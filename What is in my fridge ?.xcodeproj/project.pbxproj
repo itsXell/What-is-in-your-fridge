@@ -15,6 +15,21 @@
 		3E04CDCC2454234F0078D6A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E04CDCA2454234F0078D6A7 /* LaunchScreen.storyboard */; };
 		3E04CDD7245423500078D6A7 /* What_is_in_my_fridge__Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E04CDD6245423500078D6A7 /* What_is_in_my_fridge__Tests.swift */; };
 		3E04CDE2245423500078D6A7 /* What_is_in_my_fridge__UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E04CDE1245423500078D6A7 /* What_is_in_my_fridge__UITests.swift */; };
+		3E31598124753E110057223B /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E31598024753E110057223B /* Ingredient.swift */; };
+		3E45D02C247525AA0044D214 /* IngredientModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3E45D02A247525AA0044D214 /* IngredientModel.xcdatamodeld */; };
+		3E4878BC2454A31F0080E484 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4878BB2454A31F0080E484 /* RecipeCell.swift */; };
+		3E7BFFE1247427010006E30B /* MyFridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7BFFE0247427010006E30B /* MyFridgeViewController.swift */; };
+		3E7BFFE32474272F0006E30B /* CategoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7BFFE22474272F0006E30B /* CategoryViewCell.swift */; };
+		3E7C392224743B5D00E909A7 /* IngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C392124743B5D00E909A7 /* IngredientViewController.swift */; };
+		3E7C392524743B8B00E909A7 /* IngredientViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C392424743B8B00E909A7 /* IngredientViewCell.swift */; };
+		3E7D38E624750BD900884893 /* AddIngredientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7D38E524750BD900884893 /* AddIngredientController.swift */; };
+		3E7DF35C24759E08005726E6 /* EditIngredientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7DF35B24759E08005726E6 /* EditIngredientController.swift */; };
+		3E83AE802473C661004EC987 /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E83AE7F2473C661004EC987 /* ExploreCell.swift */; };
+		3EB8ABF02472E0B90050FA58 /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB8ABEF2472E0B90050FA58 /* ExploreController.swift */; };
+		3ED0D09824547B7A005CEF7F /* RecommendationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED0D09724547B7A005CEF7F /* RecommendationController.swift */; };
+		9D5B10AD0EFD417C014C694F /* Pods_What_is_in_my_fridge__Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF84C7E5A3EB6245F702AB90 /* Pods_What_is_in_my_fridge__Tests.framework */; };
+		A8067A9716A45F4F3D8054C3 /* Pods_What_is_in_my_fridge___What_is_in_my_fridge__UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90797B43F78BDADFF31FE82D /* Pods_What_is_in_my_fridge___What_is_in_my_fridge__UITests.framework */; };
+		E76586440EA82F3B256AF303 /* Pods_What_is_in_my_fridge__.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D38D4C5B6BEB1D0B66FBE5C /* Pods_What_is_in_my_fridge__.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		374FF57FABA77D1F0ECEF40B /* Pods-What is in my fridge ?.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-What is in my fridge ?.release.xcconfig"; path = "Target Support Files/Pods-What is in my fridge ?/Pods-What is in my fridge ?.release.xcconfig"; sourceTree = "<group>"; };
 		3E04CDBC2454234D0078D6A7 /* What is in my fridge ?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "What is in my fridge ?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E04CDBF2454234D0078D6A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E04CDC12454234D0078D6A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +65,26 @@
 		3E04CDDD245423500078D6A7 /* What is in my fridge ?UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "What is in my fridge ?UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E04CDE1245423500078D6A7 /* What_is_in_my_fridge__UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = What_is_in_my_fridge__UITests.swift; sourceTree = "<group>"; };
 		3E04CDE3245423500078D6A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E31598024753E110057223B /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		3E45D02B247525AA0044D214 /* IngredientModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IngredientModel.xcdatamodel; sourceTree = "<group>"; };
+		3E4878BB2454A31F0080E484 /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		3E7BFFE0247427010006E30B /* MyFridgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFridgeViewController.swift; sourceTree = "<group>"; };
+		3E7BFFE22474272F0006E30B /* CategoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewCell.swift; sourceTree = "<group>"; };
+		3E7C392124743B5D00E909A7 /* IngredientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientViewController.swift; sourceTree = "<group>"; };
+		3E7C392424743B8B00E909A7 /* IngredientViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientViewCell.swift; sourceTree = "<group>"; };
+		3E7D38E524750BD900884893 /* AddIngredientController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIngredientController.swift; sourceTree = "<group>"; };
+		3E7DF35B24759E08005726E6 /* EditIngredientController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditIngredientController.swift; sourceTree = "<group>"; };
+		3E83AE7F2473C661004EC987 /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
+		3EB8ABEF2472E0B90050FA58 /* ExploreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
+		3ED0D09724547B7A005CEF7F /* RecommendationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationController.swift; sourceTree = "<group>"; };
+		7C1F5E38A67FFFC0366298C2 /* Pods-What is in my fridge ?Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-What is in my fridge ?Tests.debug.xcconfig"; path = "Target Support Files/Pods-What is in my fridge ?Tests/Pods-What is in my fridge ?Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D38D4C5B6BEB1D0B66FBE5C /* Pods_What_is_in_my_fridge__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_What_is_in_my_fridge__.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90797B43F78BDADFF31FE82D /* Pods_What_is_in_my_fridge___What_is_in_my_fridge__UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_What_is_in_my_fridge___What_is_in_my_fridge__UITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EAFDC6554DB066DD9E0A183 /* Pods-What is in my fridge ?.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-What is in my fridge ?.debug.xcconfig"; path = "Target Support Files/Pods-What is in my fridge ?/Pods-What is in my fridge ?.debug.xcconfig"; sourceTree = "<group>"; };
+		B5F4BA9A1C7CB5D9ADB1C5AE /* Pods-What is in my fridge ?Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-What is in my fridge ?Tests.release.xcconfig"; path = "Target Support Files/Pods-What is in my fridge ?Tests/Pods-What is in my fridge ?Tests.release.xcconfig"; sourceTree = "<group>"; };
+		DEB25F468CC2230B4A05B91D /* Pods-What is in my fridge ?-What is in my fridge ?UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-What is in my fridge ?-What is in my fridge ?UITests.release.xcconfig"; path = "Target Support Files/Pods-What is in my fridge ?-What is in my fridge ?UITests/Pods-What is in my fridge ?-What is in my fridge ?UITests.release.xcconfig"; sourceTree = "<group>"; };
+		E7E69335E4657156226CC754 /* Pods-What is in my fridge ?-What is in my fridge ?UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-What is in my fridge ?-What is in my fridge ?UITests.debug.xcconfig"; path = "Target Support Files/Pods-What is in my fridge ?-What is in my fridge ?UITests/Pods-What is in my fridge ?-What is in my fridge ?UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF84C7E5A3EB6245F702AB90 /* Pods_What_is_in_my_fridge__Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_What_is_in_my_fridge__Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E76586440EA82F3B256AF303 /* Pods_What_is_in_my_fridge__.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D5B10AD0EFD417C014C694F /* Pods_What_is_in_my_fridge__Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8067A9716A45F4F3D8054C3 /* Pods_What_is_in_my_fridge___What_is_in_my_fridge__UITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +122,8 @@
 				3E04CDD5245423500078D6A7 /* What is in my fridge ?Tests */,
 				3E04CDE0245423500078D6A7 /* What is in my fridge ?UITests */,
 				3E04CDBD2454234D0078D6A7 /* Products */,
+				7957C19A9B5ED50B424CBA3C /* Pods */,
+				A4DB4AD6A1B08F8D3D550D9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +140,11 @@
 		3E04CDBE2454234D0078D6A7 /* What is in my fridge ? */ = {
 			isa = PBXGroup;
 			children = (
+				3E31597F24753E020057223B /* Model */,
+				3E7C392324743B6800E909A7 /* Ingredient */,
+				3E7BFFE5247427520006E30B /* MyFridge */,
+				3E83AE7E2473C635004EC987 /* Explore */,
+				3EB8ABF12472E0D50050FA58 /* Recommendation */,
 				3E04CDBF2454234D0078D6A7 /* AppDelegate.swift */,
 				3E04CDC12454234D0078D6A7 /* SceneDelegate.swift */,
 				3E04CDC32454234D0078D6A7 /* ViewController.swift */,
@@ -106,6 +152,7 @@
 				3E04CDC82454234F0078D6A7 /* Assets.xcassets */,
 				3E04CDCA2454234F0078D6A7 /* LaunchScreen.storyboard */,
 				3E04CDCD2454234F0078D6A7 /* Info.plist */,
+				3E45D02A247525AA0044D214 /* IngredientModel.xcdatamodeld */,
 			);
 			path = "What is in my fridge ?";
 			sourceTree = "<group>";
@@ -128,6 +175,75 @@
 			path = "What is in my fridge ?UITests";
 			sourceTree = "<group>";
 		};
+		3E31597F24753E020057223B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E31598024753E110057223B /* Ingredient.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3E7BFFE5247427520006E30B /* MyFridge */ = {
+			isa = PBXGroup;
+			children = (
+				3E7BFFE22474272F0006E30B /* CategoryViewCell.swift */,
+				3E7BFFE0247427010006E30B /* MyFridgeViewController.swift */,
+			);
+			path = MyFridge;
+			sourceTree = "<group>";
+		};
+		3E7C392324743B6800E909A7 /* Ingredient */ = {
+			isa = PBXGroup;
+			children = (
+				3E7C392124743B5D00E909A7 /* IngredientViewController.swift */,
+				3E7C392424743B8B00E909A7 /* IngredientViewCell.swift */,
+				3E7D38E524750BD900884893 /* AddIngredientController.swift */,
+				3E7DF35B24759E08005726E6 /* EditIngredientController.swift */,
+			);
+			path = Ingredient;
+			sourceTree = "<group>";
+		};
+		3E83AE7E2473C635004EC987 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				3EB8ABEF2472E0B90050FA58 /* ExploreController.swift */,
+				3E83AE7F2473C661004EC987 /* ExploreCell.swift */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		3EB8ABF12472E0D50050FA58 /* Recommendation */ = {
+			isa = PBXGroup;
+			children = (
+				3ED0D09724547B7A005CEF7F /* RecommendationController.swift */,
+				3E4878BB2454A31F0080E484 /* RecipeCell.swift */,
+			);
+			path = Recommendation;
+			sourceTree = "<group>";
+		};
+		7957C19A9B5ED50B424CBA3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9EAFDC6554DB066DD9E0A183 /* Pods-What is in my fridge ?.debug.xcconfig */,
+				374FF57FABA77D1F0ECEF40B /* Pods-What is in my fridge ?.release.xcconfig */,
+				E7E69335E4657156226CC754 /* Pods-What is in my fridge ?-What is in my fridge ?UITests.debug.xcconfig */,
+				DEB25F468CC2230B4A05B91D /* Pods-What is in my fridge ?-What is in my fridge ?UITests.release.xcconfig */,
+				7C1F5E38A67FFFC0366298C2 /* Pods-What is in my fridge ?Tests.debug.xcconfig */,
+				B5F4BA9A1C7CB5D9ADB1C5AE /* Pods-What is in my fridge ?Tests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A4DB4AD6A1B08F8D3D550D9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D38D4C5B6BEB1D0B66FBE5C /* Pods_What_is_in_my_fridge__.framework */,
+				90797B43F78BDADFF31FE82D /* Pods_What_is_in_my_fridge___What_is_in_my_fridge__UITests.framework */,
+				EF84C7E5A3EB6245F702AB90 /* Pods_What_is_in_my_fridge__Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +251,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E04CDE6245423500078D6A7 /* Build configuration list for PBXNativeTarget "What is in my fridge ?" */;
 			buildPhases = (
+				BEBC5950133358FE81924957 /* [CP] Check Pods Manifest.lock */,
 				3E04CDB82454234D0078D6A7 /* Sources */,
 				3E04CDB92454234D0078D6A7 /* Frameworks */,
 				3E04CDBA2454234D0078D6A7 /* Resources */,
@@ -152,6 +269,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E04CDE9245423500078D6A7 /* Build configuration list for PBXNativeTarget "What is in my fridge ?Tests" */;
 			buildPhases = (
+				5870D6B89A61A6DDC749FA80 /* [CP] Check Pods Manifest.lock */,
 				3E04CDCE245423500078D6A7 /* Sources */,
 				3E04CDCF245423500078D6A7 /* Frameworks */,
 				3E04CDD0245423500078D6A7 /* Resources */,
@@ -170,6 +288,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3E04CDEC245423500078D6A7 /* Build configuration list for PBXNativeTarget "What is in my fridge ?UITests" */;
 			buildPhases = (
+				1334BA97D10113AC2965456D /* [CP] Check Pods Manifest.lock */,
 				3E04CDD9245423500078D6A7 /* Sources */,
 				3E04CDDA245423500078D6A7 /* Frameworks */,
 				3E04CDDB245423500078D6A7 /* Resources */,
@@ -254,14 +373,95 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1334BA97D10113AC2965456D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-What is in my fridge ?-What is in my fridge ?UITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5870D6B89A61A6DDC749FA80 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-What is in my fridge ?Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEBC5950133358FE81924957 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-What is in my fridge ?-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3E04CDB82454234D0078D6A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E4878BC2454A31F0080E484 /* RecipeCell.swift in Sources */,
 				3E04CDC42454234D0078D6A7 /* ViewController.swift in Sources */,
+				3E31598124753E110057223B /* Ingredient.swift in Sources */,
 				3E04CDC02454234D0078D6A7 /* AppDelegate.swift in Sources */,
+				3E45D02C247525AA0044D214 /* IngredientModel.xcdatamodeld in Sources */,
+				3E7C392224743B5D00E909A7 /* IngredientViewController.swift in Sources */,
+				3ED0D09824547B7A005CEF7F /* RecommendationController.swift in Sources */,
+				3E7C392524743B8B00E909A7 /* IngredientViewCell.swift in Sources */,
 				3E04CDC22454234D0078D6A7 /* SceneDelegate.swift in Sources */,
+				3E7BFFE1247427010006E30B /* MyFridgeViewController.swift in Sources */,
+				3EB8ABF02472E0B90050FA58 /* ExploreController.swift in Sources */,
+				3E7BFFE32474272F0006E30B /* CategoryViewCell.swift in Sources */,
+				3E7D38E624750BD900884893 /* AddIngredientController.swift in Sources */,
+				3E7DF35C24759E08005726E6 /* EditIngredientController.swift in Sources */,
+				3E83AE802473C661004EC987 /* ExploreCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +632,7 @@
 		};
 		3E04CDE7245423500078D6A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EAFDC6554DB066DD9E0A183 /* Pods-What is in my fridge ?.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -450,6 +651,7 @@
 		};
 		3E04CDE8245423500078D6A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 374FF57FABA77D1F0ECEF40B /* Pods-What is in my fridge ?.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -468,6 +670,7 @@
 		};
 		3E04CDEA245423500078D6A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C1F5E38A67FFFC0366298C2 /* Pods-What is in my fridge ?Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +693,7 @@
 		};
 		3E04CDEB245423500078D6A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5F4BA9A1C7CB5D9ADB1C5AE /* Pods-What is in my fridge ?Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +716,7 @@
 		};
 		3E04CDED245423500078D6A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7E69335E4657156226CC754 /* Pods-What is in my fridge ?-What is in my fridge ?UITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +737,7 @@
 		};
 		3E04CDEE245423500078D6A7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEB25F468CC2230B4A05B91D /* Pods-What is in my fridge ?-What is in my fridge ?UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -590,6 +796,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3E45D02A247525AA0044D214 /* IngredientModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3E45D02B247525AA0044D214 /* IngredientModel.xcdatamodel */,
+			);
+			currentVersion = 3E45D02B247525AA0044D214 /* IngredientModel.xcdatamodel */;
+			path = IngredientModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3E04CDB42454234D0078D6A7 /* Project object */;
 }
