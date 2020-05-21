@@ -33,10 +33,13 @@ class EditIngredientController: UIViewController {
            {
            case 0:
                typeOfIngredient = "Meats"
+               print(typeSelector.selectedSegmentIndex)
            case 1:
                typeOfIngredient = "Vegetables"
+                      print(typeSelector.selectedSegmentIndex)
            case 2:
                typeOfIngredient = "Spices"
+                    print(typeSelector.selectedSegmentIndex)
            default:
                break
            }

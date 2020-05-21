@@ -25,6 +25,7 @@
 		3E7D38E624750BD900884893 /* AddIngredientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7D38E524750BD900884893 /* AddIngredientController.swift */; };
 		3E7DF35C24759E08005726E6 /* EditIngredientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7DF35B24759E08005726E6 /* EditIngredientController.swift */; };
 		3E83AE802473C661004EC987 /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E83AE7F2473C661004EC987 /* ExploreCell.swift */; };
+		3E972DAE2475B6770086BC2A /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E972DAD2475B6770086BC2A /* icon@2x.png */; };
 		3EB8ABF02472E0B90050FA58 /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB8ABEF2472E0B90050FA58 /* ExploreController.swift */; };
 		3ED0D09824547B7A005CEF7F /* RecommendationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED0D09724547B7A005CEF7F /* RecommendationController.swift */; };
 		9D5B10AD0EFD417C014C694F /* Pods_What_is_in_my_fridge__Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF84C7E5A3EB6245F702AB90 /* Pods_What_is_in_my_fridge__Tests.framework */; };
@@ -75,6 +76,7 @@
 		3E7D38E524750BD900884893 /* AddIngredientController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIngredientController.swift; sourceTree = "<group>"; };
 		3E7DF35B24759E08005726E6 /* EditIngredientController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditIngredientController.swift; sourceTree = "<group>"; };
 		3E83AE7F2473C661004EC987 /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
+		3E972DAD2475B6770086BC2A /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		3EB8ABEF2472E0B90050FA58 /* ExploreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
 		3ED0D09724547B7A005CEF7F /* RecommendationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationController.swift; sourceTree = "<group>"; };
 		7C1F5E38A67FFFC0366298C2 /* Pods-What is in my fridge ?Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-What is in my fridge ?Tests.debug.xcconfig"; path = "Target Support Files/Pods-What is in my fridge ?Tests/Pods-What is in my fridge ?Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				3E04CDC82454234F0078D6A7 /* Assets.xcassets */,
 				3E04CDCA2454234F0078D6A7 /* LaunchScreen.storyboard */,
 				3E04CDCD2454234F0078D6A7 /* Info.plist */,
+				3E972DAD2475B6770086BC2A /* icon@2x.png */,
 				3E45D02A247525AA0044D214 /* IngredientModel.xcdatamodeld */,
 			);
 			path = "What is in my fridge ?";
@@ -352,6 +355,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E04CDCC2454234F0078D6A7 /* LaunchScreen.storyboard in Resources */,
+				3E972DAE2475B6770086BC2A /* icon@2x.png in Resources */,
 				3E04CDC92454234F0078D6A7 /* Assets.xcassets in Resources */,
 				3E04CDC72454234D0078D6A7 /* Main.storyboard in Resources */,
 			);

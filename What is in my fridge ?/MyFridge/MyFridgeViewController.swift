@@ -25,9 +25,10 @@ class MyFridgeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        categoryList.append(category(name:"Meats", imageName:"meat"))
-        categoryList.append(category(name:"Vegetables", imageName:"vegetable"))
-         categoryList.append(category(name:"Spices", imageName:"spices"))
+        categoryList.append(category(name:"Meat", imageName:"meat"))
+        categoryList.append(category(name:"Vegetable", imageName:"vegetable"))
+         categoryList.append(category(name:"Spice", imageName:"spices"))
+        categoryList.append(category(name:"Sauce", imageName:"sauce"))
 
     }
     override func viewWillAppear(_ animated: Bool) {

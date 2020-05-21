@@ -14,7 +14,7 @@ class AddingIngredientController: UIViewController {
     @IBOutlet var amount: UITextField!
     @IBOutlet var expirationDate: UITextField!
     @IBOutlet var typeSelector: UISegmentedControl!
-    var typeOfIngredient:String = "Meats"
+    var typeOfIngredient:String = "Meat"
     private var datePicker: UIDatePicker = UIDatePicker()
     let toolBar = UIToolbar()
     
@@ -49,15 +49,18 @@ class AddingIngredientController: UIViewController {
         
     }
     
-    @IBAction func typeChange(_ sender: Any) {
+    @IBAction func typeSelector(_ sender: UISegmentedControl) {
         switch typeSelector.selectedSegmentIndex
         {
         case 0:
-            typeOfIngredient = "Meats"
+            typeOfIngredient = "Meat"
+            print(typeOfIngredient)
         case 1:
-            typeOfIngredient = "Vegetables"
+            typeOfIngredient = "Vegetable"
+            print(typeOfIngredient)
         case 2:
-            typeOfIngredient = "Spices"
+            typeOfIngredient = "Spice"
+            print(typeOfIngredient)
         default:
             break
         }
