@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-What is in my fridge ?/Pods-What is in my fridge ?-frameworks.sh
+${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework
 ${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework

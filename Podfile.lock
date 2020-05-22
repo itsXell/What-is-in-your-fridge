@@ -1,16 +1,22 @@
 PODS:
+  - ImageSlideshow (1.8.3):
+    - ImageSlideshow/Core (= 1.8.3)
+  - ImageSlideshow/Core (1.8.3)
   - ObjectMapper (3.5.1)
 
 DEPENDENCIES:
+  - ImageSlideshow
   - ObjectMapper
 
 SPEC REPOS:
   trunk:
+    - ImageSlideshow
     - ObjectMapper
 
 SPEC CHECKSUMS:
+  ImageSlideshow: 4694d7d699a1549582e7cc631fb392d8f91630f3
   ObjectMapper: 70187b8941977c62ccfb423caf6b50be405cabf0
 
-PODFILE CHECKSUM: 9d76eb94443f35eb7d2d0b7a4e2f089588f18e33
+PODFILE CHECKSUM: 2408724df9da87bb91283fbed99b5e6420c6623f
 
 COCOAPODS: 1.9.0

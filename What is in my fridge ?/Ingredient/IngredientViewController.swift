@@ -67,6 +67,7 @@ class IngredientViewController: UIViewController {
                     print("Object id")
                     print(data.objectID)
                     ingredientList.append((Ingredient(id: data.objectID, name: data.value(forKey: "ingreName") as! String, type: data.value(forKey: "ingreType") as! String, amount: data.value(forKey: "ingreAmount") as! Double, expireDate: data.value(forKey: "ingreExpire") as! Date)))
+
                 }
             }
             
@@ -155,16 +156,6 @@ extension IngredientViewController: UITableViewDataSource, UITableViewDelegate{
             self.present(alert, animated: true, completion: nil)
         }
     }
-    
-    //        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    //            tableView.deselectRow(at: indexPath, animated: true)
-    //            let currentSelected = json[indexPath.row]
-    //            if let vc = self.storyboard?.instantiateViewController(identifier: "detailViewController") as? DetailViewController{
-    //                vc.detailRest = currentSelected
-    //                navigationController?.pushViewController(vc, animated: true)
-    //
-    //            }
-    //        }
-    
+
     
 }

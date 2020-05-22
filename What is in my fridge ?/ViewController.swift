@@ -20,14 +20,15 @@ class ViewController: UIViewController {
     @IBOutlet var explore: UIButton!
     @IBOutlet var ownRecipe: UIButton!
     @IBOutlet var tableView: UITableView!
+    var tableList: [Recipe] = []
     let json: [Recipe] = Mapper<Recipe>().mapArray(JSONfile: "recipe.json")!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        showRecommendationFirst()
-        //        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "recipeCell")
-        alignText()
         retrieveData()
+        alignText()
+        displayToRecommend()
+//        retrieveData()
         for i in json {
             globalRecipe.append(i)
         }
@@ -69,55 +70,24 @@ class ViewController: UIViewController {
         view.removeFromSuperview()
     }
     
-    func createRecommendationList(){
-        
-    }
-    func retrieveData() {
-        
-        //As we know that container is set up in the AppDelegates so we need to refer that container.
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-        
-        //We need to create a context from this container
-        let managedContext = appDelegate.persistentContainer.viewContext
-        
-        //Prepare the request of type NSFetchRequest  for the entity
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "IngredientModel")
-        
-        //        fetchRequest.fetchLimit = 1
-        //        fetchRequest.predicate = NSPredicate(format: "username = %@", "Ankur")
-        //        fetchRequest.sortDescriptors = [NSSortDescriptor.init(key: "email", ascending: false)]
-        //
-        do {
-            let result = try managedContext.fetch(fetchRequest)
-            for data in result as! [NSManagedObject] {
-                globalIngredient.append((Ingredient(id: data.objectID, name: data.value(forKey: "ingreName") as! String, type: data.value(forKey: "ingreType") as! String, amount: data.value(forKey: "ingreAmount") as! Double, expireDate: data.value(forKey: "ingreExpire") as! Date)))
-            }
-            
-        } catch {
-            
-            print("Failed")
-        }
-    }
-    
     
     
     @IBAction func recommendationView(){
-        //        recommendationController.alpha = 1
-        //        exploreController.alpha = 0
-        //        ownRecipeController.alpha = 0
+        tableList.removeAll()
+        displayToRecommend()
+        retrieveData()
+        tableView.reloadData()
         buttonAnimation(mainButton: recommendation, sideButton1: ownRecipe, sideButton2: explore)
     }
     @IBAction func exploreView(){
-        //        recommendationController.alpha = 0
-        //        exploreController.alpha = 1
-        //        ownRecipeController.alpha = 0
+        tableList.removeAll()
+        retrieveData()
+        tableList.append(contentsOf: json)
+        tableView.reloadData()
         buttonAnimation(mainButton: explore, sideButton1: recommendation, sideButton2: ownRecipe)
     }
     
     @IBAction func ownRecipeView(){
-        //        recommendationController.alpha = 0
-        //        exploreController.alpha = 0
-        //        ownRecipeController.alpha = 1
         buttonAnimation(mainButton: ownRecipe, sideButton1: explore, sideButton2: recommendation)
         
     }
@@ -154,6 +124,44 @@ class ViewController: UIViewController {
         let paddingView = UIView(frame: CGRect(x: 0,y: 0,width: 25,height: txtField.frame.height))
         txtField.leftView = paddingView
     }
+    func displayToRecommend()  {
+        for i in json{
+            var check = 0
+            var approveAmount = Int((Double(i.ingredient.count) * 0.7).rounded(.towardZero))
+            for j in i.ingredient {
+                for k in globalIngredient{
+                    if (k.name.lowercased().contains(j.name.lowercased()) && k.type.lowercased() == j.type.lowercased()) || k.name.lowercased() == j.name.lowercased() || ( j.name.lowercased().contains(k.name.lowercased()) &&  k.type.lowercased() == j.type.lowercased() ){
+                        check += 1
+                        if check >= approveAmount {
+                            tableList.append(i)
+                        }
+                    }
+                }
+            }
+        }
+        tableView.reloadData()
+    }
+      public func retrieveData() {
+           
+           //As we know that container is set up in the AppDelegates so we need to refer that container.
+           guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+           
+           //We need to create a context from this container
+           let managedContext = appDelegate.persistentContainer.viewContext
+           
+           //Prepare the request of type NSFetchRequest  for the entity
+           let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "IngredientModel")
+    
+           globalIngredient.removeAll()
+           do {
+               let result = try managedContext.fetch(fetchRequest)
+               for data in result as! [NSManagedObject] {
+                   globalIngredient.append((Ingredient(id: data.objectID, name: data.value(forKey: "ingreName") as! String, type: data.value(forKey: "ingreType") as! String, amount: data.value(forKey: "ingreAmount") as! Double, expireDate: data.value(forKey: "ingreExpire") as! Date)))
+               }
+           } catch {
+               print("Failed")
+           }
+       }
     
     
     //    func showRecommendationFirst(){
@@ -169,14 +177,21 @@ class ViewController: UIViewController {
     
     
 }
+
+extension ViewController{
+    
+ 
+    
+}
+
 extension ViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return globalRecipe.count
+        return tableList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "recipeCell") as! RecipeCell
-        cell.name.text = globalRecipe[indexPath.row].name
+        cell.name.text = tableList[indexPath.row].name
         let image = UIImage(named:"meat")
         cell.img.image = image
         return cell
@@ -185,7 +200,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        let currentSelected = globalRecipe[indexPath.row]
+        let currentSelected = tableList[indexPath.row]
         if let vc = self.storyboard?.instantiateViewController(identifier: "detailview") as? DetailViewController{
             vc.currentRecipe = currentSelected
             navigationController?.pushViewController(vc, animated: true)

@@ -7,35 +7,40 @@
 //
 
 import UIKit
+import PDFKit
+import ImageSlideshow
+
 
 class DetailViewController: UIViewController {
     
-    
-    @IBOutlet var imageSlide: UIView!
+    @IBOutlet var imageSlide: ImageSlideshow!
     @IBOutlet var ingredientTable: UITableView!
     @IBOutlet var methodTable:UITableView!
     var currentRecipe: Recipe? = nil
     var heightOfCell = 5
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = currentRecipe?.name
+        generatePDF(title: (currentRecipe?.name)!, ingredient: "Ingredient", step: " step")
         var size = currentRecipe?.ingredient.count
         ingredientTable.frame = CGRect(x: ingredientTable.frame.origin.x, y: ingredientTable.frame.origin.y, width: ingredientTable.frame.size.width, height: CGFloat(size!*heightOfCell))
         print(currentRecipe?.name)
-        
     }
     
     func checkIngredient(ingredientName:String, ingredientType:String) -> Double {
         var amount = 0.0
         for i in globalIngredient{
-            if (ingredientName.lowercased().contains(i.name.lowercased()) && ingredientType.lowercased() == i.type.lowercased())  || ingredientName.lowercased() == i.name.lowercased() {
+            if (ingredientName.lowercased().contains(i.name.lowercased()) && ingredientType.lowercased().contains(i.type.lowercased()))  || ingredientName.lowercased() == i.name.lowercased() || (i.name.lowercased().contains(ingredientName.lowercased()) && ingredientType.lowercased().contains(i.type.lowercased())) {
                 amount = i.amount
                 return amount
             }
         }
         return amount
     }
+    
     
     
 }
@@ -65,10 +70,10 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate{
             return cell
         }else if tableView == methodTable {
             let cell = tableView.dequeueReusableCell(withIdentifier: "methodCell") as! StepCell
-
+            
             cell.step.text = String(indexPath.row + 1) + ". " + currentRecipe!.step[indexPath.row]
-        
-//            cell.step.text =
+            
+            //            cell.step.text =
             return cell
         }
         return UITableViewCell()
@@ -85,65 +90,76 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate{
     //        }
     //    }
     
+    // share text
+    @IBAction func shareTextButton(_ sender: UIButton) {
+        
+        // text to share
+        let text = currentRecipe?.credit
+        
+        // set up activity view controller
+        let textToShare = [ text ]
+        let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view // so that iPads won't crash
+        
+        // exclude some activity types from the list (optional)
+        activityViewController.excludedActivityTypes = [ UIActivity.ActivityType.airDrop, UIActivity.ActivityType.postToFacebook ]
+        
+        // present the view controller
+        self.present(activityViewController, animated: true, completion: nil)
+        
+    }
+    
+    
+    func generatePDF(title:String,ingredient:String,step:String){
+        let format = UIGraphicsPDFRendererFormat()
+        let metaData = [kCGPDFContextTitle:title,
+                        kCGPDFOutlineTitle:ingredient,
+                        kCGPDFContextAuthor:"Xell"]
+        format.documentInfo = metaData as [String: Any]
+        let pageRect = CGRect(x: 0, y: 0, width: 595, height: 842)
+        let renderer = UIGraphicsPDFRenderer(bounds: pageRect,
+                                             format: format)
+        let url = URL(fileURLWithPath: "/Users/xell/Documents/IOS /What is in my fridge ?/What is in my fridge ?")
+        try? renderer.writePDF(to: url) {(context) in
+            context.beginPage()
+            
+            let paragraphStyle = NSMutableParagraphStyle()
+            paragraphStyle.alignment = .center
+            let attributes = [
+                NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 14),
+                NSAttributedString.Key.paragraphStyle: paragraphStyle
+            ]
+            let text = "Hello, World!"
+            let textRect = CGRect(x: 100, // left margin
+                y: 100, // top margin
+                width: 200,
+                height: 20)
+            
+            text.draw(in: textRect, withAttributes: attributes) }
+        //        let data = renderer.pdfData { (context) in
+        //          context.beginPage()
+        //
+        //          let paragraphStyle = NSMutableParagraphStyle()
+        //          paragraphStyle.alignment = .center
+        //          let attributes = [
+        //            NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 14),
+        //            NSAttributedString.Key.paragraphStyle: paragraphStyle
+        //          ]
+        //          let text = "Hello, World!"
+        //          let textRect = CGRect(x: 100, // left margin
+        //                                y: 100, // top margin
+        //                            width: 200,
+        //                           height: 20)
+        //
+        //          text.draw(in: textRect, withAttributes: attributes)
+        //        }
+        //        let pdfDocument = PDFDocument(data: data)
+        //        pdfDocument?.write(to: path)
+    }
+    
+    
 }
 
 
 
-
-//extension DetailViewController: UITableViewDataSource, UITableViewDelegate{
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        var count = 0
-//        if tableView == ingredientTable {
-//            count = currentRecipe!.ingredient.count
-//            return count
-//        }else if tableView == methodTable{
-//            count = currentRecipe!.step.count
-//            return count
-//        }
-//        return count
-//    }
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        var cell:UITableViewCell?
-//        if tableView == ingredientTable,
-//            let cell = tableView.dequeueReusableCell(withIdentifier: "ingredientCell") as! IngredientCell {
-//            cell.name.text = currentRecipe!.ingredient[indexPath.row].name
-//            cell.amount.text = currentRecipe!.ingredient[indexPath.row].quantity
-//            cell.name.text = currentRecipe!.ingredient[indexPath.row].name
-//            return cell
-//        } else if tableView == methodTable,
-//            let cell = tableView.dequeueReusableCell(withIdentifier: "methocell") as? UITableViewCell {
-//            cell.textLabel?.text = String(indexPath.row) + ". " + currentRecipe!.step[indexPath.row]
-//            return cell
-//        }
-//
-//        return UITableViewCell()
-//    }
-//
-
-
-
-
-
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        var cell = UITableViewCell()
-//        if tableView == ingredientTable{
-//            print("run")
-//            let cell = tableView.dequeueReusableCell(withIdentifier: "ingredientCell") as! IngredientCell
-//            cell.name.text = currentRecipe!.ingredient[indexPath.row].name
-//            cell.amount.text = currentRecipe!.ingredient[indexPath.row].quantity
-//            cell.name.text = currentRecipe!.ingredient[indexPath.row].name
-//            return cell
-//
-//
-//        }else if tableView == methodTable{
-//            let cell = tableView.dequeueReusableCell(withIdentifier: "methocell", for: indexPath)
-//            cell.textLabel?.text = String(indexPath.row) + ". " + currentRecipe!.step[indexPath.row]
-//            return cell
-//
-//
-//        }
-//         return cell
-//    }
-
-//}
 

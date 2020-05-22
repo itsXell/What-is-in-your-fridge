@@ -36,7 +36,6 @@
 		3E83AE802473C661004EC987 /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E83AE7F2473C661004EC987 /* ExploreCell.swift */; };
 		3E972DAE2475B6770086BC2A /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E972DAD2475B6770086BC2A /* icon@2x.png */; };
 		3EB8ABF02472E0B90050FA58 /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB8ABEF2472E0B90050FA58 /* ExploreController.swift */; };
-		3ED0D09824547B7A005CEF7F /* RecommendationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ED0D09724547B7A005CEF7F /* RecommendationController.swift */; };
 		E76586440EA82F3B256AF303 /* Pods_What_is_in_my_fridge__.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D38D4C5B6BEB1D0B66FBE5C /* Pods_What_is_in_my_fridge__.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,7 +93,6 @@
 		3E83AE7F2473C661004EC987 /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
 		3E972DAD2475B6770086BC2A /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		3EB8ABEF2472E0B90050FA58 /* ExploreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
-		3ED0D09724547B7A005CEF7F /* RecommendationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationController.swift; sourceTree = "<group>"; };
 		8D38D4C5B6BEB1D0B66FBE5C /* Pods_What_is_in_my_fridge__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_What_is_in_my_fridge__.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EAFDC6554DB066DD9E0A183 /* Pods-What is in my fridge ?.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-What is in my fridge ?.debug.xcconfig"; path = "Target Support Files/Pods-What is in my fridge ?/Pods-What is in my fridge ?.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,6 +148,7 @@
 		3E04CDBE2454234D0078D6A7 /* What is in my fridge ? */ = {
 			isa = PBXGroup;
 			children = (
+				3E3A488C2478084F00086CC9 /* PDFKit */,
 				3E21AA8B2476EA1600183830 /* Detialview */,
 				3E31597F24753E020057223B /* Model */,
 				3E7C392324743B6800E909A7 /* Ingredient */,
@@ -208,6 +207,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		3E3A488C2478084F00086CC9 /* PDFKit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PDFKit;
+			sourceTree = "<group>";
+		};
 		3E7BFFE5247427520006E30B /* MyFridge */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,7 +247,6 @@
 			isa = PBXGroup;
 			children = (
 				3E706963247675B8000852EF /* RecommendDetailViewController.swift */,
-				3ED0D09724547B7A005CEF7F /* RecommendationController.swift */,
 				3E4878BB2454A31F0080E484 /* RecipeCell.swift */,
 				3E76DEAD247696D300343A48 /* RecomIngredientTableViewCell.swift */,
 				3E76DEAF2476978A00343A48 /* RecomMethodTableViewCell.swift */,
@@ -454,7 +459,6 @@
 				3E45D02C247525AA0044D214 /* IngredientModel.xcdatamodeld in Sources */,
 				3E706964247675B8000852EF /* RecommendDetailViewController.swift in Sources */,
 				3E7C392224743B5D00E909A7 /* IngredientViewController.swift in Sources */,
-				3ED0D09824547B7A005CEF7F /* RecommendationController.swift in Sources */,
 				3E7C392524743B8B00E909A7 /* IngredientViewCell.swift in Sources */,
 				3E04CDC22454234D0078D6A7 /* SceneDelegate.swift in Sources */,
 				3E7BFFE1247427010006E30B /* MyFridgeViewController.swift in Sources */,

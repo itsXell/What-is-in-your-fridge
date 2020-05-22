@@ -556,7 +556,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sKA-aj-7fO"/>
                     </view>
-                    <navigationItem key="navigationItem" id="QgD-cB-fPp"/>
+                    <navigationItem key="navigationItem" id="QgD-cB-fPp">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="square.and.arrow.up" catalog="system" id="tG2-ZA-5ln">
+                            <connections>
+                                <action selector="shareTextButton:" destination="EeQ-rg-dCr" id="0Vt-q0-cMz"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="imageSlide" destination="Q5q-Rp-swe" id="nCQ-PR-HZO"/>
                         <outlet property="ingredientTable" destination="WbZ-ys-i0B" id="E4k-If-haa"/>
@@ -1032,5 +1038,6 @@
         <image name="clock" width="512" height="512"/>
         <image name="fridge" width="25" height="25"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
     </resources>
 </document>

@@ -15,6 +15,7 @@ class Recipe: Mappable{
     var step:[String]! = []
     var times:String! = ""
     var imageGalley:[String]! = []
+    var credit:String! = ""
     
     
     required init?(map: Map) {
@@ -27,6 +28,7 @@ class Recipe: Mappable{
         step <- map["steps"]
         times <- map["timers"]
         imageGalley <- map["imageGallery"]
+        credit <- map["credit"]
     }
     
     
