@@ -23,27 +23,28 @@ class EditIngredientController: UIViewController {
         super.viewDidLoad()
         displayToTextField()
         
-      
+        
         // Do any additional setup after loading the view.
     }
     
     
     @IBAction func typeChange(_ sender: Any) {
-           switch typeSelector.selectedSegmentIndex
-           {
-           case 0:
-               typeOfIngredient = "Meats"
-               print(typeSelector.selectedSegmentIndex)
-           case 1:
-               typeOfIngredient = "Vegetables"
-                      print(typeSelector.selectedSegmentIndex)
-           case 2:
-               typeOfIngredient = "Spices"
-                    print(typeSelector.selectedSegmentIndex)
-           default:
-               break
-           }
-       }
+        switch typeSelector.selectedSegmentIndex
+        {
+        case 0:
+            typeOfIngredient = "Meat"
+        case 1:
+            typeOfIngredient = "Vegetable"
+        case 2:
+            typeOfIngredient = "Spice"
+        case 3:
+            typeOfIngredient = "Sauce"
+        case 4:
+            typeOfIngredient = "Starch"
+        default:
+            break
+        }
+    }
     
     @IBAction func updateIngredient(){
         let updateName:String! = ingredientName.text
@@ -57,58 +58,58 @@ class EditIngredientController: UIViewController {
         ingredientName.text = selectIngredient?.name
         let currentAmount:String = String(format:"%.1f", (selectIngredient?.amount!)!)
         amount.text = currentAmount
-//        let dateFormat = DateFormatter()
-//        dateFormat.dateFormat = "dd/MM/yy"
-//        expirationDate.text = dateFormat.string(from: selectIngredient!.expireDate)
+        //        let dateFormat = DateFormatter()
+        //        dateFormat.dateFormat = "dd/MM/yy"
+        //        expirationDate.text = dateFormat.string(from: selectIngredient!.expireDate)
     }
     
     @objc func dateChanged(datePicker: UIDatePicker){
-           let dateFormat = DateFormatter()
-           dateFormat.dateFormat = "dd/MM/yy"
-           expirationDate.text = dateFormat.string(from: datePicker.date)
-           //        view.endEditing(true)
-       }
+        let dateFormat = DateFormatter()
+        dateFormat.dateFormat = "dd/MM/yy"
+        expirationDate.text = dateFormat.string(from: datePicker.date)
+        //        view.endEditing(true)
+    }
     
     
     
     func updateData(id: NSObject,name:String,type:String,amount:Double, expireDate: Date){
-           
-           //As we know that container is set up in the AppDelegates so we need to refer that container.
-           guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-           
-           //We need to create a context from this container
-           let managedContext = appDelegate.persistentContainer.viewContext
-           
-           let fetchRequest:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest.init(entityName: "User")
-           fetchRequest.predicate = NSPredicate(format: "username = %@", "Ankur1")
-           do
-           {
-               let ingredient = try managedContext.existingObject(with: id as! NSManagedObjectID)
-               
-               ingredient.setValue(name, forKey: "ingreName")
-               ingredient.setValue(type, forKey: "ingreType")
-               ingredient.setValue(amount, forKey: "ingreAmount")
-               ingredient.setValue(expireDate, forKey: "ingreExpire")
-               
-               do{
-                   try managedContext.save()
-               }
-               catch
-               {
-                   print(error)
-               }
-           }
-           catch
-           {
-               print(error)
-           }
-           
-       }
+        
+        //As we know that container is set up in the AppDelegates so we need to refer that container.
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        
+        //We need to create a context from this container
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest.init(entityName: "User")
+        fetchRequest.predicate = NSPredicate(format: "username = %@", "Ankur1")
+        do
+        {
+            let ingredient = try managedContext.existingObject(with: id as! NSManagedObjectID)
+            
+            ingredient.setValue(name, forKey: "ingreName")
+            ingredient.setValue(type, forKey: "ingreType")
+            ingredient.setValue(amount, forKey: "ingreAmount")
+            ingredient.setValue(expireDate, forKey: "ingreExpire")
+            
+            do{
+                try managedContext.save()
+            }
+            catch
+            {
+                print(error)
+            }
+        }
+        catch
+        {
+            print(error)
+        }
+        
+    }
     
     
     
     
-
+    
     
     
     

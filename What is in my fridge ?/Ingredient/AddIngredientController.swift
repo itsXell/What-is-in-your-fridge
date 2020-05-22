@@ -13,22 +13,27 @@ class AddingIngredientController: UIViewController {
     @IBOutlet var ingredientName: UITextField!
     @IBOutlet var amount: UITextField!
     @IBOutlet var expirationDate: UITextField!
-    @IBOutlet var typeSelector: UISegmentedControl!
+    @IBOutlet var segmentControl: UISegmentedControl!
     var typeOfIngredient:String = "Meat"
     private var datePicker: UIDatePicker = UIDatePicker()
+    
     let toolBar = UIToolbar()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         datePickerView()
-        
-        
+        setSegmentedColor()
     }
+    
+    
+
+    
     func datePickerView() {
         datePicker = UIDatePicker()
         datePicker.datePickerMode = .date
         datePicker.addTarget(self, action: #selector(AddingIngredientController.dateChanged(datePicker:)), for: .valueChanged)
+        
         
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(AddingIngredientController.viewTapped(gestureRecognizer:)))
@@ -36,6 +41,7 @@ class AddingIngredientController: UIViewController {
         view.addGestureRecognizer(tapGesture)
         expirationDate.inputView = datePicker
     }
+    
     
     @IBAction func saveIngredient(){
         let checkIfEmpty = checkTextfield()
@@ -48,24 +54,33 @@ class AddingIngredientController: UIViewController {
         }
         
     }
+    func setSegmentedColor(){
+        segmentControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: UIControl.State.normal)
+        segmentControl.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black], for: UIControl.State.selected)
+    }
     
-    @IBAction func typeSelector(_ sender: UISegmentedControl) {
-        switch typeSelector.selectedSegmentIndex
+    
+    @IBAction func typeChange(_ sender: Any) {
+        switch segmentControl.selectedSegmentIndex
         {
         case 0:
             typeOfIngredient = "Meat"
-            print(typeOfIngredient)
         case 1:
             typeOfIngredient = "Vegetable"
-            print(typeOfIngredient)
+            
         case 2:
             typeOfIngredient = "Spice"
-            print(typeOfIngredient)
+            
+        case 3:
+            typeOfIngredient = "Sauce"
+            
+        case 4:
+            typeOfIngredient = "Starch"
+            
         default:
             break
         }
     }
-
     
     
     @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer){
@@ -86,14 +101,16 @@ class AddingIngredientController: UIViewController {
         }
     }
     
-   
+    
     
     
     
     
     func createAlertView(title:String,description:String) {
-        var altMessage = UIAlertController(title: title, message: description, preferredStyle: UIAlertController.Style.alert)
-        altMessage.addAction(UIAlertAction(title: "Done", style: UIAlertAction.Style.default, handler: nil))
+        let altMessage = UIAlertController(title: title, message: description, preferredStyle: UIAlertController.Style.alert)
+        altMessage.addAction(UIAlertAction(title: "Done", style: UIAlertAction.Style.default, handler: { action in
+            self.navigationController?.popViewController(animated: true)
+        }))
         self.present(altMessage, animated: true, completion: nil)
         
     }
@@ -127,7 +144,7 @@ class AddingIngredientController: UIViewController {
         do {
             try managedContext.save()
             createAlertView(title: "Success", description: "Ingredient Save")
-            navigationController?.popViewController(animated: true)
+            
             
         } catch let error as NSError {
             createAlertView(title: "Fail", description: "Error Occured!")

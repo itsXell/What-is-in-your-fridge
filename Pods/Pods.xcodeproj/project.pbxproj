@@ -7,150 +7,191 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		003B7E72DFFC141B616E640EF37D1C43 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		3E5F14A6F2ACF000C24CFB4F3D816B8E /* Pods-What is in my fridge ?Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD500323AC2E4B54509A0C94644E532 /* Pods-What is in my fridge ?Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		421CB7735F9F6E1B8387905E14EF3406 /* Pods-What is in my fridge ?-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B63E2720FB754EE9834F989ECA1A3A9 /* Pods-What is in my fridge ?-dummy.m */; };
-		4A50E3527174F8896DD6E086B282E8E8 /* Pods-What is in my fridge ?Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0871ED9392B53BFB8C27A1C1B9DBFC94 /* Pods-What is in my fridge ?Tests-dummy.m */; };
-		598E84B377480136B60B9941932CC6C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		6B84CC000B55DA8BFFC34B6905F6F0AB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		83F6D124654D87C6A3AA466460459254 /* Pods-What is in my fridge ?-What is in my fridge ?UITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E7ECF6C320EDE7231C494160DBA08E00 /* Pods-What is in my fridge ?-What is in my fridge ?UITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC31CC671B9E50E6069F41BD3178E86C /* Pods-What is in my fridge ?-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FA52DEF639BF493302D57D2E20CAFAB /* Pods-What is in my fridge ?-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F14220C0D3EFF33B97F343D002F8C78C /* Pods-What is in my fridge ?-What is in my fridge ?UITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 392052A230A84E50245DDEEFDFDBA5D5 /* Pods-What is in my fridge ?-What is in my fridge ?UITests-dummy.m */; };
+		02E11AACB509E00F07FC45B073374310 /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F760DB2553C865E6AB9B1C9CF1861EA /* EnumTransform.swift */; };
+		0C9FD48191A4E68417C886A9BA356C76 /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75A94537E71259ABFCB16A3F0B5C776 /* ISO8601DateTransform.swift */; };
+		0E478FF7AD49149E802261DB853A2837 /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3179B1F347B0D0E8699D050AEA277ED /* DateTransform.swift */; };
+		13798AF99B72826414E88FC1976BFDD9 /* Pods-What is in my fridge ?-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FE3A994F9737119F93B3EDC3FE91B4A /* Pods-What is in my fridge ?-dummy.m */; };
+		3556C30029720A3AF9CDBF70BE28281C /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135E95451969BC10671635417777CD1B /* FromJSON.swift */; };
+		45EF41171CA52C2B9E61E1CCD69DDAB6 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EF2C83F103567DC13E0436685A065A /* Map.swift */; };
+		4ABBB8593D9C91700F2AA96469A9D65F /* Pods-What is in my fridge ?-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 675C1FB4E5A17322C250AACF64DC6E93 /* Pods-What is in my fridge ?-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		553CF23D91DC8777B26191C77938004A /* NSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F18500B7F399772509A47D3337E5010 /* NSDecimalNumberTransform.swift */; };
+		64C60112E347C8B0F4B70760861FA125 /* EnumOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4AC254224F7AD20242E21190402B7A /* EnumOperators.swift */; };
+		65F3F57891C3534229655745DB094F1B /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = E23DBE1563A12E8C09AAC3596809056E /* TransformOf.swift */; };
+		664B70329CC935DB023416ADE2F203DC /* DictionaryTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5997FAFDF12E50A2521F57E252BF8B39 /* DictionaryTransform.swift */; };
+		78BB4BFABCB498A10A06C02661795CDB /* ObjectMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 840A1D01972994FA7178CD85F11B1123 /* ObjectMapper-dummy.m */; };
+		7908F4065CB1E8A38293CE28F4936941 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C95ADD393055D9159817F2E6EA7BCDAD /* Mapper.swift */; };
+		83ADD0310D235BAF1EF73EBFCFCBBB50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		86D61ED9E92755CAA98639EF12E90D65 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F3362C174789C3DFE3298B387DAC43D /* Operators.swift */; };
+		8DA5B74F96053B88D81B4C81C4D42C64 /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D2206AE594A369137FA7A03387539D /* ToJSON.swift */; };
+		96DBFE11AAE27CA46A220B4FB06C355B /* IntegerOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5955BACE4A13897DB859E371FDA1E47 /* IntegerOperators.swift */; };
+		9A2E1EA1F0F8F4FA13589FEFC4D712B0 /* HexColorTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0763C5513E0C9C2BFAE001362322DDB6 /* HexColorTransform.swift */; };
+		9F73038C5D5809B9C54A4D5455C0CA91 /* MapError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C23ABDD44ADA27DB9CAE7626CA08163 /* MapError.swift */; };
+		A23B1618251C3B92A365B5669F513796 /* CodableTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF1BCD4001CF9C11D8E759330D325C6 /* CodableTransform.swift */; };
+		A35CB412DFB6E16F962F7D2A5E792D5D /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBA3CFC0FE4FD16EEDF49F566ADB492B /* TransformType.swift */; };
+		B4A09A31159DC4BBD705B24893E7AC38 /* ObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4841FFC8825E171CD4CC7B621442B45D /* ObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA2A816A2CDE195F83BBC03AB4671980 /* TransformOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F220E1DFB34D4A12FC56CBC9D136D9D6 /* TransformOperators.swift */; };
+		BE77AF28ABBCD1A186B56195290331D8 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181FDCEAE5E7411B2B4D3A5503B3576A /* Mappable.swift */; };
+		C79E078828851B49B17112F9623F176B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		EB2E92AFE8E36A23EE6D311736B88B67 /* DataTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1172ED21E3546166E97B27829A52FE74 /* DataTransform.swift */; };
+		F000D6CA12F7C477EC63335B91707775 /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C1CAD43096F34B1AED0734134C07D54 /* URLTransform.swift */; };
+		F2CA9FD6E3A7EFBB13BCEF662D06524B /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407EBD985C74217A1323774EFB635FA7 /* CustomDateFormatTransform.swift */; };
+		F60975556A37AD5647ED82DC76E9CF6F /* DateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E81ECA5516F1FE1E462C54772D935B0 /* DateFormatterTransform.swift */; };
+		F9B31EED95B0E98A057B6012F9883DCF /* ImmutableMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903641CBB4E2AD613F25E1BADB4686D7 /* ImmutableMappable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		536EA40956A5DFA25CD0AA10FC8B4565 /* PBXContainerItemProxy */ = {
+		29BE2CEE1859679F66C03F9DBD869A43 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FAB0234198513390276FA0A0825C9E60;
-			remoteInfo = "Pods-What is in my fridge ?";
+			remoteGlobalIDString = 162E649F50FEC62B61BDD87D1BD422B4;
+			remoteInfo = ObjectMapper;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0871ED9392B53BFB8C27A1C1B9DBFC94 /* Pods-What is in my fridge ?Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-What is in my fridge ?Tests-dummy.m"; sourceTree = "<group>"; };
-		1AACB6E6F9462BD1BC2FD7DD8CF166C7 /* Pods-What is in my fridge ?-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-What is in my fridge ?-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1BF971493B79F045217BA391826DD29D /* Pods-What is in my fridge ?-What is in my fridge ?UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-What is in my fridge ?-What is in my fridge ?UITests.release.xcconfig"; sourceTree = "<group>"; };
-		25BC01D4B1CCC625D5AE2AD2260678C3 /* Pods-What is in my fridge ?.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-What is in my fridge ?.release.xcconfig"; sourceTree = "<group>"; };
+		04B3EA84B6049FB1ACABE0964734E1F3 /* Pods-What is in my fridge ?-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-What is in my fridge ?-acknowledgements.plist"; sourceTree = "<group>"; };
+		0646190EB130867348D89F317F38B961 /* ObjectMapper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ObjectMapper-Info.plist"; sourceTree = "<group>"; };
+		0763C5513E0C9C2BFAE001362322DDB6 /* HexColorTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexColorTransform.swift; path = Sources/HexColorTransform.swift; sourceTree = "<group>"; };
+		1172ED21E3546166E97B27829A52FE74 /* DataTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataTransform.swift; path = Sources/DataTransform.swift; sourceTree = "<group>"; };
+		135E95451969BC10671635417777CD1B /* FromJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FromJSON.swift; path = Sources/FromJSON.swift; sourceTree = "<group>"; };
+		181FDCEAE5E7411B2B4D3A5503B3576A /* Mappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mappable.swift; path = Sources/Mappable.swift; sourceTree = "<group>"; };
+		1F18500B7F399772509A47D3337E5010 /* NSDecimalNumberTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSDecimalNumberTransform.swift; path = Sources/NSDecimalNumberTransform.swift; sourceTree = "<group>"; };
+		1F4AC254224F7AD20242E21190402B7A /* EnumOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumOperators.swift; path = Sources/EnumOperators.swift; sourceTree = "<group>"; };
+		1F760DB2553C865E6AB9B1C9CF1861EA /* EnumTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumTransform.swift; path = Sources/EnumTransform.swift; sourceTree = "<group>"; };
+		24147ECA17AC722299ADF9C3CCEBC4C3 /* Pods-What is in my fridge ?-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-What is in my fridge ?-Info.plist"; sourceTree = "<group>"; };
+		26FF376498EA6B142A1146FABA2EAB1E /* Pods-What is in my fridge ?-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-What is in my fridge ?-frameworks.sh"; sourceTree = "<group>"; };
+		27EF2C83F103567DC13E0436685A065A /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = Sources/Map.swift; sourceTree = "<group>"; };
+		2F3362C174789C3DFE3298B387DAC43D /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/Operators.swift; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		392052A230A84E50245DDEEFDFDBA5D5 /* Pods-What is in my fridge ?-What is in my fridge ?UITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-What is in my fridge ?-What is in my fridge ?UITests-dummy.m"; sourceTree = "<group>"; };
-		3EB37FC3085E8E3F0CE2CB081F92A4BB /* Pods-What is in my fridge ?Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-What is in my fridge ?Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4929AFA3DC3130D9247638C8C1D99749 /* Pods_What_is_in_my_fridge___What_is_in_my_fridge__UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_What_is_in_my_fridge___What_is_in_my_fridge__UITests.framework; path = "Pods-What is in my fridge ?-What is in my fridge ?UITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D23995C8CFAE97CB2A16D2D09B7A3F2 /* Pods-What is in my fridge ?-What is in my fridge ?UITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-What is in my fridge ?-What is in my fridge ?UITests-Info.plist"; sourceTree = "<group>"; };
-		69EA3209ECD4A76DDDCC9E5E4F409FF7 /* Pods-What is in my fridge ?Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-What is in my fridge ?Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6FA52DEF639BF493302D57D2E20CAFAB /* Pods-What is in my fridge ?-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-What is in my fridge ?-umbrella.h"; sourceTree = "<group>"; };
-		8F8411AA4E6CCC708168078A5B5D9240 /* Pods-What is in my fridge ?Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-What is in my fridge ?Tests.release.xcconfig"; sourceTree = "<group>"; };
-		93F93462D99F6257EFF37B0727EF197F /* Pods-What is in my fridge ?-What is in my fridge ?UITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-What is in my fridge ?-What is in my fridge ?UITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		9A9884A2F1710B1BCA371ACBF4B6CFA5 /* Pods_What_is_in_my_fridge__Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_What_is_in_my_fridge__Tests.framework; path = "Pods-What is in my fridge ?Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B63E2720FB754EE9834F989ECA1A3A9 /* Pods-What is in my fridge ?-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-What is in my fridge ?-dummy.m"; sourceTree = "<group>"; };
+		3FFF620136760F98E02A6A7E03F9E27A /* ObjectMapper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectMapper.release.xcconfig; sourceTree = "<group>"; };
+		407EBD985C74217A1323774EFB635FA7 /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomDateFormatTransform.swift; path = Sources/CustomDateFormatTransform.swift; sourceTree = "<group>"; };
+		47D2206AE594A369137FA7A03387539D /* ToJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToJSON.swift; path = Sources/ToJSON.swift; sourceTree = "<group>"; };
+		4841FFC8825E171CD4CC7B621442B45D /* ObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-umbrella.h"; sourceTree = "<group>"; };
+		5997FAFDF12E50A2521F57E252BF8B39 /* DictionaryTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryTransform.swift; path = Sources/DictionaryTransform.swift; sourceTree = "<group>"; };
+		5E255E62767B714818578179F594B8F4 /* Pods-What is in my fridge ?.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-What is in my fridge ?.debug.xcconfig"; sourceTree = "<group>"; };
+		60E2E25DDC9F9DE59BE96E66A5F0598D /* Pods-What is in my fridge ?.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-What is in my fridge ?.release.xcconfig"; sourceTree = "<group>"; };
+		675C1FB4E5A17322C250AACF64DC6E93 /* Pods-What is in my fridge ?-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-What is in my fridge ?-umbrella.h"; sourceTree = "<group>"; };
+		6BAA1582FA852B253F5A7A776392FBF7 /* Pods-What is in my fridge ?-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-What is in my fridge ?-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6C23ABDD44ADA27DB9CAE7626CA08163 /* MapError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MapError.swift; path = Sources/MapError.swift; sourceTree = "<group>"; };
+		7C1CAD43096F34B1AED0734134C07D54 /* URLTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLTransform.swift; path = Sources/URLTransform.swift; sourceTree = "<group>"; };
+		840A1D01972994FA7178CD85F11B1123 /* ObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjectMapper-dummy.m"; sourceTree = "<group>"; };
+		8FF1BCD4001CF9C11D8E759330D325C6 /* CodableTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodableTransform.swift; path = Sources/CodableTransform.swift; sourceTree = "<group>"; };
+		903641CBB4E2AD613F25E1BADB4686D7 /* ImmutableMappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImmutableMappable.swift; path = Sources/ImmutableMappable.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A16A925E894BD00C0F32B25A37D28600 /* Pods-What is in my fridge ?-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-What is in my fridge ?-Info.plist"; sourceTree = "<group>"; };
-		AA4604F7080B7F3A8EB8A05EFCC0F9D4 /* Pods-What is in my fridge ?.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-What is in my fridge ?.modulemap"; sourceTree = "<group>"; };
-		ADD500323AC2E4B54509A0C94644E532 /* Pods-What is in my fridge ?Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-What is in my fridge ?Tests-umbrella.h"; sourceTree = "<group>"; };
-		AE6821904EB8ABB767FCBE4DE35D43CD /* Pods-What is in my fridge ?.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-What is in my fridge ?.debug.xcconfig"; sourceTree = "<group>"; };
-		B57D7F1914C0B9B1758163CE3A09E91A /* Pods-What is in my fridge ?-What is in my fridge ?UITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-What is in my fridge ?-What is in my fridge ?UITests.modulemap"; sourceTree = "<group>"; };
-		C280CE55B465983B15CCA68EA5877CAF /* Pods-What is in my fridge ?-What is in my fridge ?UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-What is in my fridge ?-What is in my fridge ?UITests.debug.xcconfig"; sourceTree = "<group>"; };
-		C53C8AF6A8859FB62469C79AB2CD13E9 /* Pods-What is in my fridge ?-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-What is in my fridge ?-acknowledgements.plist"; sourceTree = "<group>"; };
-		CF971EFA2E181D7CA3033974028D9AD1 /* Pods-What is in my fridge ?-What is in my fridge ?UITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-What is in my fridge ?-What is in my fridge ?UITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DA9E55A171E6E84168F644E4C0E29507 /* Pods-What is in my fridge ?Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-What is in my fridge ?Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		9E81ECA5516F1FE1E462C54772D935B0 /* DateFormatterTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormatterTransform.swift; path = Sources/DateFormatterTransform.swift; sourceTree = "<group>"; };
+		9F2E6797346130829683488E5B531D7F /* ObjectMapper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectMapper.debug.xcconfig; sourceTree = "<group>"; };
+		9FE3A994F9737119F93B3EDC3FE91B4A /* Pods-What is in my fridge ?-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-What is in my fridge ?-dummy.m"; sourceTree = "<group>"; };
+		ADBE5CBF01E0B8C80105579221E38062 /* ObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-prefix.pch"; sourceTree = "<group>"; };
+		B5955BACE4A13897DB859E371FDA1E47 /* IntegerOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = IntegerOperators.swift; path = Sources/IntegerOperators.swift; sourceTree = "<group>"; };
+		B75A94537E71259ABFCB16A3F0B5C776 /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateTransform.swift; path = Sources/ISO8601DateTransform.swift; sourceTree = "<group>"; };
+		B9084FE779702931E8DF1D00A2D725FB /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ObjectMapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFE6D370D6BE0C56BB352D3E9950654D /* ObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ObjectMapper.modulemap; sourceTree = "<group>"; };
+		C95ADD393055D9159817F2E6EA7BCDAD /* Mapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mapper.swift; path = Sources/Mapper.swift; sourceTree = "<group>"; };
+		CBA3CFC0FE4FD16EEDF49F566ADB492B /* TransformType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformType.swift; path = Sources/TransformType.swift; sourceTree = "<group>"; };
+		E23DBE1563A12E8C09AAC3596809056E /* TransformOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOf.swift; path = Sources/TransformOf.swift; sourceTree = "<group>"; };
 		E455B3106F78356487DD36A5EDE208BD /* Pods_What_is_in_my_fridge__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_What_is_in_my_fridge__.framework; path = "Pods-What is in my fridge ?.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7ECF6C320EDE7231C494160DBA08E00 /* Pods-What is in my fridge ?-What is in my fridge ?UITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-What is in my fridge ?-What is in my fridge ?UITests-umbrella.h"; sourceTree = "<group>"; };
-		F26AEC21831D4D1E4F4450EBC35EE579 /* Pods-What is in my fridge ?Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-What is in my fridge ?Tests-Info.plist"; sourceTree = "<group>"; };
-		F86F52BEE5849B95E6A78D744FF42FC5 /* Pods-What is in my fridge ?Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-What is in my fridge ?Tests.modulemap"; sourceTree = "<group>"; };
+		F220E1DFB34D4A12FC56CBC9D136D9D6 /* TransformOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOperators.swift; path = Sources/TransformOperators.swift; sourceTree = "<group>"; };
+		F3179B1F347B0D0E8699D050AEA277ED /* DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTransform.swift; path = Sources/DateTransform.swift; sourceTree = "<group>"; };
+		F5709B028BE6ADBB00E657F3C4C8C55F /* Pods-What is in my fridge ?.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-What is in my fridge ?.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1B7AE5DC65EABE48A677440B7867C062 /* Frameworks */ = {
+		76008C79518E379797C98A7EBC17F418 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B84CC000B55DA8BFFC34B6905F6F0AB /* Foundation.framework in Frameworks */,
+				C79E078828851B49B17112F9623F176B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2B08D932CFA25E23F4C6004349A8D357 /* Frameworks */ = {
+		ED1637C96BF54A5D16D10C9E2A6FEA60 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				598E84B377480136B60B9941932CC6C0 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F78F2B5CF940EF0956F15BAA60DF4C92 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				003B7E72DFFC141B616E640EF37D1C43 /* Foundation.framework in Frameworks */,
+				83ADD0310D235BAF1EF73EBFCFCBBB50 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1B15CD2B8148B3CD873021BE108F4A3D /* Products */ = {
+		10403A08AE247A3F12E7A94C6DE33D74 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E455B3106F78356487DD36A5EDE208BD /* Pods_What_is_in_my_fridge__.framework */,
-				4929AFA3DC3130D9247638C8C1D99749 /* Pods_What_is_in_my_fridge___What_is_in_my_fridge__UITests.framework */,
-				9A9884A2F1710B1BCA371ACBF4B6CFA5 /* Pods_What_is_in_my_fridge__Tests.framework */,
+				BFE6D370D6BE0C56BB352D3E9950654D /* ObjectMapper.modulemap */,
+				840A1D01972994FA7178CD85F11B1123 /* ObjectMapper-dummy.m */,
+				0646190EB130867348D89F317F38B961 /* ObjectMapper-Info.plist */,
+				ADBE5CBF01E0B8C80105579221E38062 /* ObjectMapper-prefix.pch */,
+				4841FFC8825E171CD4CC7B621442B45D /* ObjectMapper-umbrella.h */,
+				9F2E6797346130829683488E5B531D7F /* ObjectMapper.debug.xcconfig */,
+				3FFF620136760F98E02A6A7E03F9E27A /* ObjectMapper.release.xcconfig */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/ObjectMapper";
 			sourceTree = "<group>";
 		};
-		2B9A8E68E8DC9EDDB92355A865E565C9 /* Targets Support Files */ = {
+		80A18565E2B5B584D86E793E9567920B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A5FA4BE0F0E1B9D727F3353A80B2306C /* Pods-What is in my fridge ? */,
-				7AD8191607739D7E9CF904CC03B7E606 /* Pods-What is in my fridge ?-What is in my fridge ?UITests */,
-				8024B95FE69E3E356A53A5F6BCFFD10D /* Pods-What is in my fridge ?Tests */,
+				B196C892122001869ED7C3323F8A7204 /* ObjectMapper */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A1AB5F368E2FB7ABF89BD174334972ED /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BDABF8D668E0EBE372486C4CCA9241A0 /* Pods-What is in my fridge ? */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7AD8191607739D7E9CF904CC03B7E606 /* Pods-What is in my fridge ?-What is in my fridge ?UITests */ = {
+		B196C892122001869ED7C3323F8A7204 /* ObjectMapper */ = {
 			isa = PBXGroup;
 			children = (
-				B57D7F1914C0B9B1758163CE3A09E91A /* Pods-What is in my fridge ?-What is in my fridge ?UITests.modulemap */,
-				CF971EFA2E181D7CA3033974028D9AD1 /* Pods-What is in my fridge ?-What is in my fridge ?UITests-acknowledgements.markdown */,
-				93F93462D99F6257EFF37B0727EF197F /* Pods-What is in my fridge ?-What is in my fridge ?UITests-acknowledgements.plist */,
-				392052A230A84E50245DDEEFDFDBA5D5 /* Pods-What is in my fridge ?-What is in my fridge ?UITests-dummy.m */,
-				4D23995C8CFAE97CB2A16D2D09B7A3F2 /* Pods-What is in my fridge ?-What is in my fridge ?UITests-Info.plist */,
-				E7ECF6C320EDE7231C494160DBA08E00 /* Pods-What is in my fridge ?-What is in my fridge ?UITests-umbrella.h */,
-				C280CE55B465983B15CCA68EA5877CAF /* Pods-What is in my fridge ?-What is in my fridge ?UITests.debug.xcconfig */,
-				1BF971493B79F045217BA391826DD29D /* Pods-What is in my fridge ?-What is in my fridge ?UITests.release.xcconfig */,
+				8FF1BCD4001CF9C11D8E759330D325C6 /* CodableTransform.swift */,
+				407EBD985C74217A1323774EFB635FA7 /* CustomDateFormatTransform.swift */,
+				1172ED21E3546166E97B27829A52FE74 /* DataTransform.swift */,
+				9E81ECA5516F1FE1E462C54772D935B0 /* DateFormatterTransform.swift */,
+				F3179B1F347B0D0E8699D050AEA277ED /* DateTransform.swift */,
+				5997FAFDF12E50A2521F57E252BF8B39 /* DictionaryTransform.swift */,
+				1F4AC254224F7AD20242E21190402B7A /* EnumOperators.swift */,
+				1F760DB2553C865E6AB9B1C9CF1861EA /* EnumTransform.swift */,
+				135E95451969BC10671635417777CD1B /* FromJSON.swift */,
+				0763C5513E0C9C2BFAE001362322DDB6 /* HexColorTransform.swift */,
+				903641CBB4E2AD613F25E1BADB4686D7 /* ImmutableMappable.swift */,
+				B5955BACE4A13897DB859E371FDA1E47 /* IntegerOperators.swift */,
+				B75A94537E71259ABFCB16A3F0B5C776 /* ISO8601DateTransform.swift */,
+				27EF2C83F103567DC13E0436685A065A /* Map.swift */,
+				6C23ABDD44ADA27DB9CAE7626CA08163 /* MapError.swift */,
+				181FDCEAE5E7411B2B4D3A5503B3576A /* Mappable.swift */,
+				C95ADD393055D9159817F2E6EA7BCDAD /* Mapper.swift */,
+				1F18500B7F399772509A47D3337E5010 /* NSDecimalNumberTransform.swift */,
+				2F3362C174789C3DFE3298B387DAC43D /* Operators.swift */,
+				47D2206AE594A369137FA7A03387539D /* ToJSON.swift */,
+				E23DBE1563A12E8C09AAC3596809056E /* TransformOf.swift */,
+				F220E1DFB34D4A12FC56CBC9D136D9D6 /* TransformOperators.swift */,
+				CBA3CFC0FE4FD16EEDF49F566ADB492B /* TransformType.swift */,
+				7C1CAD43096F34B1AED0734134C07D54 /* URLTransform.swift */,
+				10403A08AE247A3F12E7A94C6DE33D74 /* Support Files */,
 			);
-			name = "Pods-What is in my fridge ?-What is in my fridge ?UITests";
-			path = "Target Support Files/Pods-What is in my fridge ?-What is in my fridge ?UITests";
+			name = ObjectMapper;
+			path = ObjectMapper;
 			sourceTree = "<group>";
 		};
-		8024B95FE69E3E356A53A5F6BCFFD10D /* Pods-What is in my fridge ?Tests */ = {
+		BDABF8D668E0EBE372486C4CCA9241A0 /* Pods-What is in my fridge ? */ = {
 			isa = PBXGroup;
 			children = (
-				F86F52BEE5849B95E6A78D744FF42FC5 /* Pods-What is in my fridge ?Tests.modulemap */,
-				69EA3209ECD4A76DDDCC9E5E4F409FF7 /* Pods-What is in my fridge ?Tests-acknowledgements.markdown */,
-				DA9E55A171E6E84168F644E4C0E29507 /* Pods-What is in my fridge ?Tests-acknowledgements.plist */,
-				0871ED9392B53BFB8C27A1C1B9DBFC94 /* Pods-What is in my fridge ?Tests-dummy.m */,
-				F26AEC21831D4D1E4F4450EBC35EE579 /* Pods-What is in my fridge ?Tests-Info.plist */,
-				ADD500323AC2E4B54509A0C94644E532 /* Pods-What is in my fridge ?Tests-umbrella.h */,
-				3EB37FC3085E8E3F0CE2CB081F92A4BB /* Pods-What is in my fridge ?Tests.debug.xcconfig */,
-				8F8411AA4E6CCC708168078A5B5D9240 /* Pods-What is in my fridge ?Tests.release.xcconfig */,
-			);
-			name = "Pods-What is in my fridge ?Tests";
-			path = "Target Support Files/Pods-What is in my fridge ?Tests";
-			sourceTree = "<group>";
-		};
-		A5FA4BE0F0E1B9D727F3353A80B2306C /* Pods-What is in my fridge ? */ = {
-			isa = PBXGroup;
-			children = (
-				AA4604F7080B7F3A8EB8A05EFCC0F9D4 /* Pods-What is in my fridge ?.modulemap */,
-				1AACB6E6F9462BD1BC2FD7DD8CF166C7 /* Pods-What is in my fridge ?-acknowledgements.markdown */,
-				C53C8AF6A8859FB62469C79AB2CD13E9 /* Pods-What is in my fridge ?-acknowledgements.plist */,
-				9B63E2720FB754EE9834F989ECA1A3A9 /* Pods-What is in my fridge ?-dummy.m */,
-				A16A925E894BD00C0F32B25A37D28600 /* Pods-What is in my fridge ?-Info.plist */,
-				6FA52DEF639BF493302D57D2E20CAFAB /* Pods-What is in my fridge ?-umbrella.h */,
-				AE6821904EB8ABB767FCBE4DE35D43CD /* Pods-What is in my fridge ?.debug.xcconfig */,
-				25BC01D4B1CCC625D5AE2AD2260678C3 /* Pods-What is in my fridge ?.release.xcconfig */,
+				F5709B028BE6ADBB00E657F3C4C8C55F /* Pods-What is in my fridge ?.modulemap */,
+				6BAA1582FA852B253F5A7A776392FBF7 /* Pods-What is in my fridge ?-acknowledgements.markdown */,
+				04B3EA84B6049FB1ACABE0964734E1F3 /* Pods-What is in my fridge ?-acknowledgements.plist */,
+				9FE3A994F9737119F93B3EDC3FE91B4A /* Pods-What is in my fridge ?-dummy.m */,
+				26FF376498EA6B142A1146FABA2EAB1E /* Pods-What is in my fridge ?-frameworks.sh */,
+				24147ECA17AC722299ADF9C3CCEBC4C3 /* Pods-What is in my fridge ?-Info.plist */,
+				675C1FB4E5A17322C250AACF64DC6E93 /* Pods-What is in my fridge ?-umbrella.h */,
+				5E255E62767B714818578179F594B8F4 /* Pods-What is in my fridge ?.debug.xcconfig */,
+				60E2E25DDC9F9DE59BE96E66A5F0598D /* Pods-What is in my fridge ?.release.xcconfig */,
 			);
 			name = "Pods-What is in my fridge ?";
 			path = "Target Support Files/Pods-What is in my fridge ?";
@@ -164,13 +205,23 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		C2049F083370FDABEE389BB3384781D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9084FE779702931E8DF1D00A2D725FB /* ObjectMapper.framework */,
+				E455B3106F78356487DD36A5EDE208BD /* Pods_What_is_in_my_fridge__.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				1B15CD2B8148B3CD873021BE108F4A3D /* Products */,
-				2B9A8E68E8DC9EDDB92355A865E565C9 /* Targets Support Files */,
+				80A18565E2B5B584D86E793E9567920B /* Pods */,
+				C2049F083370FDABEE389BB3384781D5 /* Products */,
+				A1AB5F368E2FB7ABF89BD174334972ED /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,82 +236,56 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		B858ADE13D96F59297F04EB46ECA1573 /* Headers */ = {
+		CCA6E17C793ED5BE6A94E6948D844AE5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC31CC671B9E50E6069F41BD3178E86C /* Pods-What is in my fridge ?-umbrella.h in Headers */,
+				B4A09A31159DC4BBD705B24893E7AC38 /* ObjectMapper-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CE7CC8E8086B4023BE1F7991748E7433 /* Headers */ = {
+		F79F42D1660415A541DD796E02441718 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83F6D124654D87C6A3AA466460459254 /* Pods-What is in my fridge ?-What is in my fridge ?UITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F6090C1B61BB41C5DBC7F3733083B7BB /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3E5F14A6F2ACF000C24CFB4F3D816B8E /* Pods-What is in my fridge ?Tests-umbrella.h in Headers */,
+				4ABBB8593D9C91700F2AA96469A9D65F /* Pods-What is in my fridge ?-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A60B4B1FA3F61424005B3D22EB35BD9C /* Pods-What is in my fridge ?Tests */ = {
+		162E649F50FEC62B61BDD87D1BD422B4 /* ObjectMapper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2FA914ED7E991455DF7F184EB40042F2 /* Build configuration list for PBXNativeTarget "Pods-What is in my fridge ?Tests" */;
+			buildConfigurationList = E87F6954491067B29ADB27A94D68AA11 /* Build configuration list for PBXNativeTarget "ObjectMapper" */;
 			buildPhases = (
-				F6090C1B61BB41C5DBC7F3733083B7BB /* Headers */,
-				9D565EC35730E9AAC17C9102CD9EEDBB /* Sources */,
-				1B7AE5DC65EABE48A677440B7867C062 /* Frameworks */,
-				445EC4D377C6A53920F6517A7148E50A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0A46A21B94D5049C599B99C82DF0C50F /* PBXTargetDependency */,
-			);
-			name = "Pods-What is in my fridge ?Tests";
-			productName = "Pods-What is in my fridge ?Tests";
-			productReference = 9A9884A2F1710B1BCA371ACBF4B6CFA5 /* Pods_What_is_in_my_fridge__Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		BF403BE2F79372E7A5452EBEC4921989 /* Pods-What is in my fridge ?-What is in my fridge ?UITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AB002D9AE6F5670AED7E7C6B45B29F10 /* Build configuration list for PBXNativeTarget "Pods-What is in my fridge ?-What is in my fridge ?UITests" */;
-			buildPhases = (
-				CE7CC8E8086B4023BE1F7991748E7433 /* Headers */,
-				0D83764AD4832EA31B0890A4B7EB46D0 /* Sources */,
-				F78F2B5CF940EF0956F15BAA60DF4C92 /* Frameworks */,
-				BC396CD7F10F34821F1BA56124120470 /* Resources */,
+				CCA6E17C793ED5BE6A94E6948D844AE5 /* Headers */,
+				39B28AE5344BF7EAB543FC2C9D39AE75 /* Sources */,
+				ED1637C96BF54A5D16D10C9E2A6FEA60 /* Frameworks */,
+				DB00122A85F347C8D68E5E2B7D815A51 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-What is in my fridge ?-What is in my fridge ?UITests";
-			productName = "Pods-What is in my fridge ?-What is in my fridge ?UITests";
-			productReference = 4929AFA3DC3130D9247638C8C1D99749 /* Pods_What_is_in_my_fridge___What_is_in_my_fridge__UITests.framework */;
+			name = ObjectMapper;
+			productName = ObjectMapper;
+			productReference = B9084FE779702931E8DF1D00A2D725FB /* ObjectMapper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FAB0234198513390276FA0A0825C9E60 /* Pods-What is in my fridge ? */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 64E455900A1F164545ECCCE18B520126 /* Build configuration list for PBXNativeTarget "Pods-What is in my fridge ?" */;
+			buildConfigurationList = 775CE65D504A92E37DB3A8B56228D237 /* Build configuration list for PBXNativeTarget "Pods-What is in my fridge ?" */;
 			buildPhases = (
-				B858ADE13D96F59297F04EB46ECA1573 /* Headers */,
-				6C71B34C12CF4B52F7F657320C682871 /* Sources */,
-				2B08D932CFA25E23F4C6004349A8D357 /* Frameworks */,
-				D412F1D8C3E4CAD279E6BDA8CE36C401 /* Resources */,
+				F79F42D1660415A541DD796E02441718 /* Headers */,
+				94DEF6B0DB367A9958FFD9F78683C579 /* Sources */,
+				76008C79518E379797C98A7EBC17F418 /* Frameworks */,
+				4C5CEC32599A953B50E82851514767EF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9FFF35B442BA22BF1EAA420432DA4D39 /* PBXTargetDependency */,
 			);
 			name = "Pods-What is in my fridge ?";
 			productName = "Pods-What is in my fridge ?";
@@ -285,33 +310,25 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 1B15CD2B8148B3CD873021BE108F4A3D /* Products */;
+			productRefGroup = C2049F083370FDABEE389BB3384781D5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				162E649F50FEC62B61BDD87D1BD422B4 /* ObjectMapper */,
 				FAB0234198513390276FA0A0825C9E60 /* Pods-What is in my fridge ? */,
-				BF403BE2F79372E7A5452EBEC4921989 /* Pods-What is in my fridge ?-What is in my fridge ?UITests */,
-				A60B4B1FA3F61424005B3D22EB35BD9C /* Pods-What is in my fridge ?Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		445EC4D377C6A53920F6517A7148E50A /* Resources */ = {
+		4C5CEC32599A953B50E82851514767EF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BC396CD7F10F34821F1BA56124120470 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D412F1D8C3E4CAD279E6BDA8CE36C401 /* Resources */ = {
+		DB00122A85F347C8D68E5E2B7D815A51 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,48 +338,62 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0D83764AD4832EA31B0890A4B7EB46D0 /* Sources */ = {
+		39B28AE5344BF7EAB543FC2C9D39AE75 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F14220C0D3EFF33B97F343D002F8C78C /* Pods-What is in my fridge ?-What is in my fridge ?UITests-dummy.m in Sources */,
+				A23B1618251C3B92A365B5669F513796 /* CodableTransform.swift in Sources */,
+				F2CA9FD6E3A7EFBB13BCEF662D06524B /* CustomDateFormatTransform.swift in Sources */,
+				EB2E92AFE8E36A23EE6D311736B88B67 /* DataTransform.swift in Sources */,
+				F60975556A37AD5647ED82DC76E9CF6F /* DateFormatterTransform.swift in Sources */,
+				0E478FF7AD49149E802261DB853A2837 /* DateTransform.swift in Sources */,
+				664B70329CC935DB023416ADE2F203DC /* DictionaryTransform.swift in Sources */,
+				64C60112E347C8B0F4B70760861FA125 /* EnumOperators.swift in Sources */,
+				02E11AACB509E00F07FC45B073374310 /* EnumTransform.swift in Sources */,
+				3556C30029720A3AF9CDBF70BE28281C /* FromJSON.swift in Sources */,
+				9A2E1EA1F0F8F4FA13589FEFC4D712B0 /* HexColorTransform.swift in Sources */,
+				F9B31EED95B0E98A057B6012F9883DCF /* ImmutableMappable.swift in Sources */,
+				96DBFE11AAE27CA46A220B4FB06C355B /* IntegerOperators.swift in Sources */,
+				0C9FD48191A4E68417C886A9BA356C76 /* ISO8601DateTransform.swift in Sources */,
+				45EF41171CA52C2B9E61E1CCD69DDAB6 /* Map.swift in Sources */,
+				9F73038C5D5809B9C54A4D5455C0CA91 /* MapError.swift in Sources */,
+				BE77AF28ABBCD1A186B56195290331D8 /* Mappable.swift in Sources */,
+				7908F4065CB1E8A38293CE28F4936941 /* Mapper.swift in Sources */,
+				553CF23D91DC8777B26191C77938004A /* NSDecimalNumberTransform.swift in Sources */,
+				78BB4BFABCB498A10A06C02661795CDB /* ObjectMapper-dummy.m in Sources */,
+				86D61ED9E92755CAA98639EF12E90D65 /* Operators.swift in Sources */,
+				8DA5B74F96053B88D81B4C81C4D42C64 /* ToJSON.swift in Sources */,
+				65F3F57891C3534229655745DB094F1B /* TransformOf.swift in Sources */,
+				BA2A816A2CDE195F83BBC03AB4671980 /* TransformOperators.swift in Sources */,
+				A35CB412DFB6E16F962F7D2A5E792D5D /* TransformType.swift in Sources */,
+				F000D6CA12F7C477EC63335B91707775 /* URLTransform.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6C71B34C12CF4B52F7F657320C682871 /* Sources */ = {
+		94DEF6B0DB367A9958FFD9F78683C579 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				421CB7735F9F6E1B8387905E14EF3406 /* Pods-What is in my fridge ?-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9D565EC35730E9AAC17C9102CD9EEDBB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4A50E3527174F8896DD6E086B282E8E8 /* Pods-What is in my fridge ?Tests-dummy.m in Sources */,
+				13798AF99B72826414E88FC1976BFDD9 /* Pods-What is in my fridge ?-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0A46A21B94D5049C599B99C82DF0C50F /* PBXTargetDependency */ = {
+		9FFF35B442BA22BF1EAA420432DA4D39 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-What is in my fridge ?";
-			target = FAB0234198513390276FA0A0825C9E60 /* Pods-What is in my fridge ? */;
-			targetProxy = 536EA40956A5DFA25CD0AA10FC8B4565 /* PBXContainerItemProxy */;
+			name = ObjectMapper;
+			target = 162E649F50FEC62B61BDD87D1BD422B4 /* ObjectMapper */;
+			targetProxy = 29BE2CEE1859679F66C03F9DBD869A43 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0065CDE1253EF9961F09C098DB0CD28A /* Release */ = {
+		1AB76B438A5C217D55976237548AF5E7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F8411AA4E6CCC708168078A5B5D9240 /* Pods-What is in my fridge ?Tests.release.xcconfig */;
+			baseConfigurationReference = 3FFF620136760F98E02A6A7E03F9E27A /* ObjectMapper.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -372,23 +403,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-What is in my fridge ?Tests/Pods-What is in my fridge ?Tests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ObjectMapper/ObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ObjectMapper/ObjectMapper-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-What is in my fridge ?Tests/Pods-What is in my fridge ?Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/ObjectMapper/ObjectMapper.modulemap";
+				PRODUCT_MODULE_NAME = ObjectMapper;
+				PRODUCT_NAME = ObjectMapper;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -396,47 +426,9 @@
 			};
 			name = Release;
 		};
-		34E041E746F6E2E51A7F31813453B5F2 /* Debug */ = {
+		28B0E8403E46A1C50E795BEB3681BCA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3EB37FC3085E8E3F0CE2CB081F92A4BB /* Pods-What is in my fridge ?Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-What is in my fridge ?Tests/Pods-What is in my fridge ?Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-What is in my fridge ?Tests/Pods-What is in my fridge ?Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		68CE829E2203941E3F297171C869891A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25BC01D4B1CCC625D5AE2AD2260678C3 /* Pods-What is in my fridge ?.release.xcconfig */;
+			baseConfigurationReference = 5E255E62767B714818578179F594B8F4 /* Pods-What is in my fridge ?.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -467,11 +459,10 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		939F1A8F6BCEB7F9F64D9EEE50CAE014 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -537,9 +528,9 @@
 			};
 			name = Debug;
 		};
-		A77920DFF1429B58381A07F68340148A /* Debug */ = {
+		A22DC35E138EB0A1927D7DA9A92A07DF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE6821904EB8ABB767FCBE4DE35D43CD /* Pods-What is in my fridge ?.debug.xcconfig */;
+			baseConfigurationReference = 60E2E25DDC9F9DE59BE96E66A5F0598D /* Pods-What is in my fridge ?.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -570,17 +561,16 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		C963AC118CB59D049EC0D85BA6F8F1C1 /* Debug */ = {
+		A597383E1F0261F60D89F3334BDE8884 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C280CE55B465983B15CCA68EA5877CAF /* Pods-What is in my fridge ?-What is in my fridge ?UITests.debug.xcconfig */;
+			baseConfigurationReference = 9F2E6797346130829683488E5B531D7F /* ObjectMapper.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -590,23 +580,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-What is in my fridge ?-What is in my fridge ?UITests/Pods-What is in my fridge ?-What is in my fridge ?UITests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ObjectMapper/ObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ObjectMapper/ObjectMapper-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-What is in my fridge ?-What is in my fridge ?UITests/Pods-What is in my fridge ?-What is in my fridge ?UITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/ObjectMapper/ObjectMapper.modulemap";
+				PRODUCT_MODULE_NAME = ObjectMapper;
+				PRODUCT_NAME = ObjectMapper;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -673,57 +662,9 @@
 			};
 			name = Release;
 		};
-		ED4130A71A406C85579DF600E7A1AD9B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BF971493B79F045217BA391826DD29D /* Pods-What is in my fridge ?-What is in my fridge ?UITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-What is in my fridge ?-What is in my fridge ?UITests/Pods-What is in my fridge ?-What is in my fridge ?UITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-What is in my fridge ?-What is in my fridge ?UITests/Pods-What is in my fridge ?-What is in my fridge ?UITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2FA914ED7E991455DF7F184EB40042F2 /* Build configuration list for PBXNativeTarget "Pods-What is in my fridge ?Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				34E041E746F6E2E51A7F31813453B5F2 /* Debug */,
-				0065CDE1253EF9961F09C098DB0CD28A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -733,20 +674,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		64E455900A1F164545ECCCE18B520126 /* Build configuration list for PBXNativeTarget "Pods-What is in my fridge ?" */ = {
+		775CE65D504A92E37DB3A8B56228D237 /* Build configuration list for PBXNativeTarget "Pods-What is in my fridge ?" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A77920DFF1429B58381A07F68340148A /* Debug */,
-				68CE829E2203941E3F297171C869891A /* Release */,
+				28B0E8403E46A1C50E795BEB3681BCA2 /* Debug */,
+				A22DC35E138EB0A1927D7DA9A92A07DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB002D9AE6F5670AED7E7C6B45B29F10 /* Build configuration list for PBXNativeTarget "Pods-What is in my fridge ?-What is in my fridge ?UITests" */ = {
+		E87F6954491067B29ADB27A94D68AA11 /* Build configuration list for PBXNativeTarget "ObjectMapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C963AC118CB59D049EC0D85BA6F8F1C1 /* Debug */,
-				ED4130A71A406C85579DF600E7A1AD9B /* Release */,
+				A597383E1F0261F60D89F3334BDE8884 /* Debug */,
+				1AB76B438A5C217D55976237548AF5E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

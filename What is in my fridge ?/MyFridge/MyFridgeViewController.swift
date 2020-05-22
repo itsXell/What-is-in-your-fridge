@@ -11,10 +11,12 @@ import UIKit
 class category{
     var name:String! = ""
     var imageName:String! = ""
+    var icon:String! = ""
     
-    init(name:String, imageName:String) {
+    init(name:String, imageName:String,icon:String) {
         self.name = name
         self.imageName = imageName
+        self.icon = icon
     }
 }
 
@@ -25,19 +27,20 @@ class MyFridgeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        categoryList.append(category(name:"Meat", imageName:"meat"))
-        categoryList.append(category(name:"Vegetable", imageName:"vegetable"))
-         categoryList.append(category(name:"Spice", imageName:"spices"))
-        categoryList.append(category(name:"Sauce", imageName:"sauce"))
-
+        categoryList.append(category(name:"Meat", imageName:"meat", icon: "meatIcon"))
+        categoryList.append(category(name:"Vegetable", imageName:"vegetable", icon: "vegetableIcon"))
+        categoryList.append(category(name:"Spice", imageName:"spices", icon: "spiceIcon"))
+        categoryList.append(category(name:"Sauce", imageName:"sauce", icon: "sauceIcon"))
+        categoryList.append(category(name:"Starch", imageName:"starch", icon: "flourIcon"))
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         self.navigationController?.navigationBar.tintColor = UIColor(red: 251/255, green: 33/255, blue: 142/255, alpha: 1)
-           self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor(red: 251/255, green: 33/255, blue: 142/255, alpha: 1)]
+        self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor(red: 251/255, green: 33/255, blue: 142/255, alpha: 1)]
         super.viewWillAppear(animated)
     }
-
+    
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
         super.viewWillDisappear(animated)
@@ -59,15 +62,16 @@ extension MyFridgeViewController: UITableViewDataSource, UITableViewDelegate{
         return cell
     }
     
-        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            tableView.deselectRow(at: indexPath, animated: true)
-            let currentSelected = categoryList[indexPath.row]
-            if let vc = self.storyboard?.instantiateViewController(identifier: "ingredientController") as? IngredientViewController{
-                vc.titleView = currentSelected.name
-                navigationController?.pushViewController(vc, animated: true)
-    
-            }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let currentSelected = categoryList[indexPath.row]
+        if let vc = self.storyboard?.instantiateViewController(identifier: "ingredientController") as? IngredientViewController{
+            vc.titleView = currentSelected.name
+            vc.imageTitle = currentSelected.icon
+            navigationController?.pushViewController(vc, animated: true)
+            
         }
+    }
     
     
 }

@@ -16,6 +16,7 @@ class IngredientViewController: UIViewController {
     
     var ingredientList:[Ingredient] = []
     var titleView: String! = ""
+    var imageTitle: String! = ""
     var datePicker:UIDatePicker = UIDatePicker()
     let toolBar = UIToolbar()
     @IBOutlet var tableView: UITableView!
@@ -38,7 +39,7 @@ class IngredientViewController: UIViewController {
     }
     
     @IBAction func addIngredient(){
-        let vc = (self.storyboard?.instantiateViewController(identifier: "addingredienView"))!
+        let vc = (self.storyboard?.instantiateViewController(identifier: "addingredientView"))!
         if let vc_secondVC = vc as? AddingIngredientController{
             vc_secondVC.modalPresentationStyle = .fullScreen
             self.present(vc_secondVC,animated: true)
@@ -66,8 +67,6 @@ class IngredientViewController: UIViewController {
                     print("Object id")
                     print(data.objectID)
                     ingredientList.append((Ingredient(id: data.objectID, name: data.value(forKey: "ingreName") as! String, type: data.value(forKey: "ingreType") as! String, amount: data.value(forKey: "ingreAmount") as! Double, expireDate: data.value(forKey: "ingreExpire") as! Date)))
-                    //                    print(data.value(forKey: "ingreName") as! String)
-                    //                    print(data.value(forKey: "ingreType") as! String)
                 }
             }
             
@@ -118,7 +117,7 @@ extension IngredientViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ingredientCell") as! IngredientViewCell
-        let image = UIImage(named:"food")
+        let image = UIImage(named:imageTitle)
         let dateFormat = DateFormatter()
         dateFormat.dateFormat = "dd/MM/yy"
         cell.imageView?.image = image

@@ -7,6 +7,11 @@
 //
 
 import UIKit
+import ObjectMapper
+import CoreData
+
+var globalRecipe:[Recipe] = []
+var globalIngredient:[Ingredient] = []
 
 class ViewController: UIViewController {
     @IBOutlet var searchBar: UITextField!
@@ -14,34 +19,44 @@ class ViewController: UIViewController {
     @IBOutlet var recommendation: UIButton!
     @IBOutlet var explore: UIButton!
     @IBOutlet var ownRecipe: UIButton!
-    @IBOutlet var recommendationController: UIView!
-    @IBOutlet var ownRecipeController: UIView!
-    @IBOutlet var exploreController: UIView!
-    
-    
-    
-    
-    
+    @IBOutlet var tableView: UITableView!
+    let json: [Recipe] = Mapper<Recipe>().mapArray(JSONfile: "recipe.json")!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        showRecommendationFirst()
-        // Do any additional setup after loading the view.
+        //        showRecommendationFirst()
+        //        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "recipeCell")
+        alignText()
+        retrieveData()
+        for i in json {
+            globalRecipe.append(i)
+        }
+       
         UserDefaults.standard.set(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
         let searchImage = UIImage(named: "search")!
         tabBarController?.tabBar.tintColor = UIColor(red: 251/255, green: 33/255, blue: 142/255, alpha: 1)
         addLeftImageTo(txtField: searchBar, andImage: searchImage)
         
     }
-    override func prepare(for segue:  UIStoryboardSegue, sender: Any?){
-        
+    
+    override func viewWillAppear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+        self.navigationController?.navigationBar.tintColor = UIColor(red: 251/255, green: 33/255, blue: 142/255, alpha: 1)
+        self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor(red: 251/255, green: 33/255, blue: 142/255, alpha: 1)]
+        super.viewWillAppear(animated)
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        super.viewWillDisappear(animated)
+    }
+    
     func displayContentController(content: UIViewController) {
         addChild(content)
         self.view.addSubview(content.view)
         content.didMove(toParent: self)
     }
- 
+    
     
     func add(_ parent: UIViewController,containerView: UIView) {
         
@@ -53,28 +68,61 @@ class ViewController: UIViewController {
         removeFromParent()
         view.removeFromSuperview()
     }
-    //
+    
+    func createRecommendationList(){
+        
+    }
+    func retrieveData() {
+        
+        //As we know that container is set up in the AppDelegates so we need to refer that container.
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        
+        //We need to create a context from this container
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        //Prepare the request of type NSFetchRequest  for the entity
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "IngredientModel")
+        
+        //        fetchRequest.fetchLimit = 1
+        //        fetchRequest.predicate = NSPredicate(format: "username = %@", "Ankur")
+        //        fetchRequest.sortDescriptors = [NSSortDescriptor.init(key: "email", ascending: false)]
+        //
+        do {
+            let result = try managedContext.fetch(fetchRequest)
+            for data in result as! [NSManagedObject] {
+                globalIngredient.append((Ingredient(id: data.objectID, name: data.value(forKey: "ingreName") as! String, type: data.value(forKey: "ingreType") as! String, amount: data.value(forKey: "ingreAmount") as! Double, expireDate: data.value(forKey: "ingreExpire") as! Date)))
+            }
+            
+        } catch {
+            
+            print("Failed")
+        }
+    }
+    
     
     
     @IBAction func recommendationView(){
-        recommendationController.alpha = 1
-        exploreController.alpha = 0
-        ownRecipeController.alpha = 0
+        //        recommendationController.alpha = 1
+        //        exploreController.alpha = 0
+        //        ownRecipeController.alpha = 0
         buttonAnimation(mainButton: recommendation, sideButton1: ownRecipe, sideButton2: explore)
     }
     @IBAction func exploreView(){
-        recommendationController.alpha = 0
-        exploreController.alpha = 1
-        ownRecipeController.alpha = 0
+        //        recommendationController.alpha = 0
+        //        exploreController.alpha = 1
+        //        ownRecipeController.alpha = 0
         buttonAnimation(mainButton: explore, sideButton1: recommendation, sideButton2: ownRecipe)
     }
     
     @IBAction func ownRecipeView(){
-        recommendationController.alpha = 0
-        exploreController.alpha = 0
-        ownRecipeController.alpha = 1
+        //        recommendationController.alpha = 0
+        //        exploreController.alpha = 0
+        //        ownRecipeController.alpha = 1
         buttonAnimation(mainButton: ownRecipe, sideButton1: explore, sideButton2: recommendation)
         
+    }
+    func alignText (){
+        explore.setNeedsLayout()
     }
     
     func buttonAnimation(mainButton: UIButton,sideButton1: UIButton,sideButton2:UIButton){
@@ -107,30 +155,44 @@ class ViewController: UIViewController {
         txtField.leftView = paddingView
     }
     
-    func showRecommendationFirst(){
-        let x = recommendation.frame.origin.x-10
-        let y = buttonBar.frame.origin.y
-        let width = recommendation.frame.width-20
-        let height = buttonBar.frame.height
-        self.buttonBar.frame = CGRect(x:x,y:y,width: width,height: height)
-        recommendationController.alpha = 1
-        exploreController.alpha = 0
-        ownRecipeController.alpha = 0
+    
+    //    func showRecommendationFirst(){
+    //        let x = recommendation.frame.origin.x-10
+    //        let y = buttonBar.frame.origin.y
+    //        let width = recommendation.frame.width-20
+    //        let height = buttonBar.frame.height
+    //        self.buttonBar.frame = CGRect(x:x,y:y,width: width,height: height)
+    //        recommendationController.alpha = 1
+    //        exploreController.alpha = 0
+    //        ownRecipeController.alpha = 0
+    //    }
+    
+    
+}
+extension ViewController: UITableViewDataSource, UITableViewDelegate{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return globalRecipe.count
     }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "recipeCell") as! RecipeCell
+        cell.name.text = globalRecipe[indexPath.row].name
+        let image = UIImage(named:"meat")
+        cell.img.image = image
+        return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        let currentSelected = globalRecipe[indexPath.row]
+        if let vc = self.storyboard?.instantiateViewController(identifier: "detailview") as? DetailViewController{
+            vc.currentRecipe = currentSelected
+            navigationController?.pushViewController(vc, animated: true)
+            
+        }
+    }
     
 }
 
 
-//struct GradientBackgroundStyle: ButtonStyle {
-//
-//       func makeBody(configuration: Self.Configuration) -> some View {
-//           configuration.label
-//               .frame(minWidth: 0, maxWidth: .infinity)
-//               .padding()
-//               .foregroundColor(.white)
-//               .background(LinearGradient(gradient: Gradient(colors: [Color("DarkGreen"), Color("LightGreen")]), startPoint: .leading, endPoint: .trailing))
-//               .cornerRadius(40)
-//               .padding(.horizontal, 20)
-//       }
-//   }
