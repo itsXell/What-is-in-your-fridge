@@ -35,6 +35,7 @@ class IngredientViewController: UIViewController {
         ingredientList.removeAll()
         retrieveData()
         tableView.reloadData()
+        tableView.separatorColor = UIColor.white
         super.viewWillAppear(animated)
     }
     

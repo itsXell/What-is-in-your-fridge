@@ -22,16 +22,14 @@ class category{
 
 
 class MyFridgeViewController: UIViewController {
+    @IBOutlet var tableView: UITableView!
     
     var categoryList:[category] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        categoryList.append(category(name:"Meat", imageName:"meat", icon: "meatIcon"))
-        categoryList.append(category(name:"Vegetable", imageName:"vegetable", icon: "vegetableIcon"))
-        categoryList.append(category(name:"Spice", imageName:"spices", icon: "spiceIcon"))
-        categoryList.append(category(name:"Sauce", imageName:"sauce", icon: "sauceIcon"))
-        categoryList.append(category(name:"Starch", imageName:"starch", icon: "flourIcon"))
+        tableView.separatorColor = UIColor.white
+        createCategory()
         
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -44,6 +42,15 @@ class MyFridgeViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
         super.viewWillDisappear(animated)
+    }
+    
+    
+    func createCategory(){
+        categoryList.append(category(name:"Meat", imageName:"meat", icon: "meatIcon"))
+        categoryList.append(category(name:"Vegetable", imageName:"vegetable", icon: "vegetableIcon"))
+        categoryList.append(category(name:"Spice", imageName:"spices", icon: "spiceIcon"))
+        categoryList.append(category(name:"Sauce", imageName:"sauce", icon: "sauceIcon"))
+        categoryList.append(category(name:"Starch", imageName:"starch", icon: "flourIcon"))
     }
 }
 

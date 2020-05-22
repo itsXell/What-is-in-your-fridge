@@ -363,6 +363,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="YNH-75-isU"/>
                     <connections>
+                        <outlet property="tableView" destination="LOP-Kf-yee" id="Qd1-bU-VPk"/>
                         <segue destination="AvL-KI-SfB" kind="push" id="EpZ-SG-7Bt"/>
                     </connections>
                 </viewController>

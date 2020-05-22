@@ -24,9 +24,6 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = currentRecipe?.name
-        generatePDF(title: (currentRecipe?.name)!, ingredient: "Ingredient", step: " step")
-        var size = currentRecipe?.ingredient.count
-        ingredientTable.frame = CGRect(x: ingredientTable.frame.origin.x, y: ingredientTable.frame.origin.y, width: ingredientTable.frame.size.width, height: CGFloat(size!*heightOfCell))
         print(currentRecipe?.name)
     }
     
@@ -47,6 +44,8 @@ class DetailViewController: UIViewController {
 
 
 extension DetailViewController: UITableViewDataSource, UITableViewDelegate{
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         var count = 0
         if tableView == ingredientTable {
