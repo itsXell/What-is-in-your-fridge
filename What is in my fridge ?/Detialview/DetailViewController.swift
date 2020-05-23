@@ -12,20 +12,63 @@ import ImageSlideshow
 
 
 class DetailViewController: UIViewController {
-    
-    @IBOutlet var imageSlide: ImageSlideshow!
+
+    @IBOutlet var imageSlide: UIView!
     @IBOutlet var ingredientTable: UITableView!
     @IBOutlet var methodTable:UITableView!
+    @IBOutlet var step:UILabel!
     var currentRecipe: Recipe? = nil
+  
+
     var heightOfCell = 5
+  
+    var scrollView:UIScrollView!
+  
+
     
+  
+    
+    
+//    @IBOutlet var ingredientHeight: NSLayoutConstraint!
+    var heightOfEachCell = 0.0
+
+  
+
+   
+    
+    @IBOutlet var ingredientHeight: NSLayoutConstraint!
+    
+    //    @IBOutlet var ingredientHeight: NSLayoutConstraint!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = currentRecipe?.name
+        
+//        var convertToInt = CGFloat((currentRecipe?.ingredient.count)! as Int)
+//              self.ingredientHeight.constant = CGFloat(3000)
+        self.ingredientHeight.constant = CGFloat(84 * (currentRecipe?.ingredient.count)!)
+//        print(ingredientTable.rowHeight)
+//           ingredientTable.estimatedRowHeight = UITableView.automaticDimension
+//        step.text = (currentRecipe?.step[0])!+"\n" + (currentRecipe?.step[1])!
+//        step.preferredMaxLayoutWidth = 150
+//        var contentSize = ingredientTable.contentSize.height * (currentRecipe?.ingredient.count)!
+//        self.ingredientHeight.constant = contentSize
+//        self.methodHeight.constant = 300
+//        var bigRect = view.bounds
+//        bigRect.size.width *= CGFloat(300)
+//
+//        scrollView.contentSize = bigRect.size
+     
+    
+      
+        
         print(currentRecipe?.name)
     }
+//    override func loadView() {
+//        scrollView = UIScrollView(frame: UIScreen.main.bounds)
+//           view = scrollView
+//       }
     
     func checkIngredient(ingredientName:String, ingredientType:String) -> Double {
         var amount = 0.0
@@ -36,6 +79,23 @@ class DetailViewController: UIViewController {
             }
         }
         return amount
+    }
+    @IBAction func shareTextButton(_ sender: UIButton) {
+        
+        // text to share
+        let text = currentRecipe?.credit
+        
+        // set up activity view controller
+        let textToShare = [ text ]
+        let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view // so that iPads won't crash
+        
+        // exclude some activity types from the list (optional)
+        activityViewController.excludedActivityTypes = [ UIActivity.ActivityType.airDrop, UIActivity.ActivityType.postToFacebook ]
+        
+        // present the view controller
+        self.present(activityViewController, animated: true, completion: nil)
+        
     }
     
     
@@ -64,6 +124,8 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate{
             let cell = tableView.dequeueReusableCell(withIdentifier: "ingredientCell") as! IngredientCell
             cell.name.text = currentRecipe?.ingredient[indexPath.row].name
             cell.amount.text = currentRecipe?.ingredient[indexPath.row].quantity
+            heightOfEachCell = Double(cell.frame.height)
+            print(heightOfEachCell)
             var  amount = checkIngredient(ingredientName: (currentRecipe?.ingredient[indexPath.row].name)!, ingredientType: (currentRecipe?.ingredient[indexPath.row].type)!)
             cell.infridge.text = String(amount)
             return cell
@@ -78,87 +140,21 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate{
         return UITableViewCell()
         
     }
-    
-    //    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    //        tableView.deselectRow(at? indexPath, animated: true)
-    //        let currentSelected = globalRecipe[indexPath.row]
-    //        if let vc = self.storyboard?.instantiateViewController(identifier: "detailview") as? DetailViewController{
-    //            vc.currentRecipe = currentSelected
-    //            navigationController?.pushViewController(vc, animated: true)
-    //
-    //        }
-    //    }
-    
-    // share text
-    @IBAction func shareTextButton(_ sender: UIButton) {
-        
-        // text to share
-        let text = currentRecipe?.credit
-        
-        // set up activity view controller
-        let textToShare = [ text ]
-        let activityViewController = UIActivityViewController(activityItems: textToShare, applicationActivities: nil)
-        activityViewController.popoverPresentationController?.sourceView = self.view // so that iPads won't crash
-        
-        // exclude some activity types from the list (optional)
-        activityViewController.excludedActivityTypes = [ UIActivity.ActivityType.airDrop, UIActivity.ActivityType.postToFacebook ]
-        
-        // present the view controller
-        self.present(activityViewController, animated: true, completion: nil)
-        
-    }
-    
-    
-    func generatePDF(title:String,ingredient:String,step:String){
-        let format = UIGraphicsPDFRendererFormat()
-        let metaData = [kCGPDFContextTitle:title,
-                        kCGPDFOutlineTitle:ingredient,
-                        kCGPDFContextAuthor:"Xell"]
-        format.documentInfo = metaData as [String: Any]
-        let pageRect = CGRect(x: 0, y: 0, width: 595, height: 842)
-        let renderer = UIGraphicsPDFRenderer(bounds: pageRect,
-                                             format: format)
-        let url = URL(fileURLWithPath: "/Users/xell/Documents/IOS /What is in my fridge ?/What is in my fridge ?")
-        try? renderer.writePDF(to: url) {(context) in
-            context.beginPage()
-            
-            let paragraphStyle = NSMutableParagraphStyle()
-            paragraphStyle.alignment = .center
-            let attributes = [
-                NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 14),
-                NSAttributedString.Key.paragraphStyle: paragraphStyle
-            ]
-            let text = "Hello, World!"
-            let textRect = CGRect(x: 100, // left margin
-                y: 100, // top margin
-                width: 200,
-                height: 20)
-            
-            text.draw(in: textRect, withAttributes: attributes) }
-        //        let data = renderer.pdfData { (context) in
-        //          context.beginPage()
-        //
-        //          let paragraphStyle = NSMutableParagraphStyle()
-        //          paragraphStyle.alignment = .center
-        //          let attributes = [
-        //            NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 14),
-        //            NSAttributedString.Key.paragraphStyle: paragraphStyle
-        //          ]
-        //          let text = "Hello, World!"
-        //          let textRect = CGRect(x: 100, // left margin
-        //                                y: 100, // top margin
-        //                            width: 200,
-        //                           height: 20)
-        //
-        //          text.draw(in: textRect, withAttributes: attributes)
-        //        }
-        //        let pdfDocument = PDFDocument(data: data)
-        //        pdfDocument?.write(to: path)
-    }
-    
-    
 }
+extension UIScrollView {
 
+    func resizeScrollViewContentSize() {
 
+        var contentRect = CGRect.zero
 
+        for view in self.subviews {
 
+            contentRect = contentRect.union(view.frame)
+
+        }
+
+        self.contentSize = contentRect.size
+
+    }
+
+}

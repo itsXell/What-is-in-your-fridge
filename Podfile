@@ -7,5 +7,6 @@ target 'What is in my fridge ?' do
 
   pod 'ObjectMapper'
   pod 'ImageSlideshow'
+  pod 'TinyConstraints'
 
 end
