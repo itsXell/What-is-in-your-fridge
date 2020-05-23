@@ -24,18 +24,132 @@
 		3E70695E24766D5C000852EF /* recipe.json in Resources */ = {isa = PBXBuildFile; fileRef = 3E70695D24766D5C000852EF /* recipe.json */; };
 		3E70696024766DE2000852EF /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E70695F24766DE2000852EF /* Recipe.swift */; };
 		3E70696224766F2A000852EF /* RecipeIngredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E70696124766F2A000852EF /* RecipeIngredient.swift */; };
-		3E706964247675B8000852EF /* RecommendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E706963247675B8000852EF /* RecommendDetailViewController.swift */; };
-		3E76DEAE247696D300343A48 /* RecomIngredientTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E76DEAD247696D300343A48 /* RecomIngredientTableViewCell.swift */; };
-		3E76DEB02476978A00343A48 /* RecomMethodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E76DEAF2476978A00343A48 /* RecomMethodTableViewCell.swift */; };
 		3E7BFFE1247427010006E30B /* MyFridgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7BFFE0247427010006E30B /* MyFridgeViewController.swift */; };
 		3E7BFFE32474272F0006E30B /* CategoryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7BFFE22474272F0006E30B /* CategoryViewCell.swift */; };
 		3E7C392224743B5D00E909A7 /* IngredientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C392124743B5D00E909A7 /* IngredientViewController.swift */; };
 		3E7C392524743B8B00E909A7 /* IngredientViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7C392424743B8B00E909A7 /* IngredientViewCell.swift */; };
 		3E7D38E624750BD900884893 /* AddIngredientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7D38E524750BD900884893 /* AddIngredientController.swift */; };
 		3E7DF35C24759E08005726E6 /* EditIngredientController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7DF35B24759E08005726E6 /* EditIngredientController.swift */; };
-		3E83AE802473C661004EC987 /* ExploreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E83AE7F2473C661004EC987 /* ExploreCell.swift */; };
 		3E972DAE2475B6770086BC2A /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E972DAD2475B6770086BC2A /* icon@2x.png */; };
-		3EB8ABF02472E0B90050FA58 /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB8ABEF2472E0B90050FA58 /* ExploreController.swift */; };
+		3ED9537724799A8800467BEF /* pancake4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9530024799A8800467BEF /* pancake4.jpg */; };
+		3ED9537824799A8800467BEF /* steamfish1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9530124799A8800467BEF /* steamfish1.jpg */; };
+		3ED9537924799A8800467BEF /* friedricepine3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9530224799A8800467BEF /* friedricepine3.jpg */; };
+		3ED9537A24799A8800467BEF /* tomkha1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9530324799A8800467BEF /* tomkha1.jpg */; };
+		3ED9537B24799A8800467BEF /* porkgrill4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9530424799A8800467BEF /* porkgrill4.jpg */; };
+		3ED9537C24799A8800467BEF /* friedricepine2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9530524799A8800467BEF /* friedricepine2.jpg */; };
+		3ED9537D24799A8800467BEF /* sthprawn4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9530624799A8800467BEF /* sthprawn4.jpg */; };
+		3ED9537E24799A8800467BEF /* omelet4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9530724799A8800467BEF /* omelet4.jpg */; };
+		3ED9537F24799A8800467BEF /* steamfish2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9530824799A8800467BEF /* steamfish2.jpg */; };
+		3ED9538024799A8800467BEF /* pad4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9530924799A8800467BEF /* pad4.jpg */; };
+		3ED9538124799A8800467BEF /* easypie4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9530A24799A8800467BEF /* easypie4.jpg */; };
+		3ED9538224799A8800467BEF /* tomkha2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9530B24799A8800467BEF /* tomkha2.jpg */; };
+		3ED9538324799A8800467BEF /* tomkha3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9530C24799A8800467BEF /* tomkha3.jpg */; };
+		3ED9538424799A8800467BEF /* pad5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9530D24799A8800467BEF /* pad5.jpg */; };
+		3ED9538524799A8800467BEF /* friedricepine1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9530E24799A8800467BEF /* friedricepine1.jpg */; };
+		3ED9538624799A8800467BEF /* steamfish3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9530F24799A8800467BEF /* steamfish3.jpg */; };
+		3ED9538724799A8800467BEF /* pancake2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9531024799A8800467BEF /* pancake2.jpg */; };
+		3ED9538824799A8800467BEF /* sthprawn3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9531124799A8800467BEF /* sthprawn3.jpg */; };
+		3ED9538924799A8800467BEF /* omelet1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9531224799A8800467BEF /* omelet1.jpg */; };
+		3ED9538A24799A8800467BEF /* pad1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9531324799A8800467BEF /* pad1.jpg */; };
+		3ED9538B24799A8800467BEF /* easypie1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9531424799A8800467BEF /* easypie1.jpg */; };
+		3ED9538C24799A8800467BEF /* porkgrill3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9531524799A8800467BEF /* porkgrill3.jpg */; };
+		3ED9538D24799A8800467BEF /* porkgrill2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9531624799A8800467BEF /* porkgrill2.jpg */; };
+		3ED9538E24799A8800467BEF /* friedricepine4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9531724799A8800467BEF /* friedricepine4.jpg */; };
+		3ED9538F24799A8800467BEF /* sthprawn2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9531824799A8800467BEF /* sthprawn2.jpg */; };
+		3ED9539024799A8800467BEF /* pancake3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9531924799A8800467BEF /* pancake3.jpg */; };
+		3ED9539124799A8800467BEF /* pancake1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9531A24799A8800467BEF /* pancake1.jpg */; };
+		3ED9539224799A8800467BEF /* omelet2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9531B24799A8800467BEF /* omelet2.jpg */; };
+		3ED9539324799A8800467BEF /* pad2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9531C24799A8800467BEF /* pad2.jpg */; };
+		3ED9539424799A8800467BEF /* steamfish4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9531D24799A8800467BEF /* steamfish4.jpg */; };
+		3ED9539524799A8800467BEF /* easypie2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9531E24799A8800467BEF /* easypie2.jpg */; };
+		3ED9539624799A8800467BEF /* tomkha4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9531F24799A8800467BEF /* tomkha4.jpg */; };
+		3ED9539724799A8800467BEF /* porkgrill1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9532024799A8800467BEF /* porkgrill1.jpg */; };
+		3ED9539824799A8800467BEF /* easypie3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9532124799A8800467BEF /* easypie3.jpg */; };
+		3ED9539924799A8800467BEF /* steamfish5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9532224799A8800467BEF /* steamfish5.jpg */; };
+		3ED9539A24799A8800467BEF /* omelet3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9532324799A8800467BEF /* omelet3.jpg */; };
+		3ED9539B24799A8800467BEF /* sthprawn1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9532424799A8800467BEF /* sthprawn1.jpg */; };
+		3ED9539C24799A8800467BEF /* larb4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9532524799A8800467BEF /* larb4.jpg */; };
+		3ED9539D24799A8800467BEF /* pomelo4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9532624799A8800467BEF /* pomelo4.jpg */; };
+		3ED9539E24799A8800467BEF /* bok4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9532724799A8800467BEF /* bok4.jpg */; };
+		3ED9539F24799A8800467BEF /* ducksalad1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9532824799A8800467BEF /* ducksalad1.jpg */; };
+		3ED953A024799A8800467BEF /* chocoeaster1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9532924799A8800467BEF /* chocoeaster1.jpg */; };
+		3ED953A124799A8800467BEF /* padpriking4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9532A24799A8800467BEF /* padpriking4.jpg */; };
+		3ED953A224799A8800467BEF /* ducksalad2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9532B24799A8800467BEF /* ducksalad2.jpg */; };
+		3ED953A324799A8800467BEF /* chocoeaster2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9532C24799A8800467BEF /* chocoeaster2.jpg */; };
+		3ED953A424799A8800467BEF /* chocoeaster3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9532D24799A8800467BEF /* chocoeaster3.jpg */; };
+		3ED953A524799A8800467BEF /* ducksalad3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9532E24799A8800467BEF /* ducksalad3.jpg */; };
+		3ED953A624799A8800467BEF /* larb2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9532F24799A8800467BEF /* larb2.jpg */; };
+		3ED953A724799A8800467BEF /* padpriking1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9533024799A8800467BEF /* padpriking1.jpg */; };
+		3ED953A824799A8800467BEF /* pomelo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9533124799A8800467BEF /* pomelo2.jpg */; };
+		3ED953A924799A8800467BEF /* bok2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9533224799A8800467BEF /* bok2.jpg */; };
+		3ED953AA24799A8800467BEF /* bok3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9533324799A8800467BEF /* bok3.jpg */; };
+		3ED953AB24799A8800467BEF /* pomelo3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9533424799A8800467BEF /* pomelo3.jpg */; };
+		3ED953AC24799A8800467BEF /* larb3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9533524799A8800467BEF /* larb3.jpg */; };
+		3ED953AD24799A8800467BEF /* larb1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9533624799A8800467BEF /* larb1.jpg */; };
+		3ED953AE24799A8800467BEF /* padpriking2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9533724799A8800467BEF /* padpriking2.jpg */; };
+		3ED953AF24799A8800467BEF /* pomelo1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9533824799A8800467BEF /* pomelo1.jpg */; };
+		3ED953B024799A8800467BEF /* bok1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9533924799A8800467BEF /* bok1.jpg */; };
+		3ED953B124799A8800467BEF /* ducksalad4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9533A24799A8800467BEF /* ducksalad4.jpg */; };
+		3ED953B224799A8800467BEF /* chocoeaster4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9533B24799A8800467BEF /* chocoeaster4.jpg */; };
+		3ED953B324799A8800467BEF /* padpriking3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9533C24799A8800467BEF /* padpriking3.jpg */; };
+		3ED953B424799A8800467BEF /* tapioca4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9533D24799A8800467BEF /* tapioca4.jpg */; };
+		3ED953B524799A8800467BEF /* stickyrice2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9533E24799A8800467BEF /* stickyrice2.jpg */; };
+		3ED953B624799A8800467BEF /* chickenkiev1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9533F24799A8800467BEF /* chickenkiev1.jpg */; };
+		3ED953B724799A8800467BEF /* jaffle4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9534024799A8800467BEF /* jaffle4.jpg */; };
+		3ED953B824799A8800467BEF /* hotpot1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9534124799A8800467BEF /* hotpot1.jpg */; };
+		3ED953B924799A8800467BEF /* stickyrice3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9534224799A8800467BEF /* stickyrice3.jpg */; };
+		3ED953BA24799A8800467BEF /* icemango4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9534324799A8800467BEF /* icemango4.png */; };
+		3ED953BB24799A8800467BEF /* stickyrice1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9534424799A8800467BEF /* stickyrice1.jpg */; };
+		3ED953BC24799A8800467BEF /* chickenkiev2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9534524799A8800467BEF /* chickenkiev2.jpg */; };
+		3ED953BD24799A8800467BEF /* grillwing4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9534624799A8800467BEF /* grillwing4.jpg */; };
+		3ED953BE24799A8800467BEF /* hotpot3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9534724799A8800467BEF /* hotpot3.jpg */; };
+		3ED953BF24799A8800467BEF /* hotpot2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9534824799A8800467BEF /* hotpot2.jpg */; };
+		3ED953C024799A8800467BEF /* grillwing5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9534924799A8800467BEF /* grillwing5.jpg */; };
+		3ED953C124799A8800467BEF /* chickenkiev3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9534A24799A8800467BEF /* chickenkiev3.jpg */; };
+		3ED953C224799A8800467BEF /* roastpork4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9534B24799A8800467BEF /* roastpork4.jpg */; };
+		3ED953C324799A8800467BEF /* icemango1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9534C24799A8800467BEF /* icemango1.jpg */; };
+		3ED953C424799A8800467BEF /* tapioca2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9534D24799A8800467BEF /* tapioca2.jpg */; };
+		3ED953C524799A8800467BEF /* stickyrice4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9534E24799A8800467BEF /* stickyrice4.jpg */; };
+		3ED953C624799A8800467BEF /* grillwing1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9534F24799A8800467BEF /* grillwing1.jpg */; };
+		3ED953C724799A8800467BEF /* jaffle3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9535024799A8800467BEF /* jaffle3.jpg */; };
+		3ED953C824799A8800467BEF /* jaffle2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9535124799A8800467BEF /* jaffle2.jpg */; };
+		3ED953C924799A8800467BEF /* roastpork1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9535224799A8800467BEF /* roastpork1.jpg */; };
+		3ED953CA24799A8800467BEF /* tapioca3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9535324799A8800467BEF /* tapioca3.jpg */; };
+		3ED953CB24799A8800467BEF /* icemango2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9535424799A8800467BEF /* icemango2.jpg */; };
+		3ED953CC24799A8800467BEF /* tapioca1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9535524799A8800467BEF /* tapioca1.jpg */; };
+		3ED953CD24799A8800467BEF /* roastpork3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9535624799A8800467BEF /* roastpork3.jpg */; };
+		3ED953CE24799A8800467BEF /* chickenkiev4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9535724799A8800467BEF /* chickenkiev4.jpg */; };
+		3ED953CF24799A8800467BEF /* grillwing2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9535824799A8800467BEF /* grillwing2.jpg */; };
+		3ED953D024799A8800467BEF /* jaffle1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9535924799A8800467BEF /* jaffle1.jpg */; };
+		3ED953D124799A8800467BEF /* grillwing3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9535A24799A8800467BEF /* grillwing3.jpg */; };
+		3ED953D224799A8800467BEF /* hotpot4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9535B24799A8800467BEF /* hotpot4.jpg */; };
+		3ED953D324799A8800467BEF /* roastpork2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9535C24799A8800467BEF /* roastpork2.jpg */; };
+		3ED953D424799A8900467BEF /* icemango3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9535D24799A8800467BEF /* icemango3.jpg */; };
+		3ED953D524799A8900467BEF /* som3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9535E24799A8800467BEF /* som3.jpg */; };
+		3ED953D624799A8900467BEF /* pandancake1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9535F24799A8800467BEF /* pandancake1.jpg */; };
+		3ED953D724799A8900467BEF /* pad3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9536024799A8800467BEF /* pad3.jpeg */; };
+		3ED953D824799A8900467BEF /* peppernoodle1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9536124799A8800467BEF /* peppernoodle1.jpg */; };
+		3ED953D924799A8900467BEF /* som2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9536224799A8800467BEF /* som2.jpg */; };
+		3ED953DA24799A8900467BEF /* vegan4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9536324799A8800467BEF /* vegan4.jpg */; };
+		3ED953DB24799A8900467BEF /* peppernoodle3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9536424799A8800467BEF /* peppernoodle3.jpg */; };
+		3ED953DC24799A8900467BEF /* pandancake2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9536524799A8800467BEF /* pandancake2.jpg */; };
+		3ED953DD24799A8900467BEF /* pandancake3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9536624799A8800467BEF /* pandancake3.jpg */; };
+		3ED953DE24799A8900467BEF /* peppernoodle2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9536724799A8800467BEF /* peppernoodle2.jpg */; };
+		3ED953DF24799A8900467BEF /* redcurrymussel4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9536824799A8800467BEF /* redcurrymussel4.jpg */; };
+		3ED953E024799A8900467BEF /* som1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9536924799A8800467BEF /* som1.jpg */; };
+		3ED953E124799A8900467BEF /* satay4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9536A24799A8800467BEF /* satay4.jpg */; };
+		3ED953E224799A8900467BEF /* vegan3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9536B24799A8800467BEF /* vegan3.jpg */; };
+		3ED953E324799A8900467BEF /* satay1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9536C24799A8800467BEF /* satay1.png */; };
+		3ED953E424799A8900467BEF /* redcurrymussel1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9536D24799A8800467BEF /* redcurrymussel1.jpg */; };
+		3ED953E524799A8900467BEF /* vegan2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9536E24799A8800467BEF /* vegan2.jpg */; };
+		3ED953E624799A8900467BEF /* som4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9536F24799A8800467BEF /* som4.jpg */; };
+		3ED953E724799A8900467BEF /* redcurrymussel3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9537024799A8800467BEF /* redcurrymussel3.jpg */; };
+		3ED953E824799A8900467BEF /* satay3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9537124799A8800467BEF /* satay3.jpg */; };
+		3ED953E924799A8900467BEF /* pandancake4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9537224799A8800467BEF /* pandancake4.jpg */; };
+		3ED953EA24799A8900467BEF /* peppernoodle4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9537324799A8800467BEF /* peppernoodle4.jpg */; };
+		3ED953EB24799A8900467BEF /* satay2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9537424799A8800467BEF /* satay2.jpg */; };
+		3ED953EC24799A8900467BEF /* vegan1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9537524799A8800467BEF /* vegan1.jpg */; };
+		3ED953ED24799A8900467BEF /* redcurrymussel2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3ED9537624799A8800467BEF /* redcurrymussel2.jpg */; };
 		E76586440EA82F3B256AF303 /* Pods_What_is_in_my_fridge__.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D38D4C5B6BEB1D0B66FBE5C /* Pods_What_is_in_my_fridge__.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,18 +195,132 @@
 		3E70695D24766D5C000852EF /* recipe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipe.json; sourceTree = "<group>"; };
 		3E70695F24766DE2000852EF /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		3E70696124766F2A000852EF /* RecipeIngredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeIngredient.swift; sourceTree = "<group>"; };
-		3E706963247675B8000852EF /* RecommendDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendDetailViewController.swift; sourceTree = "<group>"; };
-		3E76DEAD247696D300343A48 /* RecomIngredientTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomIngredientTableViewCell.swift; sourceTree = "<group>"; };
-		3E76DEAF2476978A00343A48 /* RecomMethodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecomMethodTableViewCell.swift; sourceTree = "<group>"; };
 		3E7BFFE0247427010006E30B /* MyFridgeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFridgeViewController.swift; sourceTree = "<group>"; };
 		3E7BFFE22474272F0006E30B /* CategoryViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewCell.swift; sourceTree = "<group>"; };
 		3E7C392124743B5D00E909A7 /* IngredientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientViewController.swift; sourceTree = "<group>"; };
 		3E7C392424743B8B00E909A7 /* IngredientViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientViewCell.swift; sourceTree = "<group>"; };
 		3E7D38E524750BD900884893 /* AddIngredientController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddIngredientController.swift; sourceTree = "<group>"; };
 		3E7DF35B24759E08005726E6 /* EditIngredientController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditIngredientController.swift; sourceTree = "<group>"; };
-		3E83AE7F2473C661004EC987 /* ExploreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCell.swift; sourceTree = "<group>"; };
 		3E972DAD2475B6770086BC2A /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
-		3EB8ABEF2472E0B90050FA58 /* ExploreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
+		3ED9530024799A8800467BEF /* pancake4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pancake4.jpg; sourceTree = "<group>"; };
+		3ED9530124799A8800467BEF /* steamfish1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = steamfish1.jpg; sourceTree = "<group>"; };
+		3ED9530224799A8800467BEF /* friedricepine3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = friedricepine3.jpg; sourceTree = "<group>"; };
+		3ED9530324799A8800467BEF /* tomkha1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tomkha1.jpg; sourceTree = "<group>"; };
+		3ED9530424799A8800467BEF /* porkgrill4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = porkgrill4.jpg; sourceTree = "<group>"; };
+		3ED9530524799A8800467BEF /* friedricepine2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = friedricepine2.jpg; sourceTree = "<group>"; };
+		3ED9530624799A8800467BEF /* sthprawn4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sthprawn4.jpg; sourceTree = "<group>"; };
+		3ED9530724799A8800467BEF /* omelet4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = omelet4.jpg; sourceTree = "<group>"; };
+		3ED9530824799A8800467BEF /* steamfish2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = steamfish2.jpg; sourceTree = "<group>"; };
+		3ED9530924799A8800467BEF /* pad4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pad4.jpg; sourceTree = "<group>"; };
+		3ED9530A24799A8800467BEF /* easypie4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = easypie4.jpg; sourceTree = "<group>"; };
+		3ED9530B24799A8800467BEF /* tomkha2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tomkha2.jpg; sourceTree = "<group>"; };
+		3ED9530C24799A8800467BEF /* tomkha3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tomkha3.jpg; sourceTree = "<group>"; };
+		3ED9530D24799A8800467BEF /* pad5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pad5.jpg; sourceTree = "<group>"; };
+		3ED9530E24799A8800467BEF /* friedricepine1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = friedricepine1.jpg; sourceTree = "<group>"; };
+		3ED9530F24799A8800467BEF /* steamfish3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = steamfish3.jpg; sourceTree = "<group>"; };
+		3ED9531024799A8800467BEF /* pancake2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pancake2.jpg; sourceTree = "<group>"; };
+		3ED9531124799A8800467BEF /* sthprawn3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sthprawn3.jpg; sourceTree = "<group>"; };
+		3ED9531224799A8800467BEF /* omelet1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = omelet1.jpg; sourceTree = "<group>"; };
+		3ED9531324799A8800467BEF /* pad1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pad1.jpg; sourceTree = "<group>"; };
+		3ED9531424799A8800467BEF /* easypie1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = easypie1.jpg; sourceTree = "<group>"; };
+		3ED9531524799A8800467BEF /* porkgrill3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = porkgrill3.jpg; sourceTree = "<group>"; };
+		3ED9531624799A8800467BEF /* porkgrill2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = porkgrill2.jpg; sourceTree = "<group>"; };
+		3ED9531724799A8800467BEF /* friedricepine4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = friedricepine4.jpg; sourceTree = "<group>"; };
+		3ED9531824799A8800467BEF /* sthprawn2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sthprawn2.jpg; sourceTree = "<group>"; };
+		3ED9531924799A8800467BEF /* pancake3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pancake3.jpg; sourceTree = "<group>"; };
+		3ED9531A24799A8800467BEF /* pancake1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pancake1.jpg; sourceTree = "<group>"; };
+		3ED9531B24799A8800467BEF /* omelet2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = omelet2.jpg; sourceTree = "<group>"; };
+		3ED9531C24799A8800467BEF /* pad2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pad2.jpg; sourceTree = "<group>"; };
+		3ED9531D24799A8800467BEF /* steamfish4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = steamfish4.jpg; sourceTree = "<group>"; };
+		3ED9531E24799A8800467BEF /* easypie2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = easypie2.jpg; sourceTree = "<group>"; };
+		3ED9531F24799A8800467BEF /* tomkha4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tomkha4.jpg; sourceTree = "<group>"; };
+		3ED9532024799A8800467BEF /* porkgrill1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = porkgrill1.jpg; sourceTree = "<group>"; };
+		3ED9532124799A8800467BEF /* easypie3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = easypie3.jpg; sourceTree = "<group>"; };
+		3ED9532224799A8800467BEF /* steamfish5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = steamfish5.jpg; sourceTree = "<group>"; };
+		3ED9532324799A8800467BEF /* omelet3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = omelet3.jpg; sourceTree = "<group>"; };
+		3ED9532424799A8800467BEF /* sthprawn1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sthprawn1.jpg; sourceTree = "<group>"; };
+		3ED9532524799A8800467BEF /* larb4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = larb4.jpg; sourceTree = "<group>"; };
+		3ED9532624799A8800467BEF /* pomelo4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pomelo4.jpg; sourceTree = "<group>"; };
+		3ED9532724799A8800467BEF /* bok4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bok4.jpg; sourceTree = "<group>"; };
+		3ED9532824799A8800467BEF /* ducksalad1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ducksalad1.jpg; sourceTree = "<group>"; };
+		3ED9532924799A8800467BEF /* chocoeaster1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chocoeaster1.jpg; sourceTree = "<group>"; };
+		3ED9532A24799A8800467BEF /* padpriking4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = padpriking4.jpg; sourceTree = "<group>"; };
+		3ED9532B24799A8800467BEF /* ducksalad2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ducksalad2.jpg; sourceTree = "<group>"; };
+		3ED9532C24799A8800467BEF /* chocoeaster2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chocoeaster2.jpg; sourceTree = "<group>"; };
+		3ED9532D24799A8800467BEF /* chocoeaster3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chocoeaster3.jpg; sourceTree = "<group>"; };
+		3ED9532E24799A8800467BEF /* ducksalad3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ducksalad3.jpg; sourceTree = "<group>"; };
+		3ED9532F24799A8800467BEF /* larb2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = larb2.jpg; sourceTree = "<group>"; };
+		3ED9533024799A8800467BEF /* padpriking1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = padpriking1.jpg; sourceTree = "<group>"; };
+		3ED9533124799A8800467BEF /* pomelo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pomelo2.jpg; sourceTree = "<group>"; };
+		3ED9533224799A8800467BEF /* bok2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bok2.jpg; sourceTree = "<group>"; };
+		3ED9533324799A8800467BEF /* bok3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bok3.jpg; sourceTree = "<group>"; };
+		3ED9533424799A8800467BEF /* pomelo3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pomelo3.jpg; sourceTree = "<group>"; };
+		3ED9533524799A8800467BEF /* larb3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = larb3.jpg; sourceTree = "<group>"; };
+		3ED9533624799A8800467BEF /* larb1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = larb1.jpg; sourceTree = "<group>"; };
+		3ED9533724799A8800467BEF /* padpriking2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = padpriking2.jpg; sourceTree = "<group>"; };
+		3ED9533824799A8800467BEF /* pomelo1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pomelo1.jpg; sourceTree = "<group>"; };
+		3ED9533924799A8800467BEF /* bok1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bok1.jpg; sourceTree = "<group>"; };
+		3ED9533A24799A8800467BEF /* ducksalad4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ducksalad4.jpg; sourceTree = "<group>"; };
+		3ED9533B24799A8800467BEF /* chocoeaster4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chocoeaster4.jpg; sourceTree = "<group>"; };
+		3ED9533C24799A8800467BEF /* padpriking3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = padpriking3.jpg; sourceTree = "<group>"; };
+		3ED9533D24799A8800467BEF /* tapioca4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tapioca4.jpg; sourceTree = "<group>"; };
+		3ED9533E24799A8800467BEF /* stickyrice2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stickyrice2.jpg; sourceTree = "<group>"; };
+		3ED9533F24799A8800467BEF /* chickenkiev1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chickenkiev1.jpg; sourceTree = "<group>"; };
+		3ED9534024799A8800467BEF /* jaffle4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jaffle4.jpg; sourceTree = "<group>"; };
+		3ED9534124799A8800467BEF /* hotpot1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hotpot1.jpg; sourceTree = "<group>"; };
+		3ED9534224799A8800467BEF /* stickyrice3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stickyrice3.jpg; sourceTree = "<group>"; };
+		3ED9534324799A8800467BEF /* icemango4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icemango4.png; sourceTree = "<group>"; };
+		3ED9534424799A8800467BEF /* stickyrice1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stickyrice1.jpg; sourceTree = "<group>"; };
+		3ED9534524799A8800467BEF /* chickenkiev2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chickenkiev2.jpg; sourceTree = "<group>"; };
+		3ED9534624799A8800467BEF /* grillwing4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grillwing4.jpg; sourceTree = "<group>"; };
+		3ED9534724799A8800467BEF /* hotpot3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hotpot3.jpg; sourceTree = "<group>"; };
+		3ED9534824799A8800467BEF /* hotpot2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hotpot2.jpg; sourceTree = "<group>"; };
+		3ED9534924799A8800467BEF /* grillwing5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grillwing5.jpg; sourceTree = "<group>"; };
+		3ED9534A24799A8800467BEF /* chickenkiev3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chickenkiev3.jpg; sourceTree = "<group>"; };
+		3ED9534B24799A8800467BEF /* roastpork4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = roastpork4.jpg; sourceTree = "<group>"; };
+		3ED9534C24799A8800467BEF /* icemango1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icemango1.jpg; sourceTree = "<group>"; };
+		3ED9534D24799A8800467BEF /* tapioca2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tapioca2.jpg; sourceTree = "<group>"; };
+		3ED9534E24799A8800467BEF /* stickyrice4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stickyrice4.jpg; sourceTree = "<group>"; };
+		3ED9534F24799A8800467BEF /* grillwing1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grillwing1.jpg; sourceTree = "<group>"; };
+		3ED9535024799A8800467BEF /* jaffle3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jaffle3.jpg; sourceTree = "<group>"; };
+		3ED9535124799A8800467BEF /* jaffle2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jaffle2.jpg; sourceTree = "<group>"; };
+		3ED9535224799A8800467BEF /* roastpork1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = roastpork1.jpg; sourceTree = "<group>"; };
+		3ED9535324799A8800467BEF /* tapioca3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tapioca3.jpg; sourceTree = "<group>"; };
+		3ED9535424799A8800467BEF /* icemango2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icemango2.jpg; sourceTree = "<group>"; };
+		3ED9535524799A8800467BEF /* tapioca1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tapioca1.jpg; sourceTree = "<group>"; };
+		3ED9535624799A8800467BEF /* roastpork3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = roastpork3.jpg; sourceTree = "<group>"; };
+		3ED9535724799A8800467BEF /* chickenkiev4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chickenkiev4.jpg; sourceTree = "<group>"; };
+		3ED9535824799A8800467BEF /* grillwing2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grillwing2.jpg; sourceTree = "<group>"; };
+		3ED9535924799A8800467BEF /* jaffle1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jaffle1.jpg; sourceTree = "<group>"; };
+		3ED9535A24799A8800467BEF /* grillwing3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grillwing3.jpg; sourceTree = "<group>"; };
+		3ED9535B24799A8800467BEF /* hotpot4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hotpot4.jpg; sourceTree = "<group>"; };
+		3ED9535C24799A8800467BEF /* roastpork2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = roastpork2.jpg; sourceTree = "<group>"; };
+		3ED9535D24799A8800467BEF /* icemango3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icemango3.jpg; sourceTree = "<group>"; };
+		3ED9535E24799A8800467BEF /* som3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = som3.jpg; sourceTree = "<group>"; };
+		3ED9535F24799A8800467BEF /* pandancake1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pandancake1.jpg; sourceTree = "<group>"; };
+		3ED9536024799A8800467BEF /* pad3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pad3.jpeg; sourceTree = "<group>"; };
+		3ED9536124799A8800467BEF /* peppernoodle1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = peppernoodle1.jpg; sourceTree = "<group>"; };
+		3ED9536224799A8800467BEF /* som2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = som2.jpg; sourceTree = "<group>"; };
+		3ED9536324799A8800467BEF /* vegan4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vegan4.jpg; sourceTree = "<group>"; };
+		3ED9536424799A8800467BEF /* peppernoodle3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = peppernoodle3.jpg; sourceTree = "<group>"; };
+		3ED9536524799A8800467BEF /* pandancake2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pandancake2.jpg; sourceTree = "<group>"; };
+		3ED9536624799A8800467BEF /* pandancake3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pandancake3.jpg; sourceTree = "<group>"; };
+		3ED9536724799A8800467BEF /* peppernoodle2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = peppernoodle2.jpg; sourceTree = "<group>"; };
+		3ED9536824799A8800467BEF /* redcurrymussel4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = redcurrymussel4.jpg; sourceTree = "<group>"; };
+		3ED9536924799A8800467BEF /* som1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = som1.jpg; sourceTree = "<group>"; };
+		3ED9536A24799A8800467BEF /* satay4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = satay4.jpg; sourceTree = "<group>"; };
+		3ED9536B24799A8800467BEF /* vegan3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vegan3.jpg; sourceTree = "<group>"; };
+		3ED9536C24799A8800467BEF /* satay1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = satay1.png; sourceTree = "<group>"; };
+		3ED9536D24799A8800467BEF /* redcurrymussel1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = redcurrymussel1.jpg; sourceTree = "<group>"; };
+		3ED9536E24799A8800467BEF /* vegan2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vegan2.jpg; sourceTree = "<group>"; };
+		3ED9536F24799A8800467BEF /* som4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = som4.jpg; sourceTree = "<group>"; };
+		3ED9537024799A8800467BEF /* redcurrymussel3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = redcurrymussel3.jpg; sourceTree = "<group>"; };
+		3ED9537124799A8800467BEF /* satay3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = satay3.jpg; sourceTree = "<group>"; };
+		3ED9537224799A8800467BEF /* pandancake4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pandancake4.jpg; sourceTree = "<group>"; };
+		3ED9537324799A8800467BEF /* peppernoodle4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = peppernoodle4.jpg; sourceTree = "<group>"; };
+		3ED9537424799A8800467BEF /* satay2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = satay2.jpg; sourceTree = "<group>"; };
+		3ED9537524799A8800467BEF /* vegan1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vegan1.jpg; sourceTree = "<group>"; };
+		3ED9537624799A8800467BEF /* redcurrymussel2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = redcurrymussel2.jpg; sourceTree = "<group>"; };
 		8D38D4C5B6BEB1D0B66FBE5C /* Pods_What_is_in_my_fridge__.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_What_is_in_my_fridge__.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EAFDC6554DB066DD9E0A183 /* Pods-What is in my fridge ?.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-What is in my fridge ?.debug.xcconfig"; path = "Target Support Files/Pods-What is in my fridge ?/Pods-What is in my fridge ?.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,12 +376,11 @@
 		3E04CDBE2454234D0078D6A7 /* What is in my fridge ? */ = {
 			isa = PBXGroup;
 			children = (
-				3E3A488C2478084F00086CC9 /* PDFKit */,
+				3ED952FF24799A8800467BEF /* food pic */,
 				3E21AA8B2476EA1600183830 /* Detialview */,
 				3E31597F24753E020057223B /* Model */,
 				3E7C392324743B6800E909A7 /* Ingredient */,
 				3E7BFFE5247427520006E30B /* MyFridge */,
-				3E83AE7E2473C635004EC987 /* Explore */,
 				3EB8ABF12472E0D50050FA58 /* Recommendation */,
 				3E04CDBF2454234D0078D6A7 /* AppDelegate.swift */,
 				3E04CDC12454234D0078D6A7 /* SceneDelegate.swift */,
@@ -207,13 +434,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		3E3A488C2478084F00086CC9 /* PDFKit */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PDFKit;
-			sourceTree = "<group>";
-		};
 		3E7BFFE5247427520006E30B /* MyFridge */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,24 +454,138 @@
 			path = Ingredient;
 			sourceTree = "<group>";
 		};
-		3E83AE7E2473C635004EC987 /* Explore */ = {
-			isa = PBXGroup;
-			children = (
-				3EB8ABEF2472E0B90050FA58 /* ExploreController.swift */,
-				3E83AE7F2473C661004EC987 /* ExploreCell.swift */,
-			);
-			path = Explore;
-			sourceTree = "<group>";
-		};
 		3EB8ABF12472E0D50050FA58 /* Recommendation */ = {
 			isa = PBXGroup;
 			children = (
-				3E706963247675B8000852EF /* RecommendDetailViewController.swift */,
 				3E4878BB2454A31F0080E484 /* RecipeCell.swift */,
-				3E76DEAD247696D300343A48 /* RecomIngredientTableViewCell.swift */,
-				3E76DEAF2476978A00343A48 /* RecomMethodTableViewCell.swift */,
 			);
 			path = Recommendation;
+			sourceTree = "<group>";
+		};
+		3ED952FF24799A8800467BEF /* food pic */ = {
+			isa = PBXGroup;
+			children = (
+				3ED9530024799A8800467BEF /* pancake4.jpg */,
+				3ED9530124799A8800467BEF /* steamfish1.jpg */,
+				3ED9530224799A8800467BEF /* friedricepine3.jpg */,
+				3ED9530324799A8800467BEF /* tomkha1.jpg */,
+				3ED9530424799A8800467BEF /* porkgrill4.jpg */,
+				3ED9530524799A8800467BEF /* friedricepine2.jpg */,
+				3ED9530624799A8800467BEF /* sthprawn4.jpg */,
+				3ED9530724799A8800467BEF /* omelet4.jpg */,
+				3ED9530824799A8800467BEF /* steamfish2.jpg */,
+				3ED9530924799A8800467BEF /* pad4.jpg */,
+				3ED9530A24799A8800467BEF /* easypie4.jpg */,
+				3ED9530B24799A8800467BEF /* tomkha2.jpg */,
+				3ED9530C24799A8800467BEF /* tomkha3.jpg */,
+				3ED9530D24799A8800467BEF /* pad5.jpg */,
+				3ED9530E24799A8800467BEF /* friedricepine1.jpg */,
+				3ED9530F24799A8800467BEF /* steamfish3.jpg */,
+				3ED9531024799A8800467BEF /* pancake2.jpg */,
+				3ED9531124799A8800467BEF /* sthprawn3.jpg */,
+				3ED9531224799A8800467BEF /* omelet1.jpg */,
+				3ED9531324799A8800467BEF /* pad1.jpg */,
+				3ED9531424799A8800467BEF /* easypie1.jpg */,
+				3ED9531524799A8800467BEF /* porkgrill3.jpg */,
+				3ED9531624799A8800467BEF /* porkgrill2.jpg */,
+				3ED9531724799A8800467BEF /* friedricepine4.jpg */,
+				3ED9531824799A8800467BEF /* sthprawn2.jpg */,
+				3ED9531924799A8800467BEF /* pancake3.jpg */,
+				3ED9531A24799A8800467BEF /* pancake1.jpg */,
+				3ED9531B24799A8800467BEF /* omelet2.jpg */,
+				3ED9531C24799A8800467BEF /* pad2.jpg */,
+				3ED9531D24799A8800467BEF /* steamfish4.jpg */,
+				3ED9531E24799A8800467BEF /* easypie2.jpg */,
+				3ED9531F24799A8800467BEF /* tomkha4.jpg */,
+				3ED9532024799A8800467BEF /* porkgrill1.jpg */,
+				3ED9532124799A8800467BEF /* easypie3.jpg */,
+				3ED9532224799A8800467BEF /* steamfish5.jpg */,
+				3ED9532324799A8800467BEF /* omelet3.jpg */,
+				3ED9532424799A8800467BEF /* sthprawn1.jpg */,
+				3ED9532524799A8800467BEF /* larb4.jpg */,
+				3ED9532624799A8800467BEF /* pomelo4.jpg */,
+				3ED9532724799A8800467BEF /* bok4.jpg */,
+				3ED9532824799A8800467BEF /* ducksalad1.jpg */,
+				3ED9532924799A8800467BEF /* chocoeaster1.jpg */,
+				3ED9532A24799A8800467BEF /* padpriking4.jpg */,
+				3ED9532B24799A8800467BEF /* ducksalad2.jpg */,
+				3ED9532C24799A8800467BEF /* chocoeaster2.jpg */,
+				3ED9532D24799A8800467BEF /* chocoeaster3.jpg */,
+				3ED9532E24799A8800467BEF /* ducksalad3.jpg */,
+				3ED9532F24799A8800467BEF /* larb2.jpg */,
+				3ED9533024799A8800467BEF /* padpriking1.jpg */,
+				3ED9533124799A8800467BEF /* pomelo2.jpg */,
+				3ED9533224799A8800467BEF /* bok2.jpg */,
+				3ED9533324799A8800467BEF /* bok3.jpg */,
+				3ED9533424799A8800467BEF /* pomelo3.jpg */,
+				3ED9533524799A8800467BEF /* larb3.jpg */,
+				3ED9533624799A8800467BEF /* larb1.jpg */,
+				3ED9533724799A8800467BEF /* padpriking2.jpg */,
+				3ED9533824799A8800467BEF /* pomelo1.jpg */,
+				3ED9533924799A8800467BEF /* bok1.jpg */,
+				3ED9533A24799A8800467BEF /* ducksalad4.jpg */,
+				3ED9533B24799A8800467BEF /* chocoeaster4.jpg */,
+				3ED9533C24799A8800467BEF /* padpriking3.jpg */,
+				3ED9533D24799A8800467BEF /* tapioca4.jpg */,
+				3ED9533E24799A8800467BEF /* stickyrice2.jpg */,
+				3ED9533F24799A8800467BEF /* chickenkiev1.jpg */,
+				3ED9534024799A8800467BEF /* jaffle4.jpg */,
+				3ED9534124799A8800467BEF /* hotpot1.jpg */,
+				3ED9534224799A8800467BEF /* stickyrice3.jpg */,
+				3ED9534324799A8800467BEF /* icemango4.png */,
+				3ED9534424799A8800467BEF /* stickyrice1.jpg */,
+				3ED9534524799A8800467BEF /* chickenkiev2.jpg */,
+				3ED9534624799A8800467BEF /* grillwing4.jpg */,
+				3ED9534724799A8800467BEF /* hotpot3.jpg */,
+				3ED9534824799A8800467BEF /* hotpot2.jpg */,
+				3ED9534924799A8800467BEF /* grillwing5.jpg */,
+				3ED9534A24799A8800467BEF /* chickenkiev3.jpg */,
+				3ED9534B24799A8800467BEF /* roastpork4.jpg */,
+				3ED9534C24799A8800467BEF /* icemango1.jpg */,
+				3ED9534D24799A8800467BEF /* tapioca2.jpg */,
+				3ED9534E24799A8800467BEF /* stickyrice4.jpg */,
+				3ED9534F24799A8800467BEF /* grillwing1.jpg */,
+				3ED9535024799A8800467BEF /* jaffle3.jpg */,
+				3ED9535124799A8800467BEF /* jaffle2.jpg */,
+				3ED9535224799A8800467BEF /* roastpork1.jpg */,
+				3ED9535324799A8800467BEF /* tapioca3.jpg */,
+				3ED9535424799A8800467BEF /* icemango2.jpg */,
+				3ED9535524799A8800467BEF /* tapioca1.jpg */,
+				3ED9535624799A8800467BEF /* roastpork3.jpg */,
+				3ED9535724799A8800467BEF /* chickenkiev4.jpg */,
+				3ED9535824799A8800467BEF /* grillwing2.jpg */,
+				3ED9535924799A8800467BEF /* jaffle1.jpg */,
+				3ED9535A24799A8800467BEF /* grillwing3.jpg */,
+				3ED9535B24799A8800467BEF /* hotpot4.jpg */,
+				3ED9535C24799A8800467BEF /* roastpork2.jpg */,
+				3ED9535D24799A8800467BEF /* icemango3.jpg */,
+				3ED9535E24799A8800467BEF /* som3.jpg */,
+				3ED9535F24799A8800467BEF /* pandancake1.jpg */,
+				3ED9536024799A8800467BEF /* pad3.jpeg */,
+				3ED9536124799A8800467BEF /* peppernoodle1.jpg */,
+				3ED9536224799A8800467BEF /* som2.jpg */,
+				3ED9536324799A8800467BEF /* vegan4.jpg */,
+				3ED9536424799A8800467BEF /* peppernoodle3.jpg */,
+				3ED9536524799A8800467BEF /* pandancake2.jpg */,
+				3ED9536624799A8800467BEF /* pandancake3.jpg */,
+				3ED9536724799A8800467BEF /* peppernoodle2.jpg */,
+				3ED9536824799A8800467BEF /* redcurrymussel4.jpg */,
+				3ED9536924799A8800467BEF /* som1.jpg */,
+				3ED9536A24799A8800467BEF /* satay4.jpg */,
+				3ED9536B24799A8800467BEF /* vegan3.jpg */,
+				3ED9536C24799A8800467BEF /* satay1.png */,
+				3ED9536D24799A8800467BEF /* redcurrymussel1.jpg */,
+				3ED9536E24799A8800467BEF /* vegan2.jpg */,
+				3ED9536F24799A8800467BEF /* som4.jpg */,
+				3ED9537024799A8800467BEF /* redcurrymussel3.jpg */,
+				3ED9537124799A8800467BEF /* satay3.jpg */,
+				3ED9537224799A8800467BEF /* pandancake4.jpg */,
+				3ED9537324799A8800467BEF /* peppernoodle4.jpg */,
+				3ED9537424799A8800467BEF /* satay2.jpg */,
+				3ED9537524799A8800467BEF /* vegan1.jpg */,
+				3ED9537624799A8800467BEF /* redcurrymussel2.jpg */,
+			);
+			path = "food pic";
 			sourceTree = "<group>";
 		};
 		7957C19A9B5ED50B424CBA3C /* Pods */ = {
@@ -377,11 +711,130 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ED953AE24799A8800467BEF /* padpriking2.jpg in Resources */,
+				3ED953ED24799A8900467BEF /* redcurrymussel2.jpg in Resources */,
+				3ED9537824799A8800467BEF /* steamfish1.jpg in Resources */,
+				3ED953A224799A8800467BEF /* ducksalad2.jpg in Resources */,
+				3ED9538824799A8800467BEF /* sthprawn3.jpg in Resources */,
+				3ED953EC24799A8900467BEF /* vegan1.jpg in Resources */,
+				3ED9538024799A8800467BEF /* pad4.jpg in Resources */,
 				3E04CDCC2454234F0078D6A7 /* LaunchScreen.storyboard in Resources */,
 				3E972DAE2475B6770086BC2A /* icon@2x.png in Resources */,
+				3ED9539224799A8800467BEF /* omelet2.jpg in Resources */,
+				3ED953AA24799A8800467BEF /* bok3.jpg in Resources */,
+				3ED953BB24799A8800467BEF /* stickyrice1.jpg in Resources */,
+				3ED953E324799A8900467BEF /* satay1.png in Resources */,
+				3ED9539724799A8800467BEF /* porkgrill1.jpg in Resources */,
+				3ED953E524799A8900467BEF /* vegan2.jpg in Resources */,
+				3ED9539324799A8800467BEF /* pad2.jpg in Resources */,
+				3ED953BD24799A8800467BEF /* grillwing4.jpg in Resources */,
+				3ED953DA24799A8900467BEF /* vegan4.jpg in Resources */,
+				3ED953B924799A8800467BEF /* stickyrice3.jpg in Resources */,
+				3ED9539F24799A8800467BEF /* ducksalad1.jpg in Resources */,
+				3ED953AB24799A8800467BEF /* pomelo3.jpg in Resources */,
+				3ED953B224799A8800467BEF /* chocoeaster4.jpg in Resources */,
+				3ED9538E24799A8800467BEF /* friedricepine4.jpg in Resources */,
+				3ED953CC24799A8800467BEF /* tapioca1.jpg in Resources */,
+				3ED9537F24799A8800467BEF /* steamfish2.jpg in Resources */,
+				3ED953AD24799A8800467BEF /* larb1.jpg in Resources */,
+				3ED953D024799A8800467BEF /* jaffle1.jpg in Resources */,
+				3ED953A624799A8800467BEF /* larb2.jpg in Resources */,
+				3ED953B324799A8800467BEF /* padpriking3.jpg in Resources */,
+				3ED953C424799A8800467BEF /* tapioca2.jpg in Resources */,
+				3ED953C624799A8800467BEF /* grillwing1.jpg in Resources */,
+				3ED953A924799A8800467BEF /* bok2.jpg in Resources */,
+				3ED9539C24799A8800467BEF /* larb4.jpg in Resources */,
+				3ED953A324799A8800467BEF /* chocoeaster2.jpg in Resources */,
+				3ED953C924799A8800467BEF /* roastpork1.jpg in Resources */,
+				3ED9539B24799A8800467BEF /* sthprawn1.jpg in Resources */,
+				3ED9539424799A8800467BEF /* steamfish4.jpg in Resources */,
+				3ED953C724799A8800467BEF /* jaffle3.jpg in Resources */,
+				3ED953A024799A8800467BEF /* chocoeaster1.jpg in Resources */,
+				3ED953EA24799A8900467BEF /* peppernoodle4.jpg in Resources */,
+				3ED9538F24799A8800467BEF /* sthprawn2.jpg in Resources */,
+				3ED953CF24799A8800467BEF /* grillwing2.jpg in Resources */,
 				3E04CDC92454234F0078D6A7 /* Assets.xcassets in Resources */,
+				3ED9539A24799A8800467BEF /* omelet3.jpg in Resources */,
+				3ED953D224799A8800467BEF /* hotpot4.jpg in Resources */,
+				3ED953C524799A8800467BEF /* stickyrice4.jpg in Resources */,
+				3ED9539824799A8800467BEF /* easypie3.jpg in Resources */,
+				3ED953C024799A8800467BEF /* grillwing5.jpg in Resources */,
+				3ED9539924799A8800467BEF /* steamfish5.jpg in Resources */,
+				3ED953E424799A8900467BEF /* redcurrymussel1.jpg in Resources */,
+				3ED9537E24799A8800467BEF /* omelet4.jpg in Resources */,
+				3ED953B124799A8800467BEF /* ducksalad4.jpg in Resources */,
+				3ED9539024799A8800467BEF /* pancake3.jpg in Resources */,
+				3ED9538424799A8800467BEF /* pad5.jpg in Resources */,
+				3ED953C224799A8800467BEF /* roastpork4.jpg in Resources */,
+				3ED953B524799A8800467BEF /* stickyrice2.jpg in Resources */,
+				3ED9538D24799A8800467BEF /* porkgrill2.jpg in Resources */,
+				3ED9538224799A8800467BEF /* tomkha2.jpg in Resources */,
 				3E04CDC72454234D0078D6A7 /* Main.storyboard in Resources */,
+				3ED953E924799A8900467BEF /* pandancake4.jpg in Resources */,
+				3ED953CD24799A8800467BEF /* roastpork3.jpg in Resources */,
+				3ED953B724799A8800467BEF /* jaffle4.jpg in Resources */,
+				3ED953D624799A8900467BEF /* pandancake1.jpg in Resources */,
+				3ED953D824799A8900467BEF /* peppernoodle1.jpg in Resources */,
+				3ED953DF24799A8900467BEF /* redcurrymussel4.jpg in Resources */,
+				3ED9538A24799A8800467BEF /* pad1.jpg in Resources */,
+				3ED953A124799A8800467BEF /* padpriking4.jpg in Resources */,
+				3ED9538324799A8800467BEF /* tomkha3.jpg in Resources */,
+				3ED953BC24799A8800467BEF /* chickenkiev2.jpg in Resources */,
+				3ED953A424799A8800467BEF /* chocoeaster3.jpg in Resources */,
+				3ED9537B24799A8800467BEF /* porkgrill4.jpg in Resources */,
+				3ED953D324799A8800467BEF /* roastpork2.jpg in Resources */,
+				3ED953D524799A8900467BEF /* som3.jpg in Resources */,
+				3ED9537924799A8800467BEF /* friedricepine3.jpg in Resources */,
+				3ED9537D24799A8800467BEF /* sthprawn4.jpg in Resources */,
+				3ED953EB24799A8900467BEF /* satay2.jpg in Resources */,
+				3ED953CE24799A8800467BEF /* chickenkiev4.jpg in Resources */,
+				3ED953A724799A8800467BEF /* padpriking1.jpg in Resources */,
+				3ED9537A24799A8800467BEF /* tomkha1.jpg in Resources */,
+				3ED953E724799A8900467BEF /* redcurrymussel3.jpg in Resources */,
+				3ED953B624799A8800467BEF /* chickenkiev1.jpg in Resources */,
+				3ED953C124799A8800467BEF /* chickenkiev3.jpg in Resources */,
+				3ED953D424799A8900467BEF /* icemango3.jpg in Resources */,
+				3ED953B824799A8800467BEF /* hotpot1.jpg in Resources */,
+				3ED953A524799A8800467BEF /* ducksalad3.jpg in Resources */,
+				3ED953CA24799A8800467BEF /* tapioca3.jpg in Resources */,
+				3ED953BE24799A8800467BEF /* hotpot3.jpg in Resources */,
+				3ED953C824799A8800467BEF /* jaffle2.jpg in Resources */,
+				3ED953BF24799A8800467BEF /* hotpot2.jpg in Resources */,
+				3ED953E824799A8900467BEF /* satay3.jpg in Resources */,
+				3ED9538524799A8800467BEF /* friedricepine1.jpg in Resources */,
+				3ED953DE24799A8900467BEF /* peppernoodle2.jpg in Resources */,
+				3ED953E624799A8900467BEF /* som4.jpg in Resources */,
+				3ED9539E24799A8800467BEF /* bok4.jpg in Resources */,
+				3ED9539524799A8800467BEF /* easypie2.jpg in Resources */,
+				3ED953DB24799A8900467BEF /* peppernoodle3.jpg in Resources */,
+				3ED953DD24799A8900467BEF /* pandancake3.jpg in Resources */,
+				3ED953DC24799A8900467BEF /* pandancake2.jpg in Resources */,
+				3ED953AF24799A8800467BEF /* pomelo1.jpg in Resources */,
+				3ED9538924799A8800467BEF /* omelet1.jpg in Resources */,
+				3ED9537724799A8800467BEF /* pancake4.jpg in Resources */,
+				3ED9537C24799A8800467BEF /* friedricepine2.jpg in Resources */,
+				3ED9538724799A8800467BEF /* pancake2.jpg in Resources */,
+				3ED953A824799A8800467BEF /* pomelo2.jpg in Resources */,
+				3ED953AC24799A8800467BEF /* larb3.jpg in Resources */,
+				3ED953D924799A8900467BEF /* som2.jpg in Resources */,
+				3ED953BA24799A8800467BEF /* icemango4.png in Resources */,
 				3E70695E24766D5C000852EF /* recipe.json in Resources */,
+				3ED953E024799A8900467BEF /* som1.jpg in Resources */,
+				3ED953D724799A8900467BEF /* pad3.jpeg in Resources */,
+				3ED953E224799A8900467BEF /* vegan3.jpg in Resources */,
+				3ED9538C24799A8800467BEF /* porkgrill3.jpg in Resources */,
+				3ED9538124799A8800467BEF /* easypie4.jpg in Resources */,
+				3ED953C324799A8800467BEF /* icemango1.jpg in Resources */,
+				3ED9539624799A8800467BEF /* tomkha4.jpg in Resources */,
+				3ED953CB24799A8800467BEF /* icemango2.jpg in Resources */,
+				3ED953B024799A8800467BEF /* bok1.jpg in Resources */,
+				3ED9538B24799A8800467BEF /* easypie1.jpg in Resources */,
+				3ED9538624799A8800467BEF /* steamfish3.jpg in Resources */,
+				3ED9539D24799A8800467BEF /* pomelo4.jpg in Resources */,
+				3ED9539124799A8800467BEF /* pancake1.jpg in Resources */,
+				3ED953B424799A8800467BEF /* tapioca4.jpg in Resources */,
+				3ED953D124799A8800467BEF /* grillwing3.jpg in Resources */,
+				3ED953E124799A8900467BEF /* satay4.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,7 +902,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E4878BC2454A31F0080E484 /* RecipeCell.swift in Sources */,
-				3E76DEAE247696D300343A48 /* RecomIngredientTableViewCell.swift in Sources */,
 				3E04CDC42454234D0078D6A7 /* ViewController.swift in Sources */,
 				3E70696224766F2A000852EF /* RecipeIngredient.swift in Sources */,
 				3E31598124753E110057223B /* Ingredient.swift in Sources */,
@@ -457,18 +909,14 @@
 				3E21AA8A2476EA1100183830 /* IngredientCell.swift in Sources */,
 				3E21AA882476E5B700183830 /* DetailViewController.swift in Sources */,
 				3E45D02C247525AA0044D214 /* IngredientModel.xcdatamodeld in Sources */,
-				3E706964247675B8000852EF /* RecommendDetailViewController.swift in Sources */,
 				3E7C392224743B5D00E909A7 /* IngredientViewController.swift in Sources */,
 				3E7C392524743B8B00E909A7 /* IngredientViewCell.swift in Sources */,
 				3E04CDC22454234D0078D6A7 /* SceneDelegate.swift in Sources */,
 				3E7BFFE1247427010006E30B /* MyFridgeViewController.swift in Sources */,
-				3EB8ABF02472E0B90050FA58 /* ExploreController.swift in Sources */,
 				3E48D22F2477051A0025A5DD /* StepCell.swift in Sources */,
 				3E7BFFE32474272F0006E30B /* CategoryViewCell.swift in Sources */,
-				3E76DEB02476978A00343A48 /* RecomMethodTableViewCell.swift in Sources */,
 				3E7D38E624750BD900884893 /* AddIngredientController.swift in Sources */,
 				3E7DF35C24759E08005726E6 /* EditIngredientController.swift in Sources */,
-				3E83AE802473C661004EC987 /* ExploreCell.swift in Sources */,
 				3E70696024766DE2000852EF /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

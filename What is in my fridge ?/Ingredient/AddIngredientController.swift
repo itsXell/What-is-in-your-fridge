@@ -60,6 +60,7 @@ class AddingIngredientController: UIViewController {
     }
     
     
+    
     @IBAction func typeChange(_ sender: Any) {
         switch segmentControl.selectedSegmentIndex
         {

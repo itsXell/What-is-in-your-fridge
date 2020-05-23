@@ -77,6 +77,7 @@ class IngredientViewController: UIViewController {
             print("Failed")
         }
     }
+    
     func deleteData(name: String){
         
         //As we know that container is set up in the AppDelegates so we need to refer that container.

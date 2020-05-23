@@ -15,14 +15,16 @@ class EditIngredientController: UIViewController {
     @IBOutlet var expirationDate: UITextField!
     @IBOutlet var typeSelector: UISegmentedControl!
     private var datePicker: UIDatePicker = UIDatePicker()
-    var typeOfIngredient:String! = "Meats"
     var selectIngredient:Ingredient? = nil
+    var typeOfIngredient:String! = ""
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        typeOfIngredient = selectIngredient?.type
         displayToTextField()
-        
+        setSegmentedColor()
+        setSegmentIndex()
         
         // Do any additional setup after loading the view.
     }
@@ -45,6 +47,26 @@ class EditIngredientController: UIViewController {
             break
         }
     }
+    func setSegmentedColor(){
+        typeSelector.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.white], for: UIControl.State.normal)
+        typeSelector.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.black], for: UIControl.State.selected)
+    }
+    func setSegmentIndex(){
+        switch typeOfIngredient {
+        case "Meat":
+            typeSelector.selectedSegmentIndex = 0
+        case "Vegetable":
+            typeSelector.selectedSegmentIndex = 1
+        case "Spice":
+            typeSelector.selectedSegmentIndex = 2
+        case "Sauce":
+            typeSelector.selectedSegmentIndex = 3
+        case "Starch":
+            typeSelector.selectedSegmentIndex = 4
+        default:
+            break
+        }
+    }
     
     @IBAction func updateIngredient(){
         let updateName:String! = ingredientName.text
@@ -58,16 +80,25 @@ class EditIngredientController: UIViewController {
         ingredientName.text = selectIngredient?.name
         let currentAmount:String = String(format:"%.1f", (selectIngredient?.amount!)!)
         amount.text = currentAmount
-        //        let dateFormat = DateFormatter()
-        //        dateFormat.dateFormat = "dd/MM/yy"
-        //        expirationDate.text = dateFormat.string(from: selectIngredient!.expireDate)
+        let dateFormat = DateFormatter()
+        dateFormat.dateFormat = "dd/MM/yy"
+        datePicker.date = selectIngredient!.expireDate
+        expirationDate.text = dateFormat.string(from: selectIngredient!.expireDate)
     }
     
     @objc func dateChanged(datePicker: UIDatePicker){
         let dateFormat = DateFormatter()
         dateFormat.dateFormat = "dd/MM/yy"
         expirationDate.text = dateFormat.string(from: datePicker.date)
-        //        view.endEditing(true)
+        view.endEditing(true)
+    }
+    func createAlertView(title:String,description:String) {
+        let altMessage = UIAlertController(title: title, message: description, preferredStyle: UIAlertController.Style.alert)
+        altMessage.addAction(UIAlertAction(title: "Done", style: UIAlertAction.Style.default, handler: { action in
+            self.navigationController?.popViewController(animated: true)
+        }))
+        self.present(altMessage, animated: true, completion: nil)
+        
     }
     
     
@@ -80,8 +111,6 @@ class EditIngredientController: UIViewController {
         //We need to create a context from this container
         let managedContext = appDelegate.persistentContainer.viewContext
         
-        let fetchRequest:NSFetchRequest<NSFetchRequestResult> = NSFetchRequest.init(entityName: "User")
-        fetchRequest.predicate = NSPredicate(format: "username = %@", "Ankur1")
         do
         {
             let ingredient = try managedContext.existingObject(with: id as! NSManagedObjectID)
@@ -93,9 +122,11 @@ class EditIngredientController: UIViewController {
             
             do{
                 try managedContext.save()
+                createAlertView(title: "Success", description: "Ingredient Updated")
             }
             catch
             {
+                 createAlertView(title: "Fail", description: "Error Occured!")
                 print(error)
             }
         }

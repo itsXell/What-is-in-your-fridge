@@ -52,7 +52,18 @@ class MyFridgeViewController: UIViewController {
         categoryList.append(category(name:"Sauce", imageName:"sauce", icon: "sauceIcon"))
         categoryList.append(category(name:"Starch", imageName:"starch", icon: "flourIcon"))
     }
+    @IBAction func showBasicInfo(){
+        
+        let altMessage = UIAlertController(title: "Important Information", message: "\nNot to confuse user \n\n To make application calculate the ingredient more accurate, we want you to input everything as Gram and the app will auto calculate the amount of ingredient that would reduce from fridge for you. \n\n For Example: 1 tbs = 14.3g \n For Liquid: 1L = 1000g \n\n Other ingredient like lemon which calculate by pieces, user can just input the number of piece same as recipe.", preferredStyle: UIAlertController.Style.alert)
+        altMessage.addAction(UIAlertAction(title: "Understood", style: UIAlertAction.Style.cancel, handler: { action in
+            
+        }))
+        self.present(altMessage, animated: true, completion: nil)
+        
+    }
 }
+
+
 
 
 
