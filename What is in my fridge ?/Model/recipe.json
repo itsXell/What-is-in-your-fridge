@@ -80,11 +80,10 @@
         ],
         "timers": "20 Minute",
         "imageGallery" : [
-            "res2_00.png",
-            "res2_01.png",
-            "res2_02.png",
-            "res2_03.png",
-            "res2_04.png"
+            "hollybasil1.jpg",
+            "hollybasil2.jpg",
+            "hollybasil3.jpg",
+            "hollybasil4.jpg"
         ]
     },
     {
@@ -1430,7 +1429,7 @@
         ],
         "timers": "30 Minute",
         "imageGallery" : [
-            "larb1.jpg",
+            "larb1",
             "larb2.jpg",
             "larb3.jpg",
             "larb4.jpg"

@@ -20,9 +20,11 @@ class ViewController: UIViewController {
     @IBOutlet var explore: UIButton!
     @IBOutlet var ownRecipe: UIButton!
     @IBOutlet var tableView: UITableView!
+    @IBOutlet var showEmmptyText: UILabel!
     var tableList: [Recipe] = []
     let json: [Recipe] = Mapper<Recipe>().mapArray(JSONfile: "recipe.json")!
     var ownRecipeList:[Recipe] = []
+    var emptyString = "Please add some ingredient."
     var ableDelete = false
     
     override func viewDidLoad() {
@@ -30,6 +32,7 @@ class ViewController: UIViewController {
         retrieveData()
         alignText()
         displayToRecommend()
+        checkExpirationDate()
         //        retrieveData()
         for i in json {
             globalRecipe.append(i)
@@ -78,7 +81,11 @@ class ViewController: UIViewController {
         ableDelete = false
         tableList.removeAll()
         displayToRecommend()
+        checkExpirationDate()
         retrieveData()
+        if tableList.count == 0 {
+            emptyString = "Please add some ingredient."
+        }
         tableView.reloadData()
         buttonAnimation(mainButton: recommendation, sideButton1: ownRecipe, sideButton2: explore)
     }
@@ -95,6 +102,9 @@ class ViewController: UIViewController {
         ableDelete = true
         tableList.removeAll()
         retrieveRecipe()
+        if tableList.count == 0 {
+            emptyString = "Let's save some recipe."
+        }
         tableView.reloadData()
         buttonAnimation(mainButton: ownRecipe, sideButton1: explore, sideButton2: recommendation)
         
@@ -134,21 +144,46 @@ class ViewController: UIViewController {
     }
     
     func displayToRecommend()  {
-        for i in json{
+        //        let date = Date()
+        //        let formatter = "dd/MM/yy"
+        //        let currentDate = formatter
+        var soon = Date().addingTimeInterval(180000)
+        for allRecipe in json{
             var check = 0
-            var approveAmount = Int((Double(i.ingredient.count) * 0.7).rounded(.towardZero))
-            for j in i.ingredient {
-                for k in globalIngredient{
-                    if (k.name.lowercased().contains(j.name.lowercased()) && k.type.lowercased() == j.type.lowercased()) || k.name.lowercased() == j.name.lowercased() || ( j.name.lowercased().contains(k.name.lowercased()) &&  k.type.lowercased() == j.type.lowercased() ){
+            var approveAmount = Int((Double(allRecipe.ingredient.count) * 0.7).rounded(.towardZero))
+            for ingredient in allRecipe.ingredient {
+                for allIngredient in globalIngredient{
+                    if (allIngredient.name.lowercased().contains(ingredient.name.lowercased()) && allIngredient.type.lowercased() == ingredient.type.lowercased()) || allIngredient.name.lowercased() == ingredient.name.lowercased() || ( ingredient.name.lowercased().contains(allIngredient.name.lowercased()) &&  allIngredient.type.lowercased() == ingredient.type.lowercased()){
                         check += 1
                         if check >= approveAmount {
-                            tableList.append(i)
+                            tableList.append(allRecipe)
                         }
                     }
                 }
             }
         }
         tableView.reloadData()
+    }
+    
+    func checkExpirationDate(){
+        var soon = Date().addingTimeInterval(180000)
+        for allRecipe in json{
+            for ingredient in allRecipe.ingredient {
+                for allIngredient in globalIngredient{
+                    if ((allIngredient.name.lowercased().contains(ingredient.name.lowercased()) && allIngredient.type.lowercased() == ingredient.type.lowercased()) || allIngredient.name.lowercased() == ingredient.name.lowercased() || ( ingredient.name.lowercased().contains(allIngredient.name.lowercased()) &&  allIngredient.type.lowercased() == ingredient.type.lowercased())) && allIngredient.expireDate <= soon {
+                        var checkIfExist = false
+                        for selectRecipe in tableList{
+                            if selectRecipe.name == allRecipe.name {
+                                checkIfExist = true
+                            }
+                        }
+                        if checkIfExist == false {
+                            tableList.append(allRecipe)
+                        }
+                    }
+                }
+            }
+        }
     }
     
     
@@ -241,26 +276,48 @@ extension ViewController{
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tableList.count
+        if tableList.count == 0{
+            return 0
+        }else{
+            return tableList.count
+        }
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "recipeCell") as! RecipeCell
-        cell.name.text = tableList[indexPath.row].name
-        let image = UIImage(named:tableList[indexPath.row].imageGalley[0])
-        cell.img.image = image
+        if tableList.count == 0 {
+            cell.img.isHidden = true
+            cell.background.backgroundColor = UIColor.white
+            cell.caloriesImage.isHidden = true
+            cell.timeImage.isHidden = true
+            cell.displayEmpty.text = emptyString
+        }else{
+            cell.img.isHidden = false
+            cell.name.text = tableList[indexPath.row].name
+            let image = UIImage(named:tableList[indexPath.row].imageGalley[0])
+            cell.background.backgroundColor = UIColor(red: 251/255, green: 33/255, blue: 142/255, alpha: 1)
+            cell.caloriesImage.isHidden = false
+            cell.timeImage.isHidden = false
+            cell.img.image = image
+            cell.displayEmpty.text = ""
+        }
+        
         return cell
         
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-        let currentSelected = tableList[indexPath.row]
-        if let vc = self.storyboard?.instantiateViewController(identifier: "detailview") as? DetailViewController{
-            vc.currentRecipe = currentSelected
-            navigationController?.pushViewController(vc, animated: true)
-            
+        if tableList.count != 0 {
+            tableView.deselectRow(at: indexPath, animated: true)
+            let currentSelected = tableList[indexPath.row]
+            if let vc = self.storyboard?.instantiateViewController(identifier: "detailview") as? DetailViewController{
+                vc.currentRecipe = currentSelected
+                navigationController?.pushViewController(vc, animated: true)
+                
+            }
         }
+        
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
@@ -274,7 +331,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate{
                     let selectName = self.tableList[indexPath.row].name! as String
                     self.tableList.remove(at: indexPath.row)
                     tableView.deleteRows(at: [indexPath], with: .fade)
-                    self.deleteData(name:selectName as String)
+                    self.deleteData(name: selectName as String)
+                    tableView.reloadData()
                 }
                 alert.addAction(okAction)
                 self.present(alert, animated: true, completion: nil)

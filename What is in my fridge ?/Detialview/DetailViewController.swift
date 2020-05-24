@@ -14,11 +14,14 @@ import CoreData
 
 class DetailViewController: UIViewController {
     
-    @IBOutlet var imageSlide: ImageSlideshow!
+    @IBOutlet var slideShow: ImageSlideshow!
     @IBOutlet var ingredientTable: UITableView!
-    @IBOutlet var methodTable:UITableView!
+    @IBOutlet var favorite: UIButton!
+    
     @IBOutlet var step:UILabel!
     var currentRecipe: Recipe? = nil
+    var listOfSaveRecipe:[String] = []
+    
     
     
     
@@ -32,10 +35,20 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         self.navigationItem.title = currentRecipe?.name
         displayMethod()
+        setFavoriteButton()
         
+        ImageSlideShow()
         self.ingredientHeight.constant = CGFloat(35 * (currentRecipe?.ingredient.count)!)
         for i in currentRecipe!.ingredient {
             checkIngredient(ingredientQuantity: i.quantity)
+        }
+    }
+    func setFavoriteButton(){
+     retrieveSaveRecipe()
+        if listOfSaveRecipe.contains((currentRecipe?.name)!) {
+            let image = UIImage(systemName: "star.fill")
+            favorite.setImage(image, for: .normal)
+            favorite.isEnabled = false
         }
     }
     
@@ -64,13 +77,13 @@ class DetailViewController: UIViewController {
     }
     
     func ImageSlideShow(){
-        print(currentRecipe?.imageGalley[0])
-        let img1 = (currentRecipe?.imageGalley[0])!
-        let img2 = currentRecipe?.imageGalley[1]
-        let img3 = currentRecipe?.imageGalley[2]
-        imageSlide.setImageInputs([ImageSource(image: UIImage(named: "meat")!),
-                                   ImageSource(image: UIImage(named: img2!)!),
-                                   ImageSource(image: UIImage(named: img3!)!),])
+        
+        let img1 = (currentRecipe?.imageGalley[1])!
+        let img2 = currentRecipe?.imageGalley[2]
+        let img3 = currentRecipe?.imageGalley[3]
+        slideShow.setImageInputs([ImageSource(image: UIImage(named: img1)!),
+                                  ImageSource(image: UIImage(named: img2!)!),
+                                  ImageSource(image: UIImage(named: img3!)!),])
     }
     
     func createRecipeInCoreData(name:String){
@@ -80,10 +93,10 @@ class DetailViewController: UIViewController {
         
         let managedContext = appDelegate.persistentContainer.viewContext
         
-      
+        
         let ingredientEntity = NSEntityDescription.entity(forEntityName: "RecipeModel", in: managedContext)!
         
-
+        
         
         let ingredient = NSManagedObject(entity: ingredientEntity, insertInto: managedContext)
         ingredient.setValue(name, forKey: "recipeName")
@@ -136,6 +149,32 @@ class DetailViewController: UIViewController {
         self.present(activityViewController, animated: true, completion: nil)
         
     }
+    func retrieveSaveRecipe() {
+        
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        
+        let managedContext = appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "RecipeModel")
+        
+        //
+        do {
+            let result = try managedContext.fetch(fetchRequest)
+            for data in result as! [NSManagedObject] {
+                listOfSaveRecipe.append(data.value(forKey: "recipeName") as! String)
+                //                for j in json{
+                //                    if data.value(forKey: "recipeName") as? String == j.name  {
+                //                        tableList.append(j)
+                //                    }
+                //                }
+            }
+        } catch {
+            
+            print("Failed")
+        }
+    }
+    
 }
 
 
@@ -150,8 +189,8 @@ extension DetailViewController: UITableViewDataSource, UITableViewDelegate{
         let cell = tableView.dequeueReusableCell(withIdentifier: "ingredientCell") as! IngredientCell
         cell.name.text = currentRecipe?.ingredient[indexPath.row].name
         cell.amount.text = currentRecipe?.ingredient[indexPath.row].quantity
-        
         var  amount = checkIngredient(ingredientName: (currentRecipe?.ingredient[indexPath.row].name)!, ingredientType: (currentRecipe?.ingredient[indexPath.row].type)!)
+        cell.infridge.text = String(amount)
         return cell
         
     }

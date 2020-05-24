@@ -13,6 +13,10 @@ class RecipeCell: UITableViewCell {
     @IBOutlet var name: UILabel!
     @IBOutlet var time: UILabel!
     @IBOutlet var calories: UILabel!
+    @IBOutlet var displayEmpty: UILabel!
+    @IBOutlet var background: UIView!
+    @IBOutlet var caloriesImage: UIImageView!
+    @IBOutlet var timeImage: UIImageView!
     
     
     override func awakeFromNib() {
