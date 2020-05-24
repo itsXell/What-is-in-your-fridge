@@ -14,13 +14,13 @@ var globalRecipe:[Recipe] = []
 var globalIngredient:[Ingredient] = []
 
 class ViewController: UIViewController {
-    @IBOutlet var searchBar: UITextField!
     @IBOutlet var buttonBar: UIView!
     @IBOutlet var recommendation: UIButton!
     @IBOutlet var explore: UIButton!
     @IBOutlet var ownRecipe: UIButton!
     @IBOutlet var tableView: UITableView!
-    @IBOutlet var showEmmptyText: UILabel!
+
+   
     var tableList: [Recipe] = []
     let json: [Recipe] = Mapper<Recipe>().mapArray(JSONfile: "recipe.json")!
     var ownRecipeList:[Recipe] = []
@@ -33,19 +33,19 @@ class ViewController: UIViewController {
         alignText()
         displayToRecommend()
         checkExpirationDate()
-        //        retrieveData()
+        tableView.reloadData()
+    
         for i in json {
             globalRecipe.append(i)
         }
         
         UserDefaults.standard.set(false, forKey: "_UIConstraintBasedLayoutLogUnsatisfiable")
-        let searchImage = UIImage(named: "search")!
         tabBarController?.tabBar.tintColor = UIColor(red: 251/255, green: 33/255, blue: 142/255, alpha: 1)
-        addLeftImageTo(txtField: searchBar, andImage: searchImage)
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = false
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
         self.navigationController?.navigationBar.tintColor = UIColor(red: 251/255, green: 33/255, blue: 142/255, alpha: 1)
         self.navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor(red: 251/255, green: 33/255, blue: 142/255, alpha: 1)]
@@ -54,6 +54,7 @@ class ViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
+        
         super.viewWillDisappear(animated)
     }
     
@@ -144,13 +145,9 @@ class ViewController: UIViewController {
     }
     
     func displayToRecommend()  {
-        //        let date = Date()
-        //        let formatter = "dd/MM/yy"
-        //        let currentDate = formatter
-        var soon = Date().addingTimeInterval(180000)
         for allRecipe in json{
             var check = 0
-            var approveAmount = Int((Double(allRecipe.ingredient.count) * 0.7).rounded(.towardZero))
+            let approveAmount = Int((Double(allRecipe.ingredient.count) * 0.7).rounded(.towardZero))
             for ingredient in allRecipe.ingredient {
                 for allIngredient in globalIngredient{
                     if (allIngredient.name.lowercased().contains(ingredient.name.lowercased()) && allIngredient.type.lowercased() == ingredient.type.lowercased()) || allIngredient.name.lowercased() == ingredient.name.lowercased() || ( ingredient.name.lowercased().contains(allIngredient.name.lowercased()) &&  allIngredient.type.lowercased() == ingredient.type.lowercased()){
@@ -166,7 +163,7 @@ class ViewController: UIViewController {
     }
     
     func checkExpirationDate(){
-        var soon = Date().addingTimeInterval(180000)
+        let soon = Date().addingTimeInterval(180000)
         for allRecipe in json{
             for ingredient in allRecipe.ingredient {
                 for allIngredient in globalIngredient{
@@ -217,13 +214,13 @@ extension ViewController{
     }
     public func retrieveData() {
         
-        //As we know that container is set up in the AppDelegates so we need to refer that container.
+     
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         
-        //We need to create a context from this container
+      
         let managedContext = appDelegate.persistentContainer.viewContext
         
-        //Prepare the request of type NSFetchRequest  for the entity
+    
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "IngredientModel")
         
         globalIngredient.removeAll()
@@ -273,6 +270,18 @@ extension ViewController{
     
     
 }
+extension ViewController: UISearchBarDelegate {
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        if let vc = self.storyboard?.instantiateViewController(identifier: "searchview") as? SearchView{
+            vc.textFromFirstScreen = searchBar.text!
+            navigationController?.pushViewController(vc, animated: true)
+            
+        }
+    }
+}
+
+
 
 extension ViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -281,7 +290,6 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate{
         }else{
             return tableList.count
         }
-        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -293,6 +301,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate{
             cell.timeImage.isHidden = true
             cell.displayEmpty.text = emptyString
         }else{
+            
             cell.img.isHidden = false
             cell.name.text = tableList[indexPath.row].name
             let image = UIImage(named:tableList[indexPath.row].imageGalley[0])
@@ -301,6 +310,8 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate{
             cell.timeImage.isHidden = false
             cell.img.image = image
             cell.displayEmpty.text = ""
+            cell.time.text = tableList[indexPath.row].times
+            cell.calories.text = tableList[indexPath.row].calories
         }
         
         return cell

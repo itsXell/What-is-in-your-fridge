@@ -78,6 +78,7 @@
             "Remove from heat and stir in the holy basil.",
             "Taste and adjust seasoning as needed."
         ],
+        "calories":"230 Calories",
         "timers": "20 Minute",
         "imageGallery" : [
             "hollybasil1.jpg",
@@ -167,6 +168,7 @@
             "Add lime juice mixture to wok. Toss to combine. Slowly pour eggs over noodles. Stir-fry for 1 minute. Add sprouts. Toss well.",
             "Spoon pad Thai onto plates. Sprinkle with peanuts and coriander leaves. Serve with lime wedges"
         ],
+        "calories":"220 Calories",
         "timers": "40 Minute",
         "imageGallery" : [
             "pad1.jpg",
@@ -244,6 +246,7 @@
             "Add dried prawns and peanuts, and pound until crushed.",
             "Add tomatoes and gently crush. Add fish sauce, lime juice, papaya, and beans, and toss to combine. Spoon papaya salad into lettuce leaves, to serve."
         ],
+        "calories":"110 Calories",
         "timers": "10 Minute",
         "imageGallery" : [
             "som1.jpg",
@@ -336,6 +339,7 @@
             "Turn down the heat to low and add coconut milk and fish sauce. Taste-test the soup for spice and salt, adding more chili and/or fish sauce (instead of salt) as desired. If too sour for your taste, add 1 teaspoon brown sugar; if too salty, add a squeeze of lime juice. Add more coconut milk if you want your soup richer or creamier, or if it's too spicy for your taste.",
             "Serve in bowls with fresh coriander sprinkled over."
         ],
+        "calories":"180 Calories",
         "timers": "30 Minute",
         "imageGallery" : [
             "tomkha1.jpg",
@@ -419,6 +423,7 @@
             "Grill the satay, basting the first time you turn it with a little of the leftover marinade from the bowl. Depending on how thin your meat is, the satay should be done in 10 to 20 minutes.",
             "Serve with Thai jasmine rice and Thai peanut sauce for dipping. For extra special occasions, serve with Thai coconut rice."
         ],
+        "calories":"250 Calories",
         "timers": "65 Minute",
         "imageGallery" : [
             "satay1.jpg",
@@ -476,6 +481,7 @@
             "Taste-test. Add more sugar if too sour for your taste, or more lime juice if too salty. Fresh minced chili or dried chili can be added if you prefer it spicier.",
             "To serve, lift out the bok choy and place on a serving platter or in a serving bowl, then pour the sauce (from the bottom of the wok or pan) over. Serve immediately with plenty of Thai jasmine-scented rice. Enjoy!"
         ],
+        "calories":"100 Calories",
         "timers": "15 Minute",
         "imageGallery" : [
             "bok1.jpg",
@@ -530,6 +536,7 @@
             "Prepare mango by cutting it open and slicing into bite-size pieces.",
             "Scoop some warm rice into each serving bowl, then drizzle lots of the sweet coconut sauce over. It should look like an English pudding with custard sauce, with the rice swimming in sauce."
         ],
+        "calories":"450 Calories",
         "timers": "35 Minute",
         "imageGallery" : [
             "stickyrice1.jpg",
@@ -591,6 +598,7 @@
             "This step is optional. If you want a really smooth top layer: Allow the custard to steam on lowered heat until a sturdy crust has formed over the top. Then, while it's still cooking, occasionally run a greased spoon lightly over the surface. This will smooth out the layer and give the top a nice sheen. Do this a few times, re-greasing the spoon each time.",
             "Allow the cake to cool at least 15 minutes before slicing. This cake is delicious as is, or you can dress it up with fresh fruit and/or a sprinkling of toasted coconut. Here, we've cut the cake into diamond shapes."
         ],
+        "calories":"230 Calories",
         "timers": "35 Minute",
         "imageGallery" : [
             "pandancake1.jpg",
@@ -874,7 +882,7 @@
             },
             {
                 "quantity": "500g",
-                "name": "Chicken wings, tips removed",
+                "name": "Chicken wings",
                 "type": "Meat"
             }
         ],
@@ -885,6 +893,7 @@
             "Thread 2 flat pieces onto each skewer on a diagonal, spacing about 1/2 apart.",
             "Grill along with drumettes, turning occasionally, until lightly charred and cooked through, 6–8 minutes. Serve with dipping sauce"
         ],
+        "calories":"250 Calories",
         "timers": "15 Minute",
         "imageGallery" : [
             "grillwing1.jpg",
@@ -963,6 +972,7 @@
             "Using 2 large spatulas, transfer fish to a serving platter. Spoon juices on plate in steamer over fish. Drizzle with lime juice, if desired.",
             "Garnish with lime slices and cilantro leaves. Serve with steamed rice."
         ],
+        "calories":"250 Calories",
         "timers": "45 Minute",
         "imageGallery" : [
             "steamfish1.jpg",
@@ -1039,6 +1049,7 @@
             "Return liquid in pot to a simmer. Add mussels to pot, cover, and cook, shaking pot occasionally, until shells open (discard any mussels that do not open), about 4 minutes.",
             "Divide mussels and cooking liquid among bowls, top with reserved vegetables, parsley, and remaining 2 Tbsp. basil, and serve with bread alongside."
         ],
+        "calories":"240 Calories",
         "timers": "50 Minute",
         "imageGallery" : [
             "redcurrymussel1.jpg",
@@ -1115,6 +1126,7 @@
             "Prepare grill for medium-high heat. Thread a piece of fatback onto middle of each skewer, then thread on a piece of pork so one end of pork touches fat and other is at pointy end of skewer.",
             "Grill, turning occasionally, until lightly charred and cooked through, about 4 minutes."
         ],
+        "calories":"295 Calories",
         "timers": "40 Minute",
         "imageGallery" : [
             "porkgrill1.jpg",
@@ -1193,6 +1205,7 @@
             "Season duck breast with salt and pepper and cook in a skillet to medium-rare; let rest, then thinly slice.",
             "Whisk garlic, oil, fish sauce, lemon juice, ginger, and sugar in a large bowl; add duck, scallions, cilantro sprigs, mint leaves, and grapefruit segments and toss."
         ],
+        "calories":"150 Calories",
         "timers": "20 Minute",
         "imageGallery" : [
             "ducksalad1.jpg",
@@ -1275,6 +1288,7 @@
             "Cook peanuts in shallot oil until golden brown, about 2 minutes. Transfer to paper towels to drain; season with salt.",
             "Remove peel and white pith from pomelos. Tear membrane off and pull segments into large pieces, transferring to a large bowl as you go. Add cilantro, remaining shallots, and half of dressing and toss to coat. Add coconut, peanuts, and dried shrimp; toss again. Divide among plates, drizzle with remaining dressing, and top with fried shallots."
         ],
+        "calories":"400 Calories",
         "timers": "20 Minute",
         "imageGallery" : [
             "pomelo1.jpg",
@@ -1344,6 +1358,7 @@
                 "type": "Vegetable"
             }
         ],
+        "calories":"200 Calories",
         "steps": [
             "Stir oyster sauce, chili-garlic sauce, soy sauce, and sugar in a small bowl to com-bine; set sauce aside.",
             "Cook noodles according to package directions. Drain, run under cold water to cool, and set aside.",
@@ -1427,6 +1442,7 @@
             "Add chicken mixture and sauté, breaking up into small pieces with the back of a spoon, until chicken is starting to turn golden brown and is cooked through, about 6 minutes.",
             "Place 2 lettuce leaves on each plate. Top leaves with chicken mixture, dividing evenly. Garnish with cilantro and spoon reserved dressing over."
         ],
+        "calories":"210 Calories",
         "timers": "30 Minute",
         "imageGallery" : [
             "larb1",
@@ -1478,6 +1494,7 @@
             "When top surface of eggs is thickened and no visible liquid egg remains, PLACE filling on one side of the omelet. ",
             "FOLD omelet in half with turner. With a quick flip of the wrist, TURN pan and INVERT or SLIDE omelet onto plate. SERVE immediately."
         ],
+        "calories":"120 Calories",
         "timers": "10 Minute",
         "imageGallery" : [
             "omelet1.jpg",
@@ -1564,6 +1581,7 @@
             "Stir the peas, bamboo shoots and prawns into the rice and eggs, then heat through for 2 mins until the prawns are hot and the peas tender.",
             "Finally, stir in the spring onion greens, lime juice and coriander, if using. Spoon into bowls and serve with extra lime wedges and soy sauce."
         ],
+        "calories":"300 Calories",
         "timers": "20 Minute",
         "imageGallery" : [
             "friedricepine1.jpg",
@@ -1615,6 +1633,7 @@
             "When hot, cook your pancakes for 1 min on each side until golden, keeping them warm in a low oven as you go.",
             "Serve with lemon wedges and caster sugar, or your favourite filling. Once cold, you can layer the pancakes between baking parchment, then wrap in cling film and freeze for up to 2 months."
         ],
+        "calories":"430 Calories",
         "timers": "10 Minute",
         "imageGallery" : [
             "pancake1.jpg",
@@ -1666,6 +1685,7 @@
             "Reduce the heat, cover and simmer for 25-30 minutes, until the veg are tender. Stir in the baked beans and a generous splash of Worcestershire sauce and heat through. Taste and add salt and pepper if necessary.",
             "Scatter over the parsley, then ladle the hotpot into bowls. Put the Worcestershire sauce bottle on the table in case anyone fancies a bit more spice."
         ],
+        "calories":"400 Calories",
         "timers": "40 Minute",
         "imageGallery" : [
             "hotpot1.jpg",
@@ -1720,6 +1740,7 @@
             "Beat 1 small egg and brush the tops of the pies. Bake for 20 mins until golden. Leave to cool in the tin for 5 mins, then remove to a wire rack.",
             "To serve, lightly dust with icing sugar. They will keep for 3 to 4 days in an airtight container."
         ],
+        "calories":"450 Calories",
         "timers": "30 Minute",
         "imageGallery" : [
             "easypie1.jpg",
@@ -1774,6 +1795,7 @@
             "Bake for 20-25 mins until the chicken is cooked and crumbs crisp and golden.",
             "Squeeze out the soft, roasted garlic from the skins and serve with the chicken."
         ],
+        "calories":"405 Calories",
         "timers": "25 Minute",
         "imageGallery" : [
             "chickenkiev1.jpg",
@@ -1843,6 +1865,7 @@
             "Light the barbecue. When the flames have died down, place a large, well-oiled non-stick frying pan or sturdy baking tray on top of the bars. Cook the burgers in the pan or on the tray for 10 mins each side until nicely browned.",
             "Alternatively, heat oven to 220C/200C fan/gas 7 and cook on oiled baking trays for 15 mins. Serve in buns with a dollop of salsa, some onion and salad leaves."
         ],
+        "calories":"150 Calories",
         "timers": "20 Minute",
         "imageGallery" : [
             "vegan1.jpg",
@@ -1894,6 +1917,7 @@
             "Reserve pan juices for apple gravy. Stand for 10 minutes before removing crackling and thinly slicing meat.",
             "Serve meat with crackling pieces and apple gravy."
         ],
+        "calories":"220 Calories",
         "timers": "200 Minute",
         "imageGallery" : [
             "roastpork1.jpg",
@@ -1930,6 +1954,7 @@
             "Add remaining cream and stir until combined. Spoon into prepared easter eggs. Serve.",
             "Tip: when melting chocolate, be careful not to overheat or it will become grainy."
         ],
+        "calories":"590 Calories",
         "timers": "15 Minute",
         "imageGallery" : [
             "chocoeaster1.jpg",
@@ -1986,6 +2011,7 @@
             "Wrap each sandwich in 2 slices prosciutto. cook sandwiches, in Batches, in jaffle iron for 4 minutes, turning halfway, or until golden.",
             "Cut into triangles, garnish with parsley and serve."
         ],
+        "calories":"890 Calories",
         "timers": "15 Minute",
         "imageGallery" : [
             "jaffle1.jpg",

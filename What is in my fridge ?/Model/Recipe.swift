@@ -13,6 +13,7 @@ class Recipe: Mappable{
     var name:String? = ""
     var ingredient:[RecipeIngredient]! = []
     var step:[String]! = []
+    var calories:String! = ""
     var times:String! = ""
     var imageGalley:[String]! = []
     var credit:String! = ""
@@ -26,6 +27,7 @@ class Recipe: Mappable{
         name <- map["name"]
         ingredient <- map["ingredients"]
         step <- map["steps"]
+        calories <- map["calories"]
         times <- map["timers"]
         imageGalley <- map["imageGallery"]
         credit <- map["credit"]

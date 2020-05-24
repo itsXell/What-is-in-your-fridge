@@ -50,7 +50,7 @@ class AddingIngredientController: UIViewController {
             createData(name: String(ingredientName.text!), type: typeOfIngredient, amount: amountOfIngredient, expireDate: datePicker.date)
             
         }else{
-            createAlertView(title: "Information Invalid", description: "Please Fill all the information below")
+            createAlertViewWithoutAction(title: "Information Invalid", description: "Please Fill all the information below")
         }
         
     }
@@ -115,22 +115,27 @@ class AddingIngredientController: UIViewController {
         self.present(altMessage, animated: true, completion: nil)
         
     }
+    func createAlertViewWithoutAction(title:String,description:String) {
+           let altMessage = UIAlertController(title: title, message: description, preferredStyle: UIAlertController.Style.alert)
+           altMessage.addAction(UIAlertAction(title: "Okay", style: UIAlertAction.Style.default, handler: { action in
+           }))
+           self.present(altMessage, animated: true, completion: nil)
+           
+       }
+
     
     
     func createData(name:String,type:String,amount:Double, expireDate: Date){
         
-        //As we know that container is set up in the AppDelegates so we need to refer that container.
+        
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         
-        //We need to create a context from this container
         let managedContext = appDelegate.persistentContainer.viewContext
         
-        //Now let’s create an entity and new user records.
+
         let ingredientEntity = NSEntityDescription.entity(forEntityName: "IngredientModel", in: managedContext)!
         
-        //final, we need to add some data to our newly created record for each keys using
-        //here adding 5 data with loop
-        
+
         
         
         let ingredient = NSManagedObject(entity: ingredientEntity, insertInto: managedContext)

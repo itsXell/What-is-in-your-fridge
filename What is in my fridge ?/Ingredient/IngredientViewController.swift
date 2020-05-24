@@ -24,11 +24,9 @@ class IngredientViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        retrieveData()
+         self.navigationItem.title = titleView
         tableView.reloadData()
-        //        ingredientList.append(Ingredient(name: "Carrot", type: "vegetable", amount: 500, expireDate: "10-10-2020"))
-        
-        // Do any additional setup after loading the view.
+       
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,6 +34,7 @@ class IngredientViewController: UIViewController {
         retrieveData()
         tableView.reloadData()
         tableView.separatorColor = UIColor.white
+        self.tabBarController?.tabBar.isHidden = true
         super.viewWillAppear(animated)
     }
     
@@ -46,29 +45,37 @@ class IngredientViewController: UIViewController {
             self.present(vc_secondVC,animated: true)
         }
     }
+    
+    func removeAllExpire(){
+        var currentDate = Date()
+        for i in ingredientList{
+             print(i.expireDate < currentDate)
+            if i.expireDate < currentDate  {
+                deleteData(name: i.name)
+                tableView.reloadData()
+            }
+        }
+    }
+    
     func retrieveData() {
         
-        //As we know that container is set up in the AppDelegates so we need to refer that container.
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
-        
-        //We need to create a context from this container
+     
         let managedContext = appDelegate.persistentContainer.viewContext
         
-        //Prepare the request of type NSFetchRequest  for the entity
+      
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "IngredientModel")
-        
-        //        fetchRequest.fetchLimit = 1
-        //        fetchRequest.predicate = NSPredicate(format: "username = %@", "Ankur")
-        //        fetchRequest.sortDescriptors = [NSSortDescriptor.init(key: "email", ascending: false)]
-        //
+
+  
+     
         do {
             let result = try managedContext.fetch(fetchRequest)
             for data in result as! [NSManagedObject] {
-                if data.value(forKey: "ingreType") as? String == titleView {
+                if data.value(forKey: "ingreType") as? String == titleView{
                     print("Object id")
                     print(data.objectID)
                     ingredientList.append((Ingredient(id: data.objectID, name: data.value(forKey: "ingreName") as! String, type: data.value(forKey: "ingreType") as! String, amount: data.value(forKey: "ingreAmount") as! Double, expireDate: data.value(forKey: "ingreExpire") as! Date)))
-
+                    
                 }
             }
             
@@ -76,6 +83,7 @@ class IngredientViewController: UIViewController {
             
             print("Failed")
         }
+        removeAllExpire()
     }
     
     func deleteData(name: String){
@@ -125,7 +133,7 @@ extension IngredientViewController: UITableViewDataSource, UITableViewDelegate{
         dateFormat.dateFormat = "dd/MM/yy"
         cell.imageView?.image = image
         cell.ingredient.text = String(ingredientList[indexPath.row].name)
-        cell.amount.text = String(ingredientList[indexPath.row].amount)
+        cell.amount.text = String(ingredientList[indexPath.row].amount) + "g"
         cell.expireDate.text = dateFormat.string(from: ingredientList[indexPath.row].expireDate)
         return cell
     }
@@ -158,6 +166,6 @@ extension IngredientViewController: UITableViewDataSource, UITableViewDelegate{
             self.present(alert, animated: true, completion: nil)
         }
     }
-
+    
     
 }

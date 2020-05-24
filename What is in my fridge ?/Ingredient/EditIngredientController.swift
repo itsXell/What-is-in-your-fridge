@@ -23,6 +23,7 @@ class EditIngredientController: UIViewController {
         super.viewDidLoad()
         typeOfIngredient = selectIngredient?.type
         displayToTextField()
+        datePickerView()
         setSegmentedColor()
         setSegmentIndex()
         
@@ -68,6 +69,19 @@ class EditIngredientController: UIViewController {
         }
     }
     
+    func datePickerView() {
+        datePicker = UIDatePicker()
+        datePicker.datePickerMode = .date
+        datePicker.addTarget(self, action: #selector(AddingIngredientController.dateChanged(datePicker:)), for: .valueChanged)
+        
+        
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(AddingIngredientController.viewTapped(gestureRecognizer:)))
+        
+        view.addGestureRecognizer(tapGesture)
+        expirationDate.inputView = datePicker
+    }
+    
     @IBAction func updateIngredient(){
         let updateName:String! = ingredientName.text
         let updateAmount:Double! =  (amount.text! as NSString).doubleValue
@@ -104,11 +118,10 @@ class EditIngredientController: UIViewController {
     
     
     func updateData(id: NSObject,name:String,type:String,amount:Double, expireDate: Date){
-        
-        //As we know that container is set up in the AppDelegates so we need to refer that container.
+       
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         
-        //We need to create a context from this container
+
         let managedContext = appDelegate.persistentContainer.viewContext
         
         do
@@ -136,12 +149,5 @@ class EditIngredientController: UIViewController {
         }
         
     }
-    
-    
-    
-    
-    
-    
-    
     
 }

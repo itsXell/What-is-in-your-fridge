@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E016537247A717800898C88 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E016536247A717800898C88 /* SearchView.swift */; };
+		3E01653A247A750600898C88 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E016539247A750600898C88 /* SearchCell.swift */; };
 		3E04CDC02454234D0078D6A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E04CDBF2454234D0078D6A7 /* AppDelegate.swift */; };
 		3E04CDC22454234D0078D6A7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E04CDC12454234D0078D6A7 /* SceneDelegate.swift */; };
 		3E04CDC42454234D0078D6A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E04CDC32454234D0078D6A7 /* ViewController.swift */; };
@@ -53,6 +55,8 @@
 
 /* Begin PBXFileReference section */
 		374FF57FABA77D1F0ECEF40B /* Pods-What is in my fridge ?.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-What is in my fridge ?.release.xcconfig"; path = "Target Support Files/Pods-What is in my fridge ?/Pods-What is in my fridge ?.release.xcconfig"; sourceTree = "<group>"; };
+		3E016536247A717800898C88 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		3E016539247A750600898C88 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		3E04CDBC2454234D0078D6A7 /* What is in my fridge ?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "What is in my fridge ?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E04CDBF2454234D0078D6A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3E04CDC12454234D0078D6A7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +117,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E016538247A74D300898C88 /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				3E016536247A717800898C88 /* SearchView.swift */,
+				3E016539247A750600898C88 /* SearchCell.swift */,
+			);
+			path = SearchView;
+			sourceTree = "<group>";
+		};
 		3E04CDB32454234D0078D6A7 = {
 			isa = PBXGroup;
 			children = (
@@ -138,17 +151,18 @@
 		3E04CDBE2454234D0078D6A7 /* What is in my fridge ? */ = {
 			isa = PBXGroup;
 			children = (
+				3E016538247A74D300898C88 /* SearchView */,
 				3E21AA8B2476EA1600183830 /* Detialview */,
 				3E31597F24753E020057223B /* Model */,
 				3E7C392324743B6800E909A7 /* Ingredient */,
 				3E7BFFE5247427520006E30B /* MyFridge */,
 				3EB8ABF12472E0D50050FA58 /* Recommendation */,
 				3E04CDBF2454234D0078D6A7 /* AppDelegate.swift */,
-				3E04CDC12454234D0078D6A7 /* SceneDelegate.swift */,
 				3E04CDC32454234D0078D6A7 /* ViewController.swift */,
 				3E04CDC52454234D0078D6A7 /* Main.storyboard */,
 				3E04CDC82454234F0078D6A7 /* Assets.xcassets */,
 				3E04CDCA2454234F0078D6A7 /* LaunchScreen.storyboard */,
+				3E04CDC12454234D0078D6A7 /* SceneDelegate.swift */,
 				3E04CDCD2454234F0078D6A7 /* Info.plist */,
 				3E972DAD2475B6770086BC2A /* icon@2x.png */,
 				3E45D02A247525AA0044D214 /* IngredientModel.xcdatamodeld */,
@@ -421,12 +435,14 @@
 				3E04CDC42454234D0078D6A7 /* ViewController.swift in Sources */,
 				3E70696224766F2A000852EF /* RecipeIngredient.swift in Sources */,
 				3E31598124753E110057223B /* Ingredient.swift in Sources */,
+				3E01653A247A750600898C88 /* SearchCell.swift in Sources */,
 				3E04CDC02454234D0078D6A7 /* AppDelegate.swift in Sources */,
 				3E21AA8A2476EA1100183830 /* IngredientCell.swift in Sources */,
 				3E21AA882476E5B700183830 /* DetailViewController.swift in Sources */,
 				3E45D02C247525AA0044D214 /* IngredientModel.xcdatamodeld in Sources */,
 				3E7C392224743B5D00E909A7 /* IngredientViewController.swift in Sources */,
 				3E7C392524743B8B00E909A7 /* IngredientViewCell.swift in Sources */,
+				3E016537247A717800898C88 /* SearchView.swift in Sources */,
 				3E04CDC22454234D0078D6A7 /* SceneDelegate.swift in Sources */,
 				3E7BFFE1247427010006E30B /* MyFridgeViewController.swift in Sources */,
 				3E48D22F2477051A0025A5DD /* StepCell.swift in Sources */,
